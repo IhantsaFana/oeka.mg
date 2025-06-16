@@ -281,14 +281,14 @@ const ChatBot = () => {
 
       {/* Welcome Message */}
       {!isOpen && hasNewMessage && (
-        <div className="absolute bottom-20 right-0 bg-white rounded-lg shadow-lg p-3 max-w-xs animate-bounce">
+        <div className="absolute bottom-20 right-0 w-80 bg-white rounded-lg shadow-lg p-3 max-w-xs animate-bounce">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
               <Bot size={16} className="text-white" />
             </div>
             <div>
               <p className="text-sm font-medium text-gray-800">
-                Nouveau message !
+                Parler avec moi ?
               </p>
               <p className="text-xs text-gray-600">Cliquez pour discuter</p>
             </div>

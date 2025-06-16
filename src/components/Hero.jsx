@@ -271,7 +271,7 @@ function Hero() {
                 }}
               >
                 <img
-                  src="/Profile.png"
+                  src="/ihantsa.jpeg"
                   alt="Ihantsa RAKOTONDRANAIVO"
                   className="object-cover w-full h-full"
                   loading="lazy"
