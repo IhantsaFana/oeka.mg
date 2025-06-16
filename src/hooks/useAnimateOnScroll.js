@@ -2,19 +2,20 @@ import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-export default function useAnimateOnScroll(threshold = 0.1) {
+export default function useAnimateOnScroll(key = '', threshold = 0.1) {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     threshold,
+    triggerOnce: true, // Only trigger once to prevent duplicate animations
   });
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start(`visible-${key}`);
     } else {
-      controls.start('hidden');
+      controls.start(`hidden-${key}`);
     }
-  }, [controls, inView]);
+  }, [controls, inView, key]);
 
   return {
     ref,
@@ -23,12 +24,12 @@ export default function useAnimateOnScroll(threshold = 0.1) {
   };
 }
 
-export const fadeInUpVariants = {
-  hidden: {
+export const fadeInUpVariants = (key = '') => ({
+  [`hidden-${key}`]: {
     opacity: 0,
     y: 30,
   },
-  visible: {
+  [`visible-${key}`]: {
     opacity: 1,
     y: 0,
     transition: {
@@ -36,15 +37,19 @@ export const fadeInUpVariants = {
       ease: [0.6, -0.05, 0.01, 0.99],
     },
   },
-};
+});
 
 export const staggerChildrenVariants = {
   hidden: {
     opacity: 0,
+    transition: {
+      when: "afterChildren",
+    }
   },
   visible: {
     opacity: 1,
     transition: {
+      when: "beforeChildren",
       staggerChildren: 0.1,
     },
   },

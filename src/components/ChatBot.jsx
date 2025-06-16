@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { MessageCircle, X, Send, User, Bot, Minimize2 } from "lucide-react";
 
 // Configuration for OpenRouter API
-const OPENROUTER_API_KEY =
-  "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";
-const SITE_URL = "oeka.vercel.app";
+const OPENROUTER_API_KEY = "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";
+const SITE_URL = "https://oeka.vercel.app"; // Added https:// protocol
 const SITE_NAME = "OEKA - Ihantsa RAKOTONDRANAIVO";
 
 // Composant Chat
@@ -43,9 +42,11 @@ const Chat = () => {
               "HTTP-Referer": SITE_URL,
               "X-Title": SITE_NAME,
               "Content-Type": "application/json",
+              Accept: "application/json",
             },
+            mode: "cors",
             body: JSON.stringify({
-              model: "deepseek/deepseek-r1-0528-qwen3-8b:free",
+              model: "mistral/mistral-7b-instruct",
               messages: [
                 {
                   role: "user",
