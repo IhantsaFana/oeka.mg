@@ -168,7 +168,67 @@ function Projects() {
         "projects": "10+",
         "feedback": "Positive"
       }
-    }
+    },
+    {
+      id: 7,
+      title: "Assistant Théologique Vocal",
+      category: "mobile",
+      description: "Application Flutter connectée à Gemini pour répondre à des questions bibliques avec synthèse vocale Google TTS.",
+      image: "theological-ai.png",
+      url: "https://github.com/IhantsaFana/personal_assist_voice",
+      tags: ["Flutter", "Gemini", "Google TTS", "Django"],
+      testimonial: {
+        text: "Un outil spirituel interactif et moderne, avec une expérience vocale fluide.",
+        author: "Ihantsa RAKOTONDRANAIVO",
+        role: "Concepteur & Développeur",
+        avatar: "https://source.unsplash.com/random/100x100/?priest"
+      },
+      stats: {
+        users: "2K+",
+        feedback: "Très Positif",
+        rating: "4.9/5"
+      }
+    },
+    {
+      id: 8,
+      title: "Comptabilité IA Madagascar",
+      category: "web",
+      description: "Pipeline OCR + IA générative pour automatiser l’écriture comptable selon le Plan Comptable Général de Madagascar.",
+      image: "madagascar-compta.png",
+      url: "https://github.com/IhantsaFana/compta-ia",
+      tags: ["Python", "Gemini", "Google Vision", "Flask"],
+      testimonial: {
+        text: "Une révolution pour les PME malgaches qui veulent automatiser leur comptabilité.",
+        author: "Ihantsa RAKOTONDRANAIVO",
+        role: "Architecte IA & Dev",
+        avatar: "https://source.unsplash.com/random/100x100/?finance"
+      },
+      stats: {
+        entreprises: "5+",
+        documents traités: "1K+",
+        impact: "Optimisation x3"
+      }
+    },
+    {
+      id: 9,
+      title: "Play to Learn – Hackathon ESMIA",
+      category: "design",
+      description: "Jeu 3D éducatif pour apprendre l’entrepreneuriat, développé en 48h lors d’un hackathon.",
+      image: "playtolearn.png",
+      url: "https://github.com/IhantsaFana/entreprenariatquest",
+      tags: ["Unity", "C#", "Design Thinking"],
+      testimonial: {
+        text: "Une immersion innovante dans l’apprentissage de l’entrepreneuriat pour les étudiants.",
+        author: "Jury Hackathon ESMIA",
+        role: "Participant gagnant",
+        avatar: "https://source.unsplash.com/random/100x100/?student"
+      },
+      stats: {
+        hackathon: "1er Prix",
+        participants: "100+",
+        durée: "48h"
+      }
+    },
   ]
 
   // Filter projects based on selected category
