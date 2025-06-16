@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import Services from './components/Services'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ChatBot from './components/ChatBot'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Contact />
       <Footer />
+      <ChatBot />
     </main>
   )
 }
