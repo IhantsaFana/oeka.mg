@@ -205,7 +205,7 @@ function Projects() {
       },
       stats: {
         entreprises: "5+",
-        documents traités: "1K+",
+        "documents traités": "1K+",
         impact: "Optimisation x3"
       }
     },
@@ -468,7 +468,7 @@ function Projects() {
                         transition-colors backdrop-blur-sm"
                       onClick={() => {
                         setSelectedProject(project);
-                        window.location.href = `https://github.com/IhantsaFana/${projectData.url}`;
+                        window.location.href = `https://github.com/IhantsaFana/${project.url}`;
                       }}
                     >
                       View Project
