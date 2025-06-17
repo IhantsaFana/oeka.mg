@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   useEffect(() => {
@@ -62,26 +64,35 @@ function Contact() {
       message: formData.message,
     };
 
-    // EmailJS send form with correct credentials
-    emailjs
-      .send(
+    try {
+      // Show loading toast
+      const toastId = toast.loading("Envoi en cours...");
+
+      // Send email
+      await emailjs.send(
         "service_d0d6vvs",
         "template_nft3259",
         templateParams,
         "o93pipBW0vElKskMH"
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setIsSubmitting(false);
-          // Reset form after submission
-          setFormData({ name: "", email: "", subject: "", message: "" });
-        },
-        (err) => {
-          console.error("FAILED...", err);
-          setIsSubmitting(false);
-        }
       );
+
+      // Update toast on success
+      toast.update(toastId, {
+        render: "🎉 Message envoyé avec succès!",
+        type: "success",
+        isLoading: false,
+        autoClose: 5000,
+      });
+
+      // Reset form
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      // Show error toast
+      toast.error("❌ Échec de l'envoi. Veuillez réessayer.");
+      console.error("Error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -90,6 +101,18 @@ function Contact() {
       id="contact"
       className="relative py-32 bg-gradient-to-b from-[#0A0A0A] via-[#111111] to-[#1A1A1A] overflow-hidden"
     >
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       {/* Moving dots in background */}
       <motion.div
         className="absolute inset-0 opacity-10"
