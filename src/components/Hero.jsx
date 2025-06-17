@@ -226,7 +226,7 @@ function Hero() {
       rounded-full overflow-hidden w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.open('/cv_ihantsa_rakotondranaivo.pdf', '_blank')}
+                onClick={() => window.open('/cv_Rakotondranaivo_Ihantsa.pdf', '_blank')}
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <span>Download CV</span>
