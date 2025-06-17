@@ -33,9 +33,11 @@ function About() {
 
   // Skills and achievements shown in highlights
   const highlights = [
-    { text: "Web Developer", icon: "🌐" },
-    { text: "System Administrator", icon: "🖥️" },
-    { text: "Problem Solver", icon: "🧩" },
+    { text: "Creative Web Developer", icon: "🌐" },
+    { text: "Efficient System Administrator", icon: "🖥️" },
+    { text: "Passionate Problem Solver", icon: "🧩" },
+    { text: "Tech Enthusiast & Fast Learner", icon: "⚡" },
+    { text: "Loves Building Useful Tools", icon: "🛠️" },
   ];
 
   // Statistics display
