@@ -34,15 +34,16 @@ function About() {
   // Skills and achievements shown in highlights
   const highlights = [
     { text: "Creative Web Developer", icon: "🌐" },
-    { text: "Mobile Developper", icon: "🖥️" },
-    { text: "Data Science", icon: "🧩" },
-    { text: "IA Analyst", icon: "⚡" },
+    { text: "Cross-platform Mobile Developer", icon: "📱" },
+    { text: "AI & LLM Integrator", icon: "🧠" },
+    { text: "OCR & Document Automation", icon: "📄" },
+    { text: "DevOps Enthusiast", icon: "⚙️" },
   ];
 
   // Statistics display
   const stats = [
     { number: "50+", label: "Projects Completed", icon: "✅" },
-    { number: "95%", label: "Client Satisfaction", icon: "😊" },
+    { number: "90%", label: "Client Satisfaction", icon: "😊" },
     {
       number: new Date().getFullYear() - 2022,
       label: "Years of Experience",
