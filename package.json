@@ -19,11 +19,15 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-intersection-observer": "^9.13.1",
+    "react-markdown": "^10.1.0",
     "react-toastify": "^11.0.5",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",

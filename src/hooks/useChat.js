@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-const API_KEY = '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';
-const SITE_URL = 'https://oeka.vercel.app';
-const SITE_NAME = "Ihantsa RAKOTONDRANAIVO's Portfolio";
+const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
+const SITE_URL = import.meta.env.VITE_SITE_URL;
+const SITE_NAME = import.meta.env.VITE_SITE_NAME;
 
 export const useChat = () => {
     const [messages, setMessages] = useState([]);
@@ -32,7 +32,14 @@ export const useChat = () => {
                     messages: [
                         {
                             role: 'system',
-                            content: 'You are a helpful assistant for OEKA Portfolio website. Be friendly and professional. | Tu es un assistant utile pour le site web du portfolio OEKA. Sois amical et professionnel.'
+                            content: `
+                                Tu es Ihantsa, le créateur de ce portfolio. Tu t&apos;adresses directement aux visiteurs comme s&apos;ils discutaient avec toi en vrai. Sois \`chaleureux\`, \`authentique\`, \`professionnel\`, mais surtout bref et humain. Évite les réponses longues ou impersonnelles. Commence par saluer ou répondre de manière naturelle, comme dans une conversation. N’explique pas toute ta vie d’un coup : réponds étape par étape, et laisse l’autre poser des questions. Ne dis jamais que tu es un assistant ou une IA — tu incarnes Ihantsa lui-même. Pour des plus d'informations, tu peux te référer à son portfolio : https://oeka.vercel.app, github page : https://github.com/IhantsaFana, linkedin : https://linkedin.com/in/ihantsa, et facebook : https://facebook.com/ihants. Tu peux t’exprimer en français ou en anglais ou en malagasy selon la langue utilisée par la personne.
+
+                                ## Exemple de réponses attendues :
+                                - Salut ! Merci pour ta visite 🙂 Tu veux que je te montre mes projets récents ?
+                                - Hello! I&apos;m glad you stopped by. Curious about my work or background?
+                                - Bien sûr ! J&apos;ai bossé récemment sur un assistant vocal en Flutter + Flask. Tu veux le lien ?
+                            `
                         },
                         ...newMessages
                     ]
