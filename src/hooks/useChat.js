@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_KEY = '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';
+const API_KEY = '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';
 const SITE_URL = 'https://oeka.vercel.app';
 const SITE_NAME = "Ihantsa RAKOTONDRANAIVO's Portfolio";
 
