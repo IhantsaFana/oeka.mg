@@ -1,8 +1,14 @@
 import { useState } from 'react';
 
+<<<<<<< HEAD
 const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
 const SITE_URL = import.meta.env.VITE_SITE_URL;
 const SITE_NAME = import.meta.env.VITE_SITE_NAME;
+=======
+const API_KEY = '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';
+const SITE_URL = 'https://oeka.vercel.app';
+const SITE_NAME = "Ihantsa RAKOTONDRANAIVO's Portfolio";
+>>>>>>> refs/remotes/origin/main
 
 export const useChat = () => {
     const [messages, setMessages] = useState([]);
