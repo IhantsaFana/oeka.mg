@@ -1,9 +1,13 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
+  useEffect(() => {
+    emailjs.init("o93pipBW0vElKskMH");
+  }, []);
+
   // Store form input values
   const [formData, setFormData] = useState({
     name: "",
@@ -50,19 +54,34 @@ function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // EmailJS send form
-    emailjs.send("service_id", "template_id", formData, "public_key").then(
-      (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        setIsSubmitting(false);
-        // Reset form after submission
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      },
-      (err) => {
-        console.error("FAILED...", err);
-        setIsSubmitting(false);
-      }
-    );
+    // Format the data correctly for EmailJS
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    // EmailJS send form with correct credentials
+    emailjs
+      .send(
+        "service_d0d6vvs",
+        "template_nft3259",
+        templateParams,
+        "o93pipBW0vElKskMH"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setIsSubmitting(false);
+          // Reset form after submission
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          setIsSubmitting(false);
+        }
+      );
   };
 
   return (
