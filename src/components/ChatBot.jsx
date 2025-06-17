@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { MessageCircle, X, Send, User, Bot, Minimize2 } from "lucide-react";
+import { MessageCircle, X, Send, User, Minimize2 } from "lucide-react";
+import { motion } from "framer-motion";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
@@ -90,17 +91,28 @@ const Chat = () => {
                   : ""
               }`}
             >
-              <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                  message.sender === "user"
-                    ? "bg-gradient-to-r from-blue-500 to-purple-600"
-                    : "bg-gradient-to-r from-purple-500 to-pink-500"
-                }`}
-              >
+              <div className="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
                 {message.sender === "user" ? (
-                  <User size={16} className="text-white" />
+                  <div className="bg-gradient-to-r from-blue-500 to-purple-600">
+                    <User size={16} className="text-white" />
+                  </div>
                 ) : (
-                  <Bot size={16} className="text-white" />
+                  <motion.img
+                    src="/ihantsa.jpeg"
+                    alt="Ihantsa RAKOTONDRANAIVO"
+                    className="w-full h-full object-cover"
+                    animate={{
+                      boxShadow: [
+                        "0 0 10px rgba(109, 190, 69, 0.3)",
+                        "0 0 20px rgba(109, 190, 69, 0.3)",
+                        "0 0 10px rgba(109, 190, 69, 0.3)",
+                      ],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                    }}
+                  />
                 )}
               </div>
               <div
@@ -207,7 +219,7 @@ const Chat = () => {
               }
             }}
             placeholder="Tapez votre message..."
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-5005 focus:border-transparent"
             disabled={isLoading}
           />
           <button
@@ -273,8 +285,23 @@ const ChatBot = () => {
         >
           <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4 rounded-t-2xl flex justify-between items-center">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                <Bot size={20} className="text-white" />
+              <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white bg-opacity-20">
+                <motion.img
+                  src="/ihantsa.jpeg"
+                  alt="Ihantsa RAKOTONDRANAIVO"
+                  className="w-full h-full object-cover"
+                  animate={{
+                    boxShadow: [
+                      "0 0 10px rgba(109, 190, 69, 0.3)",
+                      "0 0 20px rgba(109, 190, 69, 0.3)",
+                      "0 0 10px rgba(109, 190, 69, 0.3)",
+                    ],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                  }}
+                />
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Ihantsa</h3>
@@ -331,8 +358,23 @@ const ChatBot = () => {
       {!isOpen && hasNewMessage && (
         <div className="absolute bottom-20 right-0 w-80 bg-white rounded-lg shadow-lg p-3 max-w-xs animate-bounce">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-              <Bot size={16} className="text-white" />
+            <div className="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
+              <motion.img
+                src="/ihantsa.jpeg"
+                alt="Ihantsa RAKOTONDRANAIVO"
+                className="w-full h-full object-cover"
+                animate={{
+                  boxShadow: [
+                    "0 0 10px rgba(109, 190, 69, 0.3)",
+                    "0 0 20px rgba(109, 190, 69, 0.3)",
+                    "0 0 10px rgba(109, 190, 69, 0.3)",
+                  ],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                }}
+              />
             </div>
             <div>
               <p className="text-sm font-medium text-gray-800">
