@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { MessageCircle, X, Send, User, Bot, Minimize2 } from "lucide-react";
-
-// Configuration for OpenRouter API
-const OPENROUTER_API_KEY = "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";
-const SITE_URL = "https://oeka.vercel.app"; // Added https:// protocol
-const SITE_NAME = "OEKA - Ihantsa RAKOTONDRANAIVO";
+import { useChat } from "../hooks/useChat";
+import { toast } from "react-toastify";
 
 // Composant Chat
 const Chat = () => {
-  const [messages, setMessages] = useState([
+  const {
+    messages: chatMessages,
+    isLoading,
+    error,
+    sendMessage: sendChatMessage,
+  } = useChat();
+  const [inputText, setInputText] = useState("");
+
+  const [displayMessages, setDisplayMessages] = useState([
     {
       id: 1,
       text: "Salut ! Je suis Ihantsa. Comment puis-je vous aider aujourd'hui ?",
@@ -16,69 +21,37 @@ const Chat = () => {
       timestamp: new Date(),
     },
   ]);
-  const [inputText, setInputText] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
 
   const sendMessage = async () => {
     if (inputText.trim()) {
       // Add user message
       const userMessage = {
-        id: messages.length + 1,
+        id: displayMessages.length + 1,
         text: inputText,
         sender: "user",
         timestamp: new Date(),
       };
-      setMessages((prev) => [...prev, userMessage]);
+      setDisplayMessages((prev) => [...prev, userMessage]);
       setInputText("");
-      setIsLoading(true);
 
       try {
-        const response = await fetch(
-          "https://openrouter.ai/api/v1/chat/completions",
-          {
-            method: "POST",
-            headers: {
-              Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-              "HTTP-Referer": SITE_URL,
-              "X-Title": SITE_NAME,
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            mode: "cors",
-            body: JSON.stringify({
-              model: "mistral/mistral-7b-instruct",
-              messages: [
-                {
-                  role: "user",
-                  content: inputText,
-                },
-              ],
-            }),
-          }
-        );
-
-        const data = await response.json();
-
-        if (data.choices && data.choices[0]) {
-          const botResponse = {
-            id: messages.length + 2,
-            text: data.choices[0].message.content,
-            sender: "bot",
-            timestamp: new Date(),
-          };
-          setMessages((prev) => [...prev, botResponse]);
-        }
+        const response = await sendChatMessage(inputText);
+        const botResponse = {
+          id: displayMessages.length + 2,
+          text: response,
+          sender: "bot",
+          timestamp: new Date(),
+        };
+        setDisplayMessages((prev) => [...prev, botResponse]);
       } catch (error) {
-        console.error("Error:", error);
+        toast.error("Une erreur s'est produite. Veuillez réessayer.");
         const errorMessage = {
-          id: messages.length + 2,
+          id: displayMessages.length + 2,
           text: "Désolé, une erreur s'est produite. Veuillez réessayer plus tard.",
           sender: "bot",
           timestamp: new Date(),
         };
-        setMessages((prev) => [...prev, errorMessage]);
-      } finally {
-        setIsLoading(false);
+        setDisplayMessages((prev) => [...prev, errorMessage]);
       }
     }
   };
@@ -86,7 +59,7 @@ const Chat = () => {
   return (
     <div className="flex flex-col h-full">
       <div className="flex-1 overflow-y-auto space-y-4 p-4">
-        {messages.map((message) => (
+        {displayMessages.map((message) => (
           <div
             key={message.id}
             className={`flex ${
