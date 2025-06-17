@@ -1,23 +1,27 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   // Store form input values
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
   // Track if form is being submitted
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Add form reference for EmailJS
+  const form = useRef();
 
   // Check if section is visible on screen
   const { ref, inView } = useInView({
-    threshold: 0.1
-  })
+    threshold: 0.1,
+  });
 
   // Contact details with icons and links
   const contactInfo = [
@@ -25,41 +29,50 @@ function Contact() {
       icon: "M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z",
       title: "Phone",
       content: "+261 38 47 025 32",
-      href: "tel:+261384702532"
+      href: "tel:+261384702532",
     },
     {
       icon: "M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75",
       title: "Email",
       content: "ihantsarakotondranaivo@gmail.com",
-      href: "mailto:ihantsarakotondranaivo@gmail.com"
+      href: "mailto:ihantsarakotondranaivo@gmail.com",
     },
     {
       icon: "M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z",
       title: "Address",
       content: "Antananarivo, Madagascar",
-      href: "https://maps.app.goo.gl/Ce7X61nqMzGEJ4Ji6"
-    }
-  ]
+      href: "https://maps.app.goo.gl/Ce7X61nqMzGEJ4Ji6",
+    },
+  ];
 
   // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    // Fake API call delay
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    setIsSubmitting(false)
-    // Reset form after submission
-    setFormData({ name: '', email: '', subject: '', message: '' })
-  }
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // EmailJS send form
+    emailjs.send("service_id", "template_id", formData, "public_key").then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setIsSubmitting(false);
+        // Reset form after submission
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      },
+      (err) => {
+        console.error("FAILED...", err);
+        setIsSubmitting(false);
+      }
+    );
+  };
 
   return (
-    <section 
+    <section
       ref={ref}
-      id="contact" 
+      id="contact"
       className="relative py-32 bg-gradient-to-b from-[#0A0A0A] via-[#111111] to-[#1A1A1A] overflow-hidden"
     >
       {/* Moving dots in background */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0 opacity-10"
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 0.1 } : { opacity: 0 }}
@@ -67,26 +80,30 @@ function Contact() {
         key={`bg-${inView}`}
       >
         {/* Animated dot pattern */}
-        <motion.div 
+        <motion.div
           className="absolute inset-0"
           style={{
             backgroundImage: `radial-gradient(circle at center, #6DBE45 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
+            backgroundSize: "50px 50px",
           }}
-          animate={inView ? {
-            backgroundPosition: ['0% 0%', '100% 100%']
-          } : {}}
+          animate={
+            inView
+              ? {
+                  backgroundPosition: ["0% 0%", "100% 100%"],
+                }
+              : {}
+          }
           transition={{
             duration: 20,
             ease: "linear",
-            repeat: Infinity
+            repeat: Infinity,
           }}
         />
       </motion.div>
 
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Section title */}
-        <motion.div 
+        <motion.div
           className="mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -97,14 +114,14 @@ function Contact() {
             Let&apos;s <span className="text-[#6DBE45]">Connect</span>
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-center text-white/70">
-            Have a project in mind? We&apos;d love to hear from you! Drop us a message 
-            and we&apos;ll get back to you as soon as possible.
+            Have a project in mind? We&apos;d love to hear from you! Drop us a
+            message and we&apos;ll get back to you as soon as possible.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           {/* Contact form with inputs */}
-          <motion.div 
+          <motion.div
             className="p-6 overflow-hidden border sm:p-8 rounded-2xl bg-white/5 backdrop-blur-sm border-white/10"
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
@@ -112,15 +129,17 @@ function Contact() {
             key={`form-${inView}`}
           >
             {/* Form fields */}
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-5">
               {/* Name and email inputs */}
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                 <div className="relative">
                   <input
                     type="text"
-                    name="name"
+                    name="user_name"
                     value={formData.name}
-                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                    onChange={(e) =>
+                      setFormData((prev) => ({ ...prev, name: e.target.value }))
+                    }
                     placeholder="Your Name"
                     required
                     className="w-full px-4 py-3 bg-white/5 rounded-lg border border-white/10 focus:border-[#6DBE45] 
@@ -130,9 +149,14 @@ function Contact() {
                 <div className="relative">
                   <input
                     type="email"
-                    name="email"
+                    name="user_email"
                     value={formData.email}
-                    onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                    onChange={(e) =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        email: e.target.value,
+                      }))
+                    }
                     placeholder="Your Email"
                     required
                     className="w-full px-4 py-3 bg-white/5 rounded-lg border border-white/10 focus:border-[#6DBE45] 
@@ -145,7 +169,12 @@ function Contact() {
                   type="text"
                   name="subject"
                   value={formData.subject}
-                  onChange={(e) => setFormData(prev => ({ ...prev, subject: e.target.value }))}
+                  onChange={(e) =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      subject: e.target.value,
+                    }))
+                  }
                   placeholder="Subject"
                   required
                   className="w-full px-4 py-3 bg-white/5 rounded-lg border border-white/10 focus:border-[#6DBE45] 
@@ -156,7 +185,12 @@ function Contact() {
                 <textarea
                   name="message"
                   value={formData.message}
-                  onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
+                  onChange={(e) =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      message: e.target.value,
+                    }))
+                  }
                   placeholder="Your Message"
                   required
                   rows={6}
@@ -164,7 +198,7 @@ function Contact() {
                     focus:ring-2 focus:ring-[#6DBE45]/20 outline-none transition-colors placeholder:text-white/30 text-white resize-none"
                 />
               </div>
-              
+
               {/* Submit button with loading state */}
               <motion.button
                 type="submit"
@@ -175,7 +209,9 @@ function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span className="relative z-10">{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                <span className="relative z-10">
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </span>
                 {/* Button hover effect */}
                 <div className="absolute inset-0 transition-transform duration-700 transform translate-x-full -skew-x-12 bg-white/20 group-hover:translate-x-0" />
               </motion.button>
@@ -183,7 +219,7 @@ function Contact() {
           </motion.div>
 
           {/* Contact info and map */}
-          <motion.div 
+          <motion.div
             className="space-y-6"
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
@@ -201,17 +237,29 @@ function Contact() {
                   className="flex items-start gap-4 p-5 rounded-xl border border-white/10 bg-white/5 
                     backdrop-blur-sm hover:border-[#6DBE45]/50 transition-colors group"
                   initial={{ opacity: 0, y: 20 }}
-                  animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ 
-                    duration: 0.5, 
+                  animate={
+                    inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                  }
+                  transition={{
+                    duration: 0.5,
                     delay: 0.6 + index * 0.1,
                     type: "spring",
-                    stiffness: 100
+                    stiffness: 100,
                   }}
                 >
                   <div className="p-3 rounded-full bg-[#6DBE45]/20 group-hover:bg-[#6DBE45]/30 transition-colors">
-                    <svg className="w-6 h-6 text-[#6DBE45]" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d={info.icon} />
+                    <svg
+                      className="w-6 h-6 text-[#6DBE45]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d={info.icon}
+                      />
                     </svg>
                   </div>
                   <div>
@@ -225,7 +273,7 @@ function Contact() {
             </div>
 
             {/* Google Maps embed */}
-            <motion.div 
+            <motion.div
               className="mt-8 overflow-hidden border rounded-xl border-white/10 bg-white/5 backdrop-blur-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -245,7 +293,7 @@ function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact 
+export default Contact;
