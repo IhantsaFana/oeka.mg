@@ -1,21 +1,24 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "contact": "Contact",
-    "blog": "Blog",
-    "hireMe": "Hire me",
-    "discoverProjects": "Discover projects"
+    "about": "My Journey",
+    "projects": "Work",
+    "contact": "Let's Talk",
+    "blog": "Thoughts",
+    "hireMe": "Work with me",
+    "discoverProjects": "View my work"
   },
   "home": {
     "title": "Ihantsa RAKOTONDRANAIVO",
-    "subtitle": "Full-Stack Developer & AI",
-    "description": "Passionate about web and mobile development, I create modern applications with React, Next.js, Flutter and explore the possibilities of artificial intelligence.",
-    "cta": "View my projects",
-    "intro": "Passionate developer based in Madagascar, I specialize in creating modern web and mobile applications.",
-    "heroTitle": "Build modern applications.",
-    "heroHighlight": "modern"
+    "subtitle": "Full-Stack Developer & Digital Creator",
+    "description": "I turn coffee into code and ideas into memorable digital experiences. Specializing in reactive web solutions and intuitive mobile applications.",
+    "cta": "Explore my world",
+    "hello": "Hi, I'm",
+    "welcome": "Welcome to my creative space",
+    "intro": "Full-stack developer passionate about innovation and beautiful interfaces. I create digital solutions that combine performance, elegance, and exceptional user experience.",
+    "heroTitle": "I bring ideas to life",
+    "heroHighlight": "extraordinary",
+    "followMe": "Follow me on"
   },
   "about": {
     "title": "About",
