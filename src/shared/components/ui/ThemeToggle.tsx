@@ -1,4 +1,4 @@
-import { useTheme } from '@/contexts/ThemeContext';
+import { useTheme } from '@/store/contexts/ThemeContext';
 import { motion } from 'framer-motion';
 
 export function ThemeToggle() {
@@ -47,3 +47,4 @@ export function ThemeToggle() {
     </motion.button>
   );
 }
+

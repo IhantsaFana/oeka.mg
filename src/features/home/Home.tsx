@@ -1,5 +1,5 @@
-import { SEO } from '@/components/ui/SEO';
-import { Hero } from '@/components/sections/Hero';
+import { SEO } from '@/shared/components/ui/SEO';
+import { Hero } from '@/shared/components/sections/Hero';
 import { AboutHero } from '@/features/about/components/AboutHero';
 import { TechLogos } from '@/features/about/components/TechLogos';
 import { Timeline } from '@/features/about/components/Timeline';
@@ -7,7 +7,7 @@ import { Certifications } from '@/features/about/components/Certifications';
 import { ProjectsSection } from './components/ProjectsSection';
 import { ContactForm } from '@/features/contact/components/ContactForm';
 import { ContactInfo } from '@/features/contact/components/ContactInfo';
-import { Container } from '@/components/ui/Container';
+import { Container } from '@/shared/components/ui/Container';
 
 export function Home() {
   return (
@@ -68,3 +68,4 @@ export function Home() {
     </>
   );
 }
+

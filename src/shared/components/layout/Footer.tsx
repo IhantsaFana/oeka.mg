@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import { ThemeToggle } from '@/shared/components/ui/ThemeToggle';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -65,3 +65,4 @@ export function Footer() {
     </footer>
   );
 }
+

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Container } from '@/components/ui/Container';
+import { Container } from '@/shared/components/ui/Container';
 // Icons removed as they're not used in the current design
 
 interface TimelineItem {
@@ -110,3 +110,4 @@ export function Timeline() {
     </Container>
   );
 }
+

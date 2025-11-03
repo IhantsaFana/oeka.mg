@@ -98,3 +98,4 @@ export const categories = [
   { key: 'ai', label: 'IA' },
   { key: 'fullstack', label: 'Full-Stack' }
 ];
+

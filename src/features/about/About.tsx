@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { SEO } from '@/components/ui/SEO';
-import { StructuredData } from '@/components/seo/StructuredData';
+import { SEO } from '@/shared/components/ui/SEO';
+import { StructuredData } from '@/shared/components/seo/StructuredData';
 import { AboutHero } from './components/AboutHero';
 import { Skills } from './components/Skills';
 import { Timeline } from './components/Timeline';
@@ -27,3 +27,4 @@ export function About() {
     </>
   );
 }
+

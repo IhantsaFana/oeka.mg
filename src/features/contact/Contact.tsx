@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Container } from '@/components/ui/Container';
-import { SEO } from '@/components/ui/SEO';
-import { StructuredData } from '@/components/seo/StructuredData';
+import { Container } from '@/shared/components/ui/Container';
+import { SEO } from '@/shared/components/ui/SEO';
+import { StructuredData } from '@/shared/components/seo/StructuredData';
 import { ContactForm } from './components/ContactForm';
 import { ContactInfo } from './components/ContactInfo';
 
@@ -107,3 +107,4 @@ export function Contact() {
     </>
   );
 }
+

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Container } from '@/components/ui/Container';
+import { Container } from '@/shared/components/ui/Container';
 import { FaRocket } from 'react-icons/fa';
 
 export function AboutHero() {
@@ -72,3 +72,4 @@ export function AboutHero() {
     </Container>
   );
 }
+

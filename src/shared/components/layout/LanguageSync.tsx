@@ -15,3 +15,4 @@ export function LanguageSync() {
 
   return null; // Ce composant ne rend rien
 }
+

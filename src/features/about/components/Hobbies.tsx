@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Container } from '@/components/ui/Container';
+import { Container } from '@/shared/components/ui/Container';
 import { 
   FaCamera, 
   FaMusic, 
@@ -100,3 +100,4 @@ export function Hobbies() {
     </section>
   );
 }
+

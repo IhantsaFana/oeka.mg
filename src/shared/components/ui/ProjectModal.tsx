@@ -139,3 +139,4 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
     </div>
   );
 }
+

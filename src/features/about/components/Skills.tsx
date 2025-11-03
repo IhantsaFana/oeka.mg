@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Container } from '@/components/ui/Container';
+import { Container } from '@/shared/components/ui/Container';
 import { 
   FaReact,
   FaCode, 
@@ -186,3 +186,4 @@ export function Skills() {
     </section>
   );
 }
+

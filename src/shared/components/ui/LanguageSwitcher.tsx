@@ -50,3 +50,4 @@ export function LanguageSwitcher() {
     </div>
   );
 }
+

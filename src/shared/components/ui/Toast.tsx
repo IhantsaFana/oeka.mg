@@ -73,3 +73,4 @@ export function Toast({ message, type, isVisible, onClose, duration = 5000 }: To
     </div>
   );
 }
+

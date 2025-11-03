@@ -88,3 +88,4 @@ export function StructuredData({ type = 'person' }: StructuredDataProps) {
     </Helmet>
   );
 }
+

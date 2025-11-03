@@ -1,5 +1,5 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
-import { Layout } from '@/components/layout/Layout';
+import { Layout } from '@/shared/components/layout/Layout';
 import { Home } from '@/features/home/Home';
 import { About } from '@/features/about/About';
 import { Projects } from '@/features/projects/Projects';
@@ -59,3 +59,4 @@ export const router = createBrowserRouter([
     element: <Navigate to="/en" replace />,
   },
 ]);
+

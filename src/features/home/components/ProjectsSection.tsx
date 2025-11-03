@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Container } from '@/components/ui/Container';
-import { Button } from '@/components/ui/Button';
+import { Container } from '@/shared/components/ui/Container';
+import { Button } from '@/shared/components/ui/Button';
 import { ProjectCard } from '@/features/projects/components/ProjectCard';
-import { ProjectModal } from '@/components/ui/ProjectModal';
+import { ProjectModal } from '@/shared/components/ui/ProjectModal';
 import { projectsData } from '@/features/projects/data/projectsData';
 import { FaStar, FaArrowRight } from 'react-icons/fa';
 import type { Project } from '@/types/project';
@@ -91,3 +91,4 @@ export function ProjectsSection() {
     </Container>
   );
 }
+

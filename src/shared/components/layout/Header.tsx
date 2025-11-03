@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
-import { Container } from '@/components/ui/Container';
+import { LanguageSwitcher } from '@/shared/components/ui/LanguageSwitcher';
+import { Container } from '@/shared/components/ui/Container';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useSmartNavigation } from '@/hooks/useSmartNavigation';
 
@@ -189,3 +189,4 @@ export function Header() {
     </header>
   );
 }
+
