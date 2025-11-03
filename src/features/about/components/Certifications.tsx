@@ -19,22 +19,22 @@ export function Certifications() {
 
   const certifications: Certification[] = [
     {
-      name: t('certifications.informatique.name'),
-      issuer: t('certifications.informatique.issuer'),
+      name: t('about.certifications.informatique.name'),
+      issuer: t('about.certifications.informatique.issuer'),
       year: '2025',
       icon: FaGraduationCap,
       link: '#'
     },
     {
-      name: t('certifications.anglais.name'),
-      issuer: t('certifications.anglais.issuer'),
+      name: t('about.certifications.anglais.name'),
+      issuer: t('about.certifications.anglais.issuer'),
       year: '2024',
       icon: FaLanguage,
       link: '#'
     },
     {
-      name: t('certifications.francais.name'),
-      issuer: t('certifications.francais.issuer'),
+      name: t('about.certifications.francais.name'),
+      issuer: t('about.certifications.francais.issuer'),
       year: '2022',
       icon: FaLanguage,
       link: '#'
