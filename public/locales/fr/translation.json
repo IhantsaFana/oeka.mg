@@ -1,10 +1,10 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "Mon Parcours",
-    "projects": "Réalisations",
-    "contact": "Échangeons",
-    "blog": "Pensées",
+    "dev": "Dev",
+    "scout": "Scout",
+    "fleurs": "Fleurs",
+    "contact": "Contact",
     "hireMe": "Travaillons ensemble",
     "discoverProjects": "Voir mes projets"
   },

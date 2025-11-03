@@ -1,7 +1,6 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { Layout } from '@/shared/components/layout/Layout';
 import { Home } from '@/features/home/Home';
-import { About } from '@/features/about/About';
 import { Projects } from '@/features/projects/Projects';
 import { Contact } from '@/features/contact/Contact';
 import { Blog } from '@/features/blog/Blog';
@@ -35,10 +34,6 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-      },
-      {
-        path: 'about',
-        element: <About />,
       },
       {
         path: 'projects',

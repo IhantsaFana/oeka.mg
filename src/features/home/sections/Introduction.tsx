@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Container } from '@/shared/components/ui/Container';
 import { FaRocket } from 'react-icons/fa';
 
-export function AboutHero() {
+export function Introduction() {
   const { t } = useTranslation();
   
   // Calculer l'expérience dynamiquement (depuis 2023)

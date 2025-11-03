@@ -1,12 +1,40 @@
 {
   "nav": {
     "home": "Home",
-    "about": "My Journey",
-    "projects": "Work",
-    "contact": "Let's Talk",
-    "blog": "Thoughts",
+    "dev": "Dev",
+    "scout": "Scout",
+    "fleurs": "Flowers",
+    "contact": "Contact",
     "hireMe": "Work with me",
     "discoverProjects": "View my work"
+  },
+  "dev": {
+    "seo": {
+      "title": "Dev Projects & Skills - Ihantsa RAKOTONDRANAIVO",
+      "description": "Explore my development projects and technical skills. Full-stack developer specializing in React, Flutter, and Python."
+    },
+    "techLogos": {
+      "title": "Technologies I Love",
+      "description": "Here are some of the technologies I work with regularly."
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "description": "A selection of my recent development projects that showcase my skills and passion.",
+      "projectDetails": {
+        "factura": {
+          "description": "A comprehensive invoice management system for businesses",
+          "longDescription": "Factura is a modern invoice management solution that helps businesses streamline their billing process. Built with React and Node.js, it features real-time updates, customizable templates, and detailed reporting."
+        },
+        "tourmada": {
+          "description": "Mobile travel guide app for Madagascar",
+          "longDescription": "Tourmada is your pocket guide to Madagascar's wonders. This React Native app offers interactive maps, local recommendations, and cultural insights, making travel planning a breeze."
+        },
+        "theologix": {
+          "description": "Online platform for theological studies",
+          "longDescription": "Theologix is an innovative learning platform dedicated to theological studies. Built with React and MongoDB, it provides interactive courses, discussion forums, and resource libraries."
+        }
+      }
+    }
   },
   "home": {
     "title": "Ihantsa RAKOTONDRANAIVO",
