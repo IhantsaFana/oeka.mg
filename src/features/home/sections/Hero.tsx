@@ -31,18 +31,18 @@ export function Hero() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  href="#contact"
+                  href="#introduction"
                   variant="primary"
                   size="lg"
                 >
-                  {t('nav.hireMe')}
+                  {t('home.cta')}
                 </Button>
                 <Button
-                  href="#projects"
+                  to="/dev"
                   variant="secondary"
                   size="lg"
                 >
-                  {t('nav.discoverProjects')}
+                  {t('nav.dev')}
                 </Button>
               </div>
             </div>

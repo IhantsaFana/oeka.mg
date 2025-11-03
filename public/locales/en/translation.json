@@ -38,19 +38,27 @@
   },
   "home": {
     "seo": {
-      "title": "Ihantsa RAKOTONDRANAIVO - Full-Stack Developer & Digital Creator",
-      "description": "Welcome to my personal website. I'm a Full-Stack Developer specializing in modern web and mobile applications. Discover my projects and expertise."
+      "title": "Ihantsa RAKOTONDRANAIVO - Personal Website",
+      "description": "Welcome to my personal website. Discover my journey, passions, and various activities from development to scouting."
     },
     "title": "Ihantsa RAKOTONDRANAIVO",
-    "subtitle": "Full-Stack Developer & Digital Creator",
-    "description": "I turn coffee into code and ideas into memorable digital experiences. Specializing in reactive web solutions and intuitive mobile applications.",
-    "cta": "Explore my world",
-    "hello": "Hi, I'm",
-    "welcome": "Welcome to my creative space",
-    "intro": "Full-stack developer passionate about innovation and beautiful interfaces. I create digital solutions that combine performance, elegance, and exceptional user experience.",
-    "heroTitle": "I bring ideas to life",
-    "heroHighlight": "extraordinary",
-    "followMe": "Follow me on"
+    "subtitle": "Developer, Scout Leader & Volleyball Player",
+    "description": "A passionate individual dedicated to technology, youth mentoring, and sports.",
+    "cta": "Discover my world",
+    "hello": "Hello, I'm",
+    "welcome": "Welcome to my world",
+    "intro": "At 18, I'm exploring life through multiple lenses: as a developer, scout leader, and sports enthusiast. Join me in this journey of growth and discovery.",
+    "heroTitle": "Turning passion into impact",
+    "heroHighlight": "passion",
+    "followMe": "Follow me on",
+    "introduction": {
+      "title": "A Journey of Growth and Discovery",
+      "paragraphs": {
+        "personal": "I'm Ihantsa Iavontsoa Fanantenana RAKOTONDRANAIVO, an 18-year-old Malagasy passionate about technology and youth development. Based in Madagascar, I combine my love for development with active involvement in scouting and volleyball.",
+        "education": "I'm currently pursuing my studies as an AI & MLOps Specialist at ESMIA Antananarivo, combining my technical expertise with my desire to make a positive impact through innovation.",
+        "interests": "Beyond coding, I find joy in mentoring and playing with children through scouting activities. As a scout leader, I help young people develop valuable life skills. I also find team spirit and energy in playing volleyball."
+      }
+    }
   },
   "about": {
     "title": "About",
