@@ -1,9 +1,8 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { Layout } from '@/shared/components/layout/Layout';
 import { Home } from '@/features/home/Home';
-import { Projects } from '@/features/projects/Projects';
+import { Dev } from '@/features/dev/Dev';
 import { Contact } from '@/features/contact/Contact';
-import { Blog } from '@/features/blog/Blog';
 
 // Composant pour rediriger vers la langue détectée
 function RootRedirect() {
@@ -36,16 +35,12 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'projects',
-        element: <Projects />,
+        path: 'dev',
+        element: <Dev />,
       },
       {
         path: 'contact',
         element: <Contact />,
-      },
-      {
-        path: 'blog',
-        element: <Blog />,
       },
     ],
   },

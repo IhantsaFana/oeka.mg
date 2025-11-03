@@ -9,6 +9,10 @@
     "discoverProjects": "Voir mes projets"
   },
   "home": {
+    "seo": {
+      "title": "Ihantsa RAKOTONDRANAIVO - Développeur Full-Stack & Créatif Numérique",
+      "description": "Bienvenue sur mon site personnel. Je suis Développeur Full-Stack spécialisé dans les applications web et mobiles modernes. Découvrez mes projets et mon expertise."
+    },
     "title": "Ihantsa RAKOTONDRANAIVO",
     "subtitle": "Développeur Full-Stack & Créatif Numérique",
     "description": "Je transforme le café en code et les idées en expériences numériques mémorables. Spécialisé dans les solutions web réactives et les applications mobiles intuitives.",

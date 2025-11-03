@@ -37,6 +37,10 @@
     }
   },
   "home": {
+    "seo": {
+      "title": "Ihantsa RAKOTONDRANAIVO - Full-Stack Developer & Digital Creator",
+      "description": "Welcome to my personal website. I'm a Full-Stack Developer specializing in modern web and mobile applications. Discover my projects and expertise."
+    },
     "title": "Ihantsa RAKOTONDRANAIVO",
     "subtitle": "Full-Stack Developer & Digital Creator",
     "description": "I turn coffee into code and ideas into memorable digital experiences. Specializing in reactive web solutions and intuitive mobile applications.",
