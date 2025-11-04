@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { SEO } from '@/shared/components/ui/SEO';
 import { StructuredData } from '@/shared/components/seo/StructuredData';
 import { TechLogos } from './sections/TechLogos';
-import { Projects } from './sections/Projects/Projects';
+import { Projects } from './sections/Projects';
 
 export function Dev() {
   const { t } = useTranslation();

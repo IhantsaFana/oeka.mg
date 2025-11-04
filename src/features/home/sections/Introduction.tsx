@@ -26,14 +26,14 @@ export function Introduction() {
               </div>
               
               {/* Badges */}
-              <div className="absolute -bottom-4 -right-4 flex gap-2">
-                <div className="bg-blue-600 text-white p-2 rounded-full shadow-lg">
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex gap-3">
+                <div className="bg-blue-600 text-white p-2 rounded-full shadow-lg hover:scale-110 transition-transform">
                   <FaLaptopCode className="w-5 h-5" />
                 </div>
-                <div className="bg-green-600 text-white p-2 rounded-full shadow-lg">
+                <div className="bg-green-600 text-white p-2 rounded-full shadow-lg hover:scale-110 transition-transform">
                   <FaHiking className="w-5 h-5" />
                 </div>
-                <div className="bg-orange-600 text-white p-2 rounded-full shadow-lg">
+                <div className="bg-orange-600 text-white p-2 rounded-full shadow-lg hover:scale-110 transition-transform">
                   <FaVolleyballBall className="w-5 h-5" />
                 </div>
               </div>
