@@ -109,36 +109,7 @@
         "name": "Français Parlé - Niveau B1",
         "issuer": "FLTC Madagascar Group"
       }
-    },
-    "hobbies": {
-      "title": "Au-delà du Code",
-      "subtitle": "Ce que je fais quand je ne développe pas d'applications.",
-      "coding": {
-        "name": "Open Source",
-        "description": "Contribution à des projets open-source et création d'outils pour la communauté des développeurs."
-      },
-      "photography": {
-        "name": "Photographie",
-        "description": "Capturer des moments et explorer le monde à travers l'objectif de mon appareil photo."
-      },
-      "music": {
-        "name": "Musique",
-        "description": "Jouer de la guitare et découvrir de nouveaux artistes à travers différents genres."
-      },
-      "travel": {
-        "name": "Voyage",
-        "description": "Explorer de nouvelles cultures, rencontrer des gens, et trouver l'inspiration dans différents endroits."
-      },
-      "reading": {
-        "name": "Lecture",
-        "description": "Toujours apprendre à travers des livres sur la technologie, les affaires, et le développement personnel."
-      },
-      "gaming": {
-        "name": "Jeux Vidéo",
-        "description": "Profiter de jeux stratégiques et explorer des mondes virtuels pendant mon temps libre."
-      }
-    },
-    "quote": "Le code c'est comme l'humour. Quand on doit l'expliquer, c'est qu'il est mauvais."
+    }
   },
   "projects": {
     "title": "Projets",

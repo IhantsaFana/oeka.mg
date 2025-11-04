@@ -137,36 +137,7 @@
         "name": "Spoken French - Level B1",
         "issuer": "FLTC Madagascar Group"
       }
-    },
-    "hobbies": {
-      "title": "Beyond Coding",
-      "subtitle": "What I do when I'm not building applications.",
-      "coding": {
-        "name": "Open Source",
-        "description": "Contributing to open-source projects and building tools for the developer community."
-      },
-      "photography": {
-        "name": "Photography",
-        "description": "Capturing moments and exploring the world through the lens of my camera."
-      },
-      "music": {
-        "name": "Music",
-        "description": "Playing guitar and discovering new artists across different genres."
-      },
-      "travel": {
-        "name": "Travel",
-        "description": "Exploring new cultures, meeting people, and finding inspiration in different places."
-      },
-      "reading": {
-        "name": "Reading",
-        "description": "Always learning through books about technology, business, and personal development."
-      },
-      "gaming": {
-        "name": "Gaming",
-        "description": "Enjoying strategic games and exploring virtual worlds in my free time."
-      }
-    },
-    "quote": "Code is like humor. When you have to explain it, it's bad."
+    }
   },
   "projects": {
     "title": "Projects",
@@ -183,11 +154,7 @@
       "description": "Explore Ihantsa RAKOTONDRANAIVO's portfolio of web and mobile applications built with React, Next.js, Flutter, Python and AI technologies.",
       "keywords": "projects, portfolio, React, Next.js, Flutter, Python, AI, web development, mobile development, full-stack"
     },
-    "stats": {
-      "total": "Total Projects",
-      "featured": "Featured",
-      "technologies": "Technologies"
-    },
+
     "categories": {
       "all": "All",
       "web": "Web",
@@ -244,13 +211,6 @@
       "messageMinLength": "Message must be at least 10 characters",
       "formErrors": "Please fix the errors above"
     },
-    "emailjs": {
-      "notConfigured": "Email service is not configured yet.",
-      "useEmailClient": "Would you like to open your email client instead?"
-    },
-    "emailClient": {
-      "opened": "Email client opened. Please send your message from there."
-    },
     "info": {
       "title": "Let's connect",
       "subtitle": "I'm always interested in new opportunities and interesting projects. Let's discuss how we can work together.",
@@ -277,26 +237,6 @@
     },
     "social": {
       "title": "Follow me"
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Quick answers to common questions about working with me.",
-      "q1": {
-        "question": "What's your typical response time?",
-        "answer": "I usually respond within 24 hours during business days. For urgent matters, feel free to call."
-      },
-      "q2": {
-        "question": "Do you work with international clients?",
-        "answer": "Absolutely! I work with clients worldwide and am comfortable with different time zones."
-      },
-      "q3": {
-        "question": "What technologies do you specialize in?",
-        "answer": "I specialize in React, Next.js, TypeScript, Flutter, Python, and AI integration. Always learning new technologies."
-      },
-      "q4": {
-        "question": "Do you offer ongoing support?",
-        "answer": "Yes, I provide maintenance and support services for all projects I develop. Let's discuss your needs."
-      }
     }
   },
   "footer": {
