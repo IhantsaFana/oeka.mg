@@ -30,7 +30,7 @@ export function Certifications() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <section id="certifications" className="py-12 md:py-16">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

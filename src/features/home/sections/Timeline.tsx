@@ -45,7 +45,8 @@ export function Timeline() {
   ];
 
   return (
-    <Container>
+    <section id="timeline" className="py-12 md:py-16">
+      <Container>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             {t('about.timeline.title')}
@@ -107,7 +108,8 @@ export function Timeline() {
             ))}
           </div>
         </div>
-    </Container>
+      </Container>
+    </section>
   );
 }
 

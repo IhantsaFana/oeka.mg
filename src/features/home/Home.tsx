@@ -21,19 +21,13 @@ export function Home() {
       <Hero />
       
       {/* Introduction Section */}
-      <section id="introduction" className="py-20">
-        <Introduction />
-      </section>
+      <Introduction />
       
       {/* Timeline Section */}
-      <section id="timeline" className="py-20">
-        <Timeline />
-      </section>
+      <Timeline />
       
       {/* Certifications Section */}
-      <section id="certifications" className="py-20">
-        <Certifications />
-      </section>
+      <Certifications />
     </>
   );
 }

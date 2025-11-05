@@ -6,7 +6,7 @@ export function Introduction() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16">
+    <section id="introduction" className="py-12 md:py-16">
       <Container>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Photo et Badges */}
