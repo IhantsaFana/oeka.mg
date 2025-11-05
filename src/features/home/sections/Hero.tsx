@@ -4,7 +4,8 @@ import { Button } from '@/shared/components/ui/Button';
 import { StructuredData } from '@/shared/components/seo/StructuredData';
 
 export function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
 
   return (
     <>
@@ -31,19 +32,38 @@ export function Hero() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  href="#introduction"
+                  to={`/${currentLang}/contact`}
                   variant="primary"
                   size="lg"
+                  className="group flex items-center justify-center gap-2"
                 >
-                  {t('home.cta')}
+                  {t('home.cta.contact', 'Me contacter')}
+                  <span className="group-hover:translate-x-1 transition-transform">
+                    <i className="fas fa-arrow-right"></i>
+                  </span>
                 </Button>
-                <Button
-                  to="/dev"
-                  variant="secondary"
-                  size="lg"
-                >
-                  {t('nav.dev')}
-                </Button>
+                <div className="flex gap-2">
+                  <Button
+                    to={`/${currentLang}/dev`}
+                    variant="outline"
+                    size="lg"
+                    className="group flex items-center gap-2"
+                  >
+                    <i className="fas fa-code"></i>
+                    {t('home.cta.portfolio', 'Mes projets')}
+                  </Button>
+                  <Button
+                    href="https://linkedin.com/in/ihantsa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="ghost"
+                    size="lg"
+                    className="rounded-full w-12 h-12 flex items-center justify-center"
+                    aria-label="LinkedIn"
+                  >
+                    <i className="fab fa-linkedin text-xl"></i>
+                  </Button>
+                </div>
               </div>
             </div>
 

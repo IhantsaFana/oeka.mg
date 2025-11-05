@@ -16,7 +16,14 @@
     "title": "Ihantsa RAKOTONDRANAIVO",
     "subtitle": "Développeur, Chef Scout & Joueur de Volleyball",
     "description": "Un passionné dédié à la technologie, au mentorat des jeunes et au sport.",
-    "cta": "Découvrir mon univers",
+    "cta": {
+      "contact": "Me contacter",
+      "portfolio": "Voir mes projets",
+      "workTogether": "Travaillons ensemble",
+      "workTogetherSubtitle": "Discutons de votre projet et voyons comment je peux vous aider",
+      "startProject": "Démarrer un projet",
+      "learnMore": "En savoir plus"
+    },
     "hello": "Bonjour, je suis",
     "welcome": "Bienvenue dans mon monde",
     "intro": "À 18 ans, j'explore la vie sous différentes facettes : en tant que développeur, chef scout et passionné de sport. Rejoignez-moi dans ce voyage de croissance et de découverte.",

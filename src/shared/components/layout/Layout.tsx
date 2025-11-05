@@ -3,6 +3,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { LanguageSync } from './LanguageSync';
 import { inject } from '@vercel/analytics';
+import { WhatsAppFloat } from '../ui/WhatsAppFloat';
 
 export function Layout() {
   inject();
@@ -14,6 +15,7 @@ export function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }

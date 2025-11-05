@@ -44,7 +44,13 @@
     "title": "Ihantsa RAKOTONDRANAIVO",
     "subtitle": "Developer, Scout Leader & Volleyball Player",
     "description": "A passionate individual dedicated to technology, youth mentoring, and sports.",
-    "cta": "Discover my world",
+    "cta": {
+      "contact": "Contact Me",
+      "portfolio": "My Projects",
+      "workTogether": "Let's Work Together",
+      "workTogetherSubtitle": "Let's discuss your project and see how I can help you",
+      "startProject": "Start a Project"
+    },
     "hello": "Hello, I'm",
     "welcome": "Welcome to my world",
     "intro": "At 18, I'm exploring life through multiple lenses: as a developer, scout leader, and sports enthusiast. Join me in this journey of growth and discovery.",

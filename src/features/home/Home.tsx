@@ -5,6 +5,7 @@ import { Hero } from './sections/Hero';
 import { Introduction } from './sections/Introduction';
 import { Timeline } from './sections/Timeline';
 import { Certifications } from './sections/Certifications';
+import { WorkTogether } from './sections/WorkTogether';
 
 export function Home() {
   const { t } = useTranslation();
@@ -28,6 +29,9 @@ export function Home() {
       
       {/* Certifications Section */}
       <Certifications />
+      
+      {/* Work Together Section */}
+      <WorkTogether />
     </>
   );
 }
