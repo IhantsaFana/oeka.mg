@@ -59,7 +59,7 @@ export function TechLogos() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+    <section className="py-20">
       <Container>
         {/* Header */}
         <motion.div 

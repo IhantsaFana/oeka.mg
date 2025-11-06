@@ -186,6 +186,45 @@
       "technologies": "Technologies Used"
     }
   },
+  "dev": {
+    "hero": {
+      "title": "Full Stack Developer",
+      "subtitle": "Creating innovative digital experiences with modern technologies",
+      "ctaPrimary": "Contact Me",
+      "ctaSecondary": "View My Projects"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "subtitle": "My journey in software development and web technologies.",
+      "viewDetails": "View Details"
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "subtitle": "An overview of my skills and technical expertise.",
+      "legend": {
+        "title": "Skill Levels",
+        "advanced": "Advanced (80-100%)",
+        "intermediate": "Intermediate (60-79%)",
+        "beginner": "Beginner (< 60%)"
+      }
+    },
+    "education": {
+      "title": "Education & Certifications",
+      "subtitle": "My academic background and professional certifications.",
+      "viewDetails": "View Details",
+      "downloadCV": "Download My Full CV"
+    },
+    "methodologies": {
+      "title": "Methodologies & Best Practices",
+      "subtitle": "Approaches and practices for quality development.",
+      "practices": "Key Practices"
+    },
+    "cta": {
+      "title": "Ready to bring your project to life?",
+      "subtitle": "Let's discuss how I can help you achieve your goals.",
+      "button": "Let's Talk About Your Project"
+    }
+  },
   "contact": {
     "title": "Contact",
     "name": "Name",

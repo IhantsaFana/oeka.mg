@@ -162,6 +162,45 @@
       "technologies": "Technologies utilisées"
     }
   },
+  "dev": {
+    "hero": {
+      "title": "Développeur Full Stack",
+      "subtitle": "Création d'expériences numériques innovantes avec des technologies modernes",
+      "ctaPrimary": "Me contacter",
+      "ctaSecondary": "Voir mes projets"
+    },
+    "experience": {
+      "title": "Expérience Professionnelle",
+      "subtitle": "Mon parcours dans le développement logiciel et les technologies web.",
+      "viewDetails": "Voir les détails"
+    },
+    "skills": {
+      "title": "Compétences Techniques",
+      "subtitle": "Un aperçu de mes compétences et de mon expertise technique.",
+      "legend": {
+        "title": "Niveaux de compétence",
+        "advanced": "Avancé (80-100%)",
+        "intermediate": "Intermédiaire (60-79%)",
+        "beginner": "Débutant (< 60%)"
+      }
+    },
+    "education": {
+      "title": "Formation & Certifications",
+      "subtitle": "Mon parcours académique et mes certifications professionnelles.",
+      "viewDetails": "Voir les détails",
+      "downloadCV": "Télécharger mon CV complet"
+    },
+    "methodologies": {
+      "title": "Méthodologies & Bonnes Pratiques",
+      "subtitle": "Approches et pratiques pour un développement de qualité.",
+      "practices": "Pratiques clés"
+    },
+    "cta": {
+      "title": "Prêt à concrétiser votre projet ?",
+      "subtitle": "Discutons de la manière dont je peux vous aider à atteindre vos objectifs.",
+      "button": "Discutons de votre projet"
+    }
+  },
   "contact": {
     "title": "Contact",
     "name": "Nom",
