@@ -47,7 +47,7 @@ export function WorkTogether() {
             transition={{ delay: 0.4, duration: 0.6 }}
           >
             <Button
-              href="/contact"
+              to="/contact"
               variant="secondary"
               size="lg"
               className="bg-white text-blue-700 hover:bg-blue-50 dark:bg-white dark:text-blue-800 dark:hover:bg-blue-100 flex items-center gap-2 group px-8 py-4 text-lg font-semibold"
@@ -63,7 +63,7 @@ export function WorkTogether() {
             </Button>
             
             <Button
-              href="#introduction"
+              to="#introduction"
               variant="outline"
               size="lg"
               className="text-white border-2 border-white hover:bg-white/10 dark:border-blue-200 dark:text-blue-100 dark:hover:bg-white/5 px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105"

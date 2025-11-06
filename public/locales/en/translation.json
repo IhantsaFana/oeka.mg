@@ -17,6 +17,43 @@
       "title": "Technologies I Love",
       "description": "Here are some of the technologies I work with regularly."
     },
+    "methodologies": {
+      "title": "Methodologies & Best Practices",
+      "subtitle": "Approaches and practices for quality development.",
+      "practices": "Key Practices",
+      "items": [
+        {
+          "id": "agile",
+          "title": "Agile Development",
+          "description": "Agile/Scrum methodologies for iterative and collaborative development.",
+          "practices": ["Sprints", "Daily Stand-ups", "Retrospectives", "User Stories"]
+        },
+        {
+          "id": "mobile",
+          "title": "Mobile Development",
+          "description": "Responsive design with a Mobile First approach for an optimal user experience.",
+          "practices": ["Responsive Design", "PWA", "Mobile Performance", "Touch-friendly UI"]
+        },
+        {
+          "id": "architecture",
+          "title": "Modern Architecture",
+          "description": "Design of scalable and maintainable architectures.",
+          "practices": ["Microservices", "REST/GraphQL API", "Serverless", "JAMstack"]
+        },
+        {
+          "id": "security",
+          "title": "Security & Quality",
+          "description": "Integration of security best practices and quality assurance.",
+          "practices": ["Unit Testing", "Integration Testing", "OWASP", "CI/CD"]
+        },
+        {
+          "id": "devops",
+          "title": "Tools & DevOps",
+          "description": "Implementation of continuous integration and deployment pipelines.",
+          "practices": ["Git", "Docker", "GitHub Actions", "Monitoring"]
+        }
+      ]
+    },
     "projects": {
       "title": "Featured Projects",
       "description": "A selection of my recent development projects that showcase my skills and passion.",
@@ -34,6 +71,38 @@
           "longDescription": "Theologix is an innovative learning platform dedicated to theological studies. Built with React and MongoDB, it provides interactive courses, discussion forums, and resource libraries."
         }
       }
+    },
+    "hero": {
+      "title": "Full Stack Developer",
+      "subtitle": "Creating innovative digital experiences with modern technologies",
+      "ctaPrimary": "Contact Me",
+      "ctaSecondary": "View My Projects"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "subtitle": "My journey in software development and web technologies.",
+      "viewDetails": "View Details"
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "subtitle": "An overview of my skills and technical expertise.",
+      "legend": {
+        "title": "Skill Levels",
+        "advanced": "Advanced (80-100%)",
+        "intermediate": "Intermediate (60-79%)",
+        "beginner": "Beginner (< 60%)"
+      }
+    },
+    "education": {
+      "title": "Education & Certifications",
+      "subtitle": "My academic background and professional certifications.",
+      "viewDetails": "View Details",
+      "downloadCV": "Download My Full CV"
+    },
+    "cta": {
+      "title": "Ready to bring your project to life?",
+      "subtitle": "Let's discuss how I can help you achieve your goals.",
+      "button": "Let's Talk About Your Project"
     }
   },
   "home": {
@@ -102,7 +171,7 @@
     },
     "technologies": {
       "title": "Technologies",
-      "subtitle": "Tools and frameworks I use daily"
+      "subtitle": "The tools and frameworks I use daily"
     },
     "timeline": {
       "title": "Professional Experience",
@@ -110,30 +179,30 @@
       "tourmada": {
         "title": "Full-Stack Web & Mobile Developer (Internship)",
         "company": "Tourmada",
-        "description": "Designed and deployed the Tourmada platform using Django, React, Flutter, PostgreSQL, and Gemini API. Built a complete tourism solution with web and mobile interfaces."
+        "description": "Designed and deployed the Tourmada platform with Django, React, Flutter, PostgreSQL, and Gemini API. Created a comprehensive tourism solution with web and mobile interfaces."
       },
       "armh": {
         "title": "Freelance Web Developer",
         "company": "ARMH Consulting",
-        "description": "Developed responsive websites with focus on UX optimization and basic SEO implementation. Delivered modern web solutions for various clients."
+        "description": "Developed responsive websites with UX and basic SEO optimization. Delivered modern web solutions for various clients."
       },
       "lutherienne": {
         "title": "IT Manager (Internship)",
         "company": "Imprimerie Luthérienne, Antananarivo",
-        "description": "Analyzed production workflows and deployed optimization systems. Managed IT infrastructure and improved operational efficiency."
+        "description": "Analyzed production workflows and deployed an optimization system. Managed IT infrastructure and improved operational efficiency."
       },
       "hackathon": {
-        "title": "AI-Assisted Evaluation - Hackathon ESMIA 2025",
+        "title": "AI-Powered Assessment - ESMIA Hackathon 2025",
         "company": "Project",
-        "description": "Built a React/Django prototype with Gemini API to make exams interactive. Developed an innovative AI-powered assessment platform."
+        "description": "Created a React/Django prototype with Gemini API to make exams interactive. Developed an innovative assessment platform powered by AI."
       }
     },
     "certifications": {
-      "title": "Certifications & Education",
+      "title": "Education & Certifications",
       "subtitle": "Continuous learning and professional development achievements.",
       "verified": "Verified",
       "informatique": {
-        "name": "Professional Bachelor's Degree in Computer Science",
+        "name": "Professional Degree in Computer Science",
         "issuer": "ESMIA Antananarivo Madagascar"
       },
       "anglais": {
@@ -151,17 +220,21 @@
     "subtitle": "A showcase of my recent work and the technologies I've been exploring.",
     "viewProject": "View All Projects",
     "sourceCode": "Source code",
-    "recent": "Recent projects",
-    "featured": "Featured",
-    "other": "Other Projects",
     "viewLive": "Live Demo",
     "viewCode": "View Code",
     "learnMore": "Learn More",
+    "featured": "Featured",
+    "recent": "Recent Projects",
+    "other": "Other Projects",
     "seo": {
-      "description": "Explore Ihantsa RAKOTONDRANAIVO's portfolio of web and mobile applications built with React, Next.js, Flutter, Python and AI technologies.",
+      "description": "Explore Ihantsa RAKOTONDRANAIVO's portfolio featuring web and mobile applications built with React, Next.js, Flutter, Python, and AI technologies.",
       "keywords": "projects, portfolio, React, Next.js, Flutter, Python, AI, web development, mobile development, full-stack"
     },
-
+    "stats": {
+      "total": "Total Projects",
+      "featured": "Featured",
+      "technologies": "Technologies"
+    },
     "categories": {
       "all": "All",
       "web": "Web",
@@ -172,7 +245,7 @@
     "filters": {
       "categories": "Filter by Category",
       "technologies": "Filter by Technology",
-      "showing": "Showing results"
+      "showing": "Showing results for"
     },
     "noResults": {
       "title": "No projects found",
@@ -186,55 +259,16 @@
       "technologies": "Technologies Used"
     }
   },
-  "dev": {
-    "hero": {
-      "title": "Full Stack Developer",
-      "subtitle": "Creating innovative digital experiences with modern technologies",
-      "ctaPrimary": "Contact Me",
-      "ctaSecondary": "View My Projects"
-    },
-    "experience": {
-      "title": "Professional Experience",
-      "subtitle": "My journey in software development and web technologies.",
-      "viewDetails": "View Details"
-    },
-    "skills": {
-      "title": "Technical Skills",
-      "subtitle": "An overview of my skills and technical expertise.",
-      "legend": {
-        "title": "Skill Levels",
-        "advanced": "Advanced (80-100%)",
-        "intermediate": "Intermediate (60-79%)",
-        "beginner": "Beginner (< 60%)"
-      }
-    },
-    "education": {
-      "title": "Education & Certifications",
-      "subtitle": "My academic background and professional certifications.",
-      "viewDetails": "View Details",
-      "downloadCV": "Download My Full CV"
-    },
-    "methodologies": {
-      "title": "Methodologies & Best Practices",
-      "subtitle": "Approaches and practices for quality development.",
-      "practices": "Key Practices"
-    },
-    "cta": {
-      "title": "Ready to bring your project to life?",
-      "subtitle": "Let's discuss how I can help you achieve your goals.",
-      "button": "Let's Talk About Your Project"
-    }
-  },
   "contact": {
     "title": "Contact",
     "name": "Name",
     "email": "Email",
-    "message": "Message", 
-    "send": "Send Message",
+    "message": "Message",
+    "send": "Send message",
     "sending": "Sending...",
     "success": "Message sent successfully! I'll get back to you soon.",
     "error": "Error sending message. Please try again.",
-    "intro": "Have a project? A question? Feel free to contact me.",
+    "intro": "Have a project? A question? Don't hesitate to contact me.",
     "privacy": "Your information is secure and will only be used to respond to your inquiry.",
     "seo": {
       "description": "Contact Ihantsa RAKOTONDRANAIVO for web development, mobile apps, AI projects. Available for freelance work and collaborations.",
@@ -255,14 +289,21 @@
       "emailInvalid": "Please enter a valid email address",
       "messageRequired": "Message is required",
       "messageMinLength": "Message must be at least 10 characters",
-      "formErrors": "Please fix the errors above"
+      "formErrors": "Please fix the above errors"
+    },
+    "emailjs": {
+      "notConfigured": "Email service is not yet configured.",
+      "useEmailClient": "Would you like to open your email client instead?"
+    },
+    "emailClient": {
+      "opened": "Email client opened. Please send your message from there."
     },
     "info": {
-      "title": "Let's connect",
+      "title": "Let's stay connected",
       "subtitle": "I'm always interested in new opportunities and interesting projects. Let's discuss how we can work together.",
       "email": {
         "label": "Email",
-        "description": "Best way to reach me for business inquiries"
+        "description": "Best way to reach me for professional inquiries"
       },
       "linkedin": {
         "label": "LinkedIn",
@@ -274,30 +315,30 @@
       },
       "phone": {
         "label": "Phone",
-        "description": "For urgent matters only"
+        "description": "For urgent inquiries only"
       }
     },
     "availability": {
       "status": "Available for new projects",
-      "description": "Currently accepting freelance work and interesting collaborations"
+      "description": "I'm currently accepting freelance work and interesting collaborations"
     },
     "social": {
       "title": "Follow me"
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "subtitle": "Quick answers to common questions about working with me",
+      "subtitle": "Quick answers to common questions about working together",
       "q1": {
         "question": "What's your typical response time?",
-        "answer": "I usually respond within 24 hours during business days. For urgent matters, feel free to call."
+        "answer": "I typically respond within 24 hours during business days. For urgent matters, feel free to call."
       },
       "q2": {
         "question": "Do you work with international clients?",
-        "answer": "Absolutely! I work with clients worldwide and am comfortable with different time zones."
+        "answer": "Absolutely! I work with clients worldwide and am comfortable across different time zones."
       },
       "q3": {
         "question": "What technologies do you specialize in?",
-        "answer": "I specialize in React, Next.js, TypeScript, Flutter, Python, and AI integration. Always learning new technologies."
+        "answer": "I specialize in React, Next.js, TypeScript, Flutter, Python, and AI integration. I'm always learning new technologies."
       },
       "q4": {
         "question": "Do you offer ongoing support?",
@@ -310,13 +351,13 @@
   },
   "meta": {
     "title": "OEKA - Ihantsa RAKOTONDRANAIVO",
-    "description": "Full-Stack Developer & AI specialized in React, Next.js, Flutter, Python. Creating modern web and mobile applications.",
+    "description": "Full-Stack & AI Developer specializing in React, Next.js, Flutter, Python. Creating modern web and mobile applications.",
     "keywords": "developer, React, Next.js, Flutter, Python, AI, TypeScript, portfolio, Madagascar"
   },
   "notFound": {
     "seo": {
       "title": "Page Not Found - Ihantsa Rakotondraivo",
-      "description": "The page you are looking for does not exist or has been moved."
+      "description": "The page you're looking for doesn't exist or has been moved."
     },
     "title": "Oops! Page Not Found",
     "message": "Sorry, we couldn't find the page you're looking for.",

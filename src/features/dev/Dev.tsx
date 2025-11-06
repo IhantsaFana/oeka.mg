@@ -7,6 +7,7 @@ import { Projects } from './sections/Projects';
 import { Methodologies } from './sections/Methodologies';
 import { Certifications } from '@/features/home/sections/Certifications';
 import { ProjectShowcase } from './components/ProjectShowcase';
+import { Button } from '@/shared/components/ui/Button';
 
 export function Dev() {
   const { t } = useTranslation();
@@ -97,15 +98,16 @@ export function Dev() {
             <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
               {t('dev.cta.subtitle', 'Discutons de la manière dont je peux vous aider à atteindre vos objectifs.')}
             </p>
-            <a 
-              href="/contact" 
-              className="inline-flex items-center px-8 py-3 bg-white text-indigo-600 font-medium rounded-lg hover:bg-indigo-50 transition-colors"
+            <Button
+              to="/contact"
+              variant="secondary"
+              className="inline-flex items-center px-8 py-3 bg-white text-indigo-600 hover:bg-indigo-50"
             >
               {t('dev.cta.button', 'Discutons de votre projet')}
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </a>
+            </Button>
           </div>
         </section>
       </main>

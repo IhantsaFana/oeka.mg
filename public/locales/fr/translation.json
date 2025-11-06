@@ -120,15 +120,21 @@
   },
   "projects": {
     "title": "Projets",
-    "subtitle": "Une vitrine de mon travail récent et des technologies que j'ai explorées.",
-    "viewProject": "Voir Tous les Projets",
-    "sourceCode": "Code source",
-    "recent": "Projets récents",
-    "featured": "À la une",
-    "other": "Autres Projets",
+    "subtitle": "Découvrez mes projets récents et les technologies que j'utilise.",
     "viewLive": "Démo Live",
     "viewCode": "Voir le Code",
     "learnMore": "En savoir plus",
+    "featured": "À la une",
+    "viewProject": "Voir Tous les Projets",
+    "sourceCode": "Code source",
+    "recent": "Projets récents",
+    "other": "Autres Projets",
+    "modal": {
+      "description": "Description",
+      "challenge": "Défi",
+      "solution": "Solution",
+      "technologies": "Technologies utilisées"
+    },
     "seo": {
       "description": "Explorez le portfolio d'Ihantsa RAKOTONDRANAIVO avec des applications web et mobile construites avec React, Next.js, Flutter, Python et technologies IA.",
       "keywords": "projets, portfolio, React, Next.js, Flutter, Python, IA, développement web, développement mobile, full-stack"
@@ -193,7 +199,39 @@
     "methodologies": {
       "title": "Méthodologies & Bonnes Pratiques",
       "subtitle": "Approches et pratiques pour un développement de qualité.",
-      "practices": "Pratiques clés"
+      "practices": "Pratiques clés",
+      "items": [
+        {
+          "id": "agile",
+          "title": "Développement Agile",
+          "description": "Méthodologies Agile/Scrum pour un développement itératif et collaboratif.",
+          "practices": ["Sprints", "Daily Stand-ups", "Rétrospectives", "User Stories"]
+        },
+        {
+          "id": "mobile",
+          "title": "Développement Mobile",
+          "description": "Conception responsive avec approche Mobile First pour une expérience utilisateur optimale.",
+          "practices": ["Design Responsive", "PWA", "Performance Mobile", "Touch-friendly UI"]
+        },
+        {
+          "id": "architecture",
+          "title": "Architecture Moderne",
+          "description": "Conception d'architectures évolutives et maintenables.",
+          "practices": ["Microservices", "API REST/GraphQL", "Serverless", "JAMstack"]
+        },
+        {
+          "id": "security",
+          "title": "Sécurité & Qualité",
+          "description": "Intégration de bonnes pratiques de sécurité et d'assurance qualité.",
+          "practices": ["Tests unitaires", "Tests d'intégration", "OWASP", "CI/CD"]
+        },
+        {
+          "id": "devops",
+          "title": "Outils & DevOps",
+          "description": "Mise en place de pipelines d'intégration et de déploiement continus.",
+          "practices": ["Git", "Docker", "GitHub Actions", "Monitoring"]
+        }
+      ]
     },
     "cta": {
       "title": "Prêt à concrétiser votre projet ?",
