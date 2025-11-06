@@ -256,5 +256,15 @@
     "title": "OEKA - Ihantsa RAKOTONDRANAIVO",
     "description": "Développeur Full-Stack & IA spécialisé en React, Next.js, Flutter, Python. Création d'applications web et mobile modernes.",
     "keywords": "développeur, React, Next.js, Flutter, Python, IA, TypeScript, portfolio, Madagascar"
+  },
+  "notFound": {
+    "seo": {
+      "title": "Page non trouvée - Ihantsa Rakotondraivo",
+      "description": "La page que vous recherchez n'existe pas ou a été déplacée."
+    },
+    "title": "Oups ! Page introuvable",
+    "message": "Désolé, nous n'avons pas trouvé la page que vous recherchez.",
+    "ctaPrimary": "Retour à l'accueil",
+    "ctaSecondary": "Page précédente"
   }
 }

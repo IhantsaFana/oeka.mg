@@ -1,9 +1,17 @@
-import { Link } from 'react-router-dom';
 import type { ReactNode } from 'react';
+import { LocalizedLink } from '@/shared/components/navigation/LocalizedLink';
 
 interface ButtonProps {
   children: ReactNode;
+  /**
+   * Chemin de destination pour la navigation interne (avec gestion automatique de la langue)
+   * Exemple: "/contact" deviendra "/fr/contact" ou "/en/contact"
+   */
   to?: string;
+  
+  /**
+   * URL externe (pour les liens vers d'autres sites)
+   */
   href?: string;
   onClick?: () => void;
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
@@ -75,11 +83,11 @@ export function Button({
   const disabledClasses = disabled ? 'cursor-not-allowed opacity-50' : '';
   const finalClasses = `${classes} ${disabledClasses}`;
   
-  // Render as link or button
+  // Render as localized link
   if (to) {
     return (
-      <Link 
-        to={to} 
+      <LocalizedLink
+        to={to}
         className={finalClasses}
         onClick={handleClick}
         onKeyDown={handleKeyDown}
@@ -88,7 +96,7 @@ export function Button({
         aria-label={ariaLabel}
       >
         {children}
-      </Link>
+      </LocalizedLink>
     );
   }
   

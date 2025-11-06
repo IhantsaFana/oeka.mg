@@ -4,8 +4,7 @@ import { Button } from '@/shared/components/ui/Button';
 import { StructuredData } from '@/shared/components/seo/StructuredData';
 
 export function Hero() {
-  const { t, i18n } = useTranslation();
-  const currentLang = i18n.language;
+  const { t } = useTranslation();
 
   return (
     <>
@@ -32,7 +31,7 @@ export function Hero() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  to={`/${currentLang}/contact`}
+                  to="/contact"
                   variant="primary"
                   size="lg"
                   className="group flex items-center justify-center gap-2"
@@ -44,7 +43,7 @@ export function Hero() {
                 </Button>
                 <div className="flex gap-2">
                   <Button
-                    to={`/${currentLang}/dev`}
+                    to="/dev"
                     variant="outline"
                     size="lg"
                     className="group flex items-center gap-2"

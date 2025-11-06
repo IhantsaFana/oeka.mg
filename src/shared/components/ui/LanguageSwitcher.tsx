@@ -1,21 +1,24 @@
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { extractLangFromPath, getLocalizedPath } from '@/shared/utils/routes';
 
 export function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
 
-  const changeLanguage = (lng: string) => {
-    // Récupère le chemin actuel sans la langue
-    const pathWithoutLang = location.pathname.replace(/^\/(en|fr)/, '');
-    
-    // Navigue vers la nouvelle langue
-    navigate(`/${lng}${pathWithoutLang}`);
-    
+  const changeLanguage = async (lng: string) => {
     // Change la langue dans i18next
-    i18n.changeLanguage(lng);
+    await i18n.changeLanguage(lng);
+    
+    // Récupère le chemin actuel sans la langue
+    const currentLang = extractLangFromPath(location.pathname) || 'fr';
+    const pathWithoutLang = location.pathname.replace(new RegExp(`^/${currentLang}`), '');
+    
+    // Navigue vers la même page dans la nouvelle langue
+    const newPath = getLocalizedPath(pathWithoutLang || '/', lng);
+    navigate(newPath);
   };
 
   return (
