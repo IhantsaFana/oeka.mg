@@ -4,6 +4,7 @@ import { Footer } from './Footer';
 import { LanguageSync } from './LanguageSync';
 import { inject } from '@vercel/analytics';
 import { WhatsAppFloat } from '../ui/WhatsAppFloat';
+import { ScrollToTop } from '../navigation/ScrollToTop';
 
 export function Layout() {
   inject();
@@ -12,6 +13,7 @@ export function Layout() {
       <LanguageSync />
       <Header />
       <main className="flex-1">
+        <ScrollToTop />
         <Outlet />
       </main>
       <Footer />
