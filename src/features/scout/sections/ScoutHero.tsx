@@ -63,10 +63,10 @@ export function ScoutHero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-8"
+            className="flex flex-col"
           >
             {/* Scout Logos - Horizontal */}
-            <div className="flex justify-center lg:justify-end items-center gap-4 md:gap-6">
+            <div className="flex justify-center lg:justify-end items-center gap-4 md:gap-6 mb-12">
               {scoutLogos.map((logo) => (
                 <div key={logo.alt} className="relative">
                   <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden bg-white dark:bg-gray-800 shadow-lg">
@@ -93,7 +93,7 @@ export function ScoutHero() {
             </div>
 
             {/* Images empilées - Desktop only */}
-            <div className="hidden lg:block">
+            <div className="hidden lg:block flex-1">
               <ImageGallery images={scoutImages} alt="Scout" />
             </div>
           </motion.div>
