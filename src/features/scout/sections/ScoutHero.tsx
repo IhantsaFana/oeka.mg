@@ -35,15 +35,16 @@ export function ScoutHero() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-center lg:text-left"
+              className="text-center lg:text-left select-text"
+              style={{ userSelect: 'text' }}
             >
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 select-text">
                 {t('scout.hero.title')}
               </h1>
-              <div className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed space-y-3 md:space-y-4">
-                <p>{t('scout.hero.subtitle')}</p>
-                <p>{t('scout.hero.mission')}</p>
-                <p className="hidden sm:block">{t('scout.hero.description')}</p>
+              <div className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed space-y-3 md:space-y-4 select-text">
+                <p className="select-text">{t('scout.hero.subtitle')}</p>
+                <p className="select-text">{t('scout.hero.mission')}</p>
+                <p className="hidden sm:block select-text">{t('scout.hero.description')}</p>
               </div>
             </motion.div>
 
