@@ -2,6 +2,7 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { Layout } from '@/shared/components/layout/Layout';
 import { Home } from '@/features/home/Home';
 import { Dev } from '@/features/dev/Dev';
+import { Scout } from '@/features/scout/Scout';
 import { Contact } from '@/features/contact/Contact';
 import { NotFoundPage } from '@/features/error/NotFoundPage';
 
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: 'dev',
         element: <Dev />,
+      },
+      {
+        path: 'scout',
+        element: <Scout />,
       },
       {
         path: 'contact',

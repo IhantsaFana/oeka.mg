@@ -363,5 +363,74 @@
     "message": "Sorry, we couldn't find the page you're looking for.",
     "ctaPrimary": "Back to Home",
     "ctaSecondary": "Previous Page"
+  },
+  "scout": {
+    "seo": {
+      "title": "Scout - Ihantsa RAKOTONDRANAIVO",
+      "description": "Discover my commitment to scouting: activities, values and adventures with Scouts, Tily and Imaran Bato.",
+      "keywords": "scout, scouting, youth, leadership, adventure, nature, Madagascar"
+    },
+    "hero": {
+      "title": "My Scouting Adventure",
+      "subtitle": "Scouting has taught me essential values: leadership, teamwork and respect for nature.",
+      "mission": "Through different branches, I guide young people in their personal development and discovery of the world.",
+      "description": "Every activity is an opportunity to grow, learn and create bonds that last a lifetime."
+    },
+    "categories": {
+      "scouts": {
+        "description": "Scouts develop their autonomy through outdoor activities, camps and community projects. It's a period of discovery and learning life skills."
+      },
+      "tily": {
+        "description": "Tily discover the world through play, exploration and creativity. It's the beginning of the scouting adventure for the youngest, where imagination and friendship are at the heart of every activity."
+      },
+      "imaranBato": {
+        "description": "Imaran Bato prepare to become responsible leaders through challenges, service projects and demanding adventures. It's the stage of maturity and commitment."
+      }
+    },
+    "activities": {
+      "title": "Our Activities",
+      "subtitle": "Enriching experiences that build character and create unforgettable memories",
+      "camping": {
+        "title": "Camping & Bivouac",
+        "description": "Learn to live in harmony with nature, develop autonomy and create strong bonds around the campfire."
+      },
+      "hiking": {
+        "title": "Hiking & Exploration",
+        "description": "Discover the wonders of Madagascar, build endurance and learn to navigate in nature."
+      },
+      "leadership": {
+        "title": "Leadership & Team",
+        "description": "Develop leadership skills, learn to work as a team and take responsibility."
+      },
+      "games": {
+        "title": "Games & Discovery",
+        "description": "Learn while having fun through educational games that stimulate creativity and imagination."
+      },
+      "crafts": {
+        "title": "Crafts & Creativity",
+        "description": "Develop dexterity and artistic expression through various manual activities."
+      },
+      "nature": {
+        "title": "Nature & Environment",
+        "description": "Raise awareness about environmental protection and learn to respect biodiversity."
+      },
+      "community": {
+        "title": "Community Service",
+        "description": "Engage in projects that have a positive impact on the community and develop civic sense."
+      },
+      "skills": {
+        "title": "Technical Skills",
+        "description": "Master advanced survival, first aid and project management techniques."
+      },
+      "adventure": {
+        "title": "Great Adventures",
+        "description": "Take on ambitious challenges that push boundaries and build character."
+      }
+    },
+    "showcase": {
+      "title": "The Scout Spirit in Action",
+      "description": "Every adventure is an opportunity to grow, learn and create memories that last a lifetime.",
+      "alt": "Scouting activities in nature"
+    }
   }
 }

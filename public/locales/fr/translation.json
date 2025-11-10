@@ -343,5 +343,74 @@
     "message": "Désolé, nous n'avons pas trouvé la page que vous recherchez.",
     "ctaPrimary": "Retour à l'accueil",
     "ctaSecondary": "Page précédente"
+  },
+  "scout": {
+    "seo": {
+      "title": "Scout - Ihantsa RAKOTONDRANAIVO",
+      "description": "Découvrez mon engagement dans le scoutisme : activités, valeurs et aventures avec les Scouts, Tily et Imaran Bato.",
+      "keywords": "scout, scoutisme, jeunesse, leadership, aventure, nature, Madagascar"
+    },
+    "hero": {
+      "title": "Mon Aventure Scoute",
+      "subtitle": "Le scoutisme m'a appris des valeurs essentielles : le leadership, le travail d'équipe et le respect de la nature.",
+      "mission": "À travers différentes branches, j'accompagne les jeunes dans leur développement personnel et leur découverte du monde.",
+      "description": "Chaque activité est une opportunité de grandir, d'apprendre et de créer des liens qui durent toute une vie."
+    },
+    "categories": {
+      "scouts": {
+        "description": "Les Scouts développent leur autonomie à travers des activités de plein air, des camps et des projets communautaires. C'est une période de découverte et d'apprentissage des compétences de vie."
+      },
+      "tily": {
+        "description": "Les Tily découvrent le monde à travers le jeu, l'exploration et la créativité. C'est le début de l'aventure scoute pour les plus jeunes, où l'imagination et l'amitié sont au cœur de chaque activité."
+      },
+      "imaranBato": {
+        "description": "Les Imaran Bato se préparent à devenir des leaders responsables à travers des défis, des projets de service et des aventures exigeantes. C'est l'étape de la maturité et de l'engagement."
+      }
+    },
+    "activities": {
+      "title": "Nos Activités",
+      "subtitle": "Des expériences enrichissantes qui forgent le caractère et créent des souvenirs inoubliables",
+      "camping": {
+        "title": "Camping & Bivouac",
+        "description": "Apprendre à vivre en harmonie avec la nature, développer l'autonomie et créer des liens forts autour du feu de camp."
+      },
+      "hiking": {
+        "title": "Randonnées & Exploration",
+        "description": "Découvrir les merveilles de Madagascar, développer l'endurance et apprendre à s'orienter dans la nature."
+      },
+      "leadership": {
+        "title": "Leadership & Équipe",
+        "description": "Développer des compétences de leadership, apprendre à travailler en équipe et prendre des responsabilités."
+      },
+      "games": {
+        "title": "Jeux & Découvertes",
+        "description": "Apprendre en s'amusant à travers des jeux éducatifs qui stimulent la créativité et l'imagination."
+      },
+      "crafts": {
+        "title": "Artisanat & Créativité",
+        "description": "Développer la dextérité et l'expression artistique à travers des activités manuelles variées."
+      },
+      "nature": {
+        "title": "Nature & Environnement",
+        "description": "Sensibiliser à la protection de l'environnement et apprendre à respecter la biodiversité."
+      },
+      "community": {
+        "title": "Service Communautaire",
+        "description": "S'engager dans des projets qui ont un impact positif sur la communauté et développer le sens civique."
+      },
+      "skills": {
+        "title": "Compétences Techniques",
+        "description": "Maîtriser des techniques avancées de survie, de secourisme et de gestion de projet."
+      },
+      "adventure": {
+        "title": "Grandes Aventures",
+        "description": "Relever des défis ambitieux qui repoussent les limites et forgent le caractère."
+      }
+    },
+    "showcase": {
+      "title": "L'Esprit Scout en Action",
+      "description": "Chaque aventure est une opportunité de grandir, d'apprendre et de créer des souvenirs qui durent toute une vie.",
+      "alt": "Activités scoutes en pleine nature"
+    }
   }
 }
