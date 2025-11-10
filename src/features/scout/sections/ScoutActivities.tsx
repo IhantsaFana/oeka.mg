@@ -40,7 +40,7 @@ export function ScoutActivities() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-900">
+    <section className="py-12 sm:py-14 md:py-16 bg-gray-50 dark:bg-gray-900">
       <Container>
         {/* Section Title */}
         <motion.div
@@ -48,21 +48,21 @@ export function ScoutActivities() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-10 md:mb-12"
         >
-          <div className="inline-block">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="inline-block px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 md:mb-4">
               {t('scout.activities.title')}
             </h2>
             <div className="h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full" />
           </div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mt-6">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mt-4 sm:mt-5 md:mt-6 px-4">
             {t('scout.activities.subtitle')}
           </p>
         </motion.div>
 
         {/* Activities Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-2 sm:px-0">
           {activities.map((activity, index) => (
             <ActivityCard
               key={index}

@@ -20,8 +20,8 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
   return (
     <>
       {/* Mobile/Tablet: Slider simple */}
-      <div className="lg:hidden relative w-full max-w-lg mx-auto">
-        <div className="relative aspect-[16/9] overflow-hidden rounded-xl shadow-lg">
+      <div className="lg:hidden relative w-full mx-auto px-2 sm:px-0">
+        <div className="relative aspect-[16/9] overflow-hidden rounded-lg sm:rounded-xl shadow-lg">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -43,7 +43,7 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
                   if (parent && !parent.querySelector('.placeholder-text')) {
                     const placeholder = document.createElement('div');
                     placeholder.className =
-                      'placeholder-text absolute inset-0 flex items-center justify-center text-white text-lg font-semibold';
+                      'placeholder-text absolute inset-0 flex items-center justify-center text-white text-base sm:text-lg font-semibold';
                     placeholder.textContent = `${alt} ${currentIndex + 1}`;
                     parent.appendChild(placeholder);
                   }
@@ -52,25 +52,10 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
             </motion.div>
           </AnimatePresence>
         </div>
-
-        <div className="flex justify-center gap-2 mt-4">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex
-                  ? 'bg-blue-600 dark:bg-blue-400 w-8'
-                  : 'bg-gray-300 dark:bg-gray-600'
-              }`}
-              aria-label={`Aller à l'image ${index + 1}`}
-            />
-          ))}
-        </div>
       </div>
 
       {/* Desktop: Slider créatif avec cartes empilées */}
-      <div className="hidden lg:block relative h-[500px]">
+      <div className="hidden lg:block relative h-[400px] xl:h-[500px]">
         <AnimatePresence initial={false}>
           {images.map((image, index) => {
             const position = (index - currentIndex + images.length) % images.length;
@@ -128,22 +113,6 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
             );
           })}
         </AnimatePresence>
-
-        {/* Navigation dots */}
-        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex
-                  ? 'bg-blue-600 dark:bg-blue-400 w-8'
-                  : 'bg-gray-300 dark:bg-gray-600'
-              }`}
-              aria-label={`Aller à l'image ${index + 1}`}
-            />
-          ))}
-        </div>
       </div>
     </>
   );
