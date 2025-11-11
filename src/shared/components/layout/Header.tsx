@@ -41,7 +41,7 @@ export function Header() {
               className="flex items-center hover:opacity-80 transition-opacity"
             >
               <img 
-                src="/favicon.svg" 
+                src="/favicon.png" 
                 alt="OEKA - Ihantsa RAKOTONDRANAIVO Portfolio Logo" 
                 className="w-8 h-8"
                 width="32"

@@ -427,6 +427,25 @@
         "description": "Take on ambitious challenges that push boundaries and build character."
       }
     },
+    "profile": {
+      "title": "My Scouting Journey",
+      "totem": {
+        "description": "My totem OEKA Mikofo reflects the leadership spirit and eagle vision I bring to scouting. Totemized to recognize my commitment and guiding qualities."
+      },
+      "journey": {
+        "description": "Since my beginnings as a young scout, I have climbed the ranks to become a leader, guiding new generations in discovering scout values."
+      },
+      "values": {
+        "description": "Scouting has taught me the importance of service, respect for nature, and personal development through collective action.",
+        "solidarity": "Solidarity",
+        "nature": "Nature",
+        "excellence": "Excellence"
+      },
+      "stats": {
+        "years": "Years of experience",
+        "scouts": "Young people guided"
+      }
+    },
     "showcase": {
       "title": "The Scout Spirit in Action",
       "description": "Every adventure is an opportunity to grow, learn and create memories that last a lifetime.",

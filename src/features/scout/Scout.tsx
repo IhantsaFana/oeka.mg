@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { SEO } from '@/shared/components/ui/SEO';
 import { StructuredData } from '@/shared/components/seo/StructuredData';
 import { ScoutHero } from './sections/ScoutHero';
+import { ScoutProfile } from './sections/ScoutProfile';
 import { ScoutActivities } from './sections/ScoutActivities';
 import { ScoutShowcase } from './sections/ScoutShowcase';
 
@@ -20,6 +21,9 @@ export function Scout() {
       <main className="overflow-hidden">
         {/* Hero Section */}
         <ScoutHero />
+
+        {/* Profile Section */}
+        <ScoutProfile />
 
         {/* Activities Section */}
         <ScoutActivities />
