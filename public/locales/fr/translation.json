@@ -1,24 +1,43 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "Mon Parcours",
-    "projects": "Réalisations",
-    "contact": "Échangeons",
-    "blog": "Pensées",
+    "dev": "Dev",
+    "scout": "Scout",
+    "fleurs": "Fleurs",
+    "contact": "Contact",
     "hireMe": "Travaillons ensemble",
     "discoverProjects": "Voir mes projets"
   },
   "home": {
+    "seo": {
+      "title": "Ihantsa RAKOTONDRANAIVO - Site Personnel",
+      "description": "Bienvenue sur mon site personnel. Découvrez mon parcours, mes passions et mes différentes activités, du développement au scoutisme."
+    },
     "title": "Ihantsa RAKOTONDRANAIVO",
-    "subtitle": "Développeur Full-Stack & Créatif Numérique",
-    "description": "Je transforme le café en code et les idées en expériences numériques mémorables. Spécialisé dans les solutions web réactives et les applications mobiles intuitives.",
-    "cta": "Explorer mon univers",
-    "hello": "Salut, je m'appelle",
-    "welcome": "Bienvenue dans mon espace créatif",
-    "intro": "Développeur full-stack passionné par l'innovation et les belles interfaces. Je crée des solutions numériques qui allient performance, élégance et expérience utilisateur exceptionnelle.",
-    "heroTitle": "Je donne vie à des idées",
-    "heroHighlight": "extraordinaires",
-    "followMe": "Suivez-moi sur"
+    "subtitle": "Développeur, Chef Scout & Joueur de Volleyball",
+    "description": "Un passionné dédié à la technologie, au mentorat des jeunes et au sport.",
+    "cta": {
+      "contact": "Me contacter",
+      "portfolio": "Voir mes projets",
+      "workTogether": "Travaillons ensemble",
+      "workTogetherSubtitle": "Discutons de votre projet et voyons comment je peux vous aider",
+      "startProject": "Démarrer un projet",
+      "learnMore": "En savoir plus"
+    },
+    "hello": "Bonjour, je suis",
+    "welcome": "Bienvenue dans mon monde",
+    "intro": "À 18 ans, j'explore la vie sous différentes facettes : en tant que développeur, chef scout et passionné de sport. Rejoignez-moi dans ce voyage de croissance et de découverte.",
+    "heroTitle": "La passion guide mes actions",
+    "heroHighlight": "passion",
+    "followMe": "Suivez-moi sur",
+    "introduction": {
+      "title": "Un Voyage de Croissance et de Découverte",
+      "paragraphs": {
+        "personal": "Je suis Ihantsa RAKOTONDRANAIVO, un jeune Malgache de 18 ans passionné par la technologie et le développement des jeunes. Basé à Madagascar, je combine mon amour pour le développement avec une implication active dans le scoutisme et le volleyball.",
+        "education": "Je poursuis actuellement mes études en tant que Spécialiste en IA & MLOps à l'ESMIA Antananarivo, combinant mon expertise technique avec mon désir d'avoir un impact positif à travers l'innovation.",
+        "interests": "Au-delà du code, je trouve ma joie dans le mentorat et le jeu avec les enfants à travers les activités scoutes. En tant que chef scout, j'aide les jeunes à développer des compétences de vie précieuses. Je trouve également l'esprit d'équipe et l'énergie dans la pratique du volleyball."
+      }
+    }
   },
   "about": {
     "title": "À propos",
@@ -97,48 +116,25 @@
         "name": "Français Parlé - Niveau B1",
         "issuer": "FLTC Madagascar Group"
       }
-    },
-    "hobbies": {
-      "title": "Au-delà du Code",
-      "subtitle": "Ce que je fais quand je ne développe pas d'applications.",
-      "coding": {
-        "name": "Open Source",
-        "description": "Contribution à des projets open-source et création d'outils pour la communauté des développeurs."
-      },
-      "photography": {
-        "name": "Photographie",
-        "description": "Capturer des moments et explorer le monde à travers l'objectif de mon appareil photo."
-      },
-      "music": {
-        "name": "Musique",
-        "description": "Jouer de la guitare et découvrir de nouveaux artistes à travers différents genres."
-      },
-      "travel": {
-        "name": "Voyage",
-        "description": "Explorer de nouvelles cultures, rencontrer des gens, et trouver l'inspiration dans différents endroits."
-      },
-      "reading": {
-        "name": "Lecture",
-        "description": "Toujours apprendre à travers des livres sur la technologie, les affaires, et le développement personnel."
-      },
-      "gaming": {
-        "name": "Jeux Vidéo",
-        "description": "Profiter de jeux stratégiques et explorer des mondes virtuels pendant mon temps libre."
-      }
-    },
-    "quote": "Le code c'est comme l'humour. Quand on doit l'expliquer, c'est qu'il est mauvais."
+    }
   },
   "projects": {
     "title": "Projets",
-    "subtitle": "Une vitrine de mon travail récent et des technologies que j'ai explorées.",
-    "viewProject": "Voir Tous les Projets",
-    "sourceCode": "Code source",
-    "recent": "Projets récents",
-    "featured": "À la une",
-    "other": "Autres Projets",
+    "subtitle": "Découvrez mes projets récents et les technologies que j'utilise.",
     "viewLive": "Démo Live",
     "viewCode": "Voir le Code",
     "learnMore": "En savoir plus",
+    "featured": "À la une",
+    "viewProject": "Voir Tous les Projets",
+    "sourceCode": "Code source",
+    "recent": "Projets récents",
+    "other": "Autres Projets",
+    "modal": {
+      "description": "Description",
+      "challenge": "Défi",
+      "solution": "Solution",
+      "technologies": "Technologies utilisées"
+    },
     "seo": {
       "description": "Explorez le portfolio d'Ihantsa RAKOTONDRANAIVO avec des applications web et mobile construites avec React, Next.js, Flutter, Python et technologies IA.",
       "keywords": "projets, portfolio, React, Next.js, Flutter, Python, IA, développement web, développement mobile, full-stack"
@@ -170,6 +166,91 @@
       "challenge": "Défi",
       "solution": "Solution",
       "technologies": "Technologies utilisées"
+    }
+  },
+  "dev": {
+    "hero": {
+      "title": "Développeur Full Stack",
+      "subtitle": "Création d'expériences numériques innovantes avec des technologies modernes",
+      "ctaPrimary": "Me contacter",
+      "ctaSecondary": "Voir mes projets"
+    },
+    "experience": {
+      "title": "Expérience Professionnelle",
+      "subtitle": "Mon parcours dans le développement logiciel et les technologies web.",
+      "viewDetails": "Voir les détails"
+    },
+    "skills": {
+      "title": "Compétences Techniques",
+      "subtitle": "Un aperçu de mes compétences et de mon expertise technique.",
+      "legend": {
+        "title": "Niveaux de compétence",
+        "advanced": "Avancé (80-100%)",
+        "intermediate": "Intermédiaire (60-79%)",
+        "beginner": "Débutant (< 60%)"
+      }
+    },
+    "education": {
+      "title": "Formation & Certifications",
+      "subtitle": "Mon parcours académique et mes certifications professionnelles.",
+      "viewDetails": "Voir les détails",
+      "downloadCV": "Télécharger mon CV complet"
+    },
+    "methodologies": {
+      "title": "Méthodologies & Bonnes Pratiques",
+      "subtitle": "Approches et pratiques pour un développement de qualité.",
+      "practices": "Pratiques clés",
+      "items": [
+        {
+          "id": "agile",
+          "title": "Développement Agile",
+          "description": "Méthodologies Agile/Scrum pour un développement itératif et collaboratif.",
+          "practices": ["Sprints", "Daily Stand-ups", "Rétrospectives", "User Stories"]
+        },
+        {
+          "id": "mobile",
+          "title": "Développement Mobile",
+          "description": "Conception responsive avec approche Mobile First pour une expérience utilisateur optimale.",
+          "practices": ["Design Responsive", "PWA", "Performance Mobile", "Touch-friendly UI"]
+        },
+        {
+          "id": "architecture",
+          "title": "Architecture Moderne",
+          "description": "Conception d'architectures évolutives et maintenables.",
+          "practices": ["Microservices", "API REST/GraphQL", "Serverless", "JAMstack"]
+        },
+        {
+          "id": "security",
+          "title": "Sécurité & Qualité",
+          "description": "Intégration de bonnes pratiques de sécurité et d'assurance qualité.",
+          "practices": ["Tests unitaires", "Tests d'intégration", "OWASP", "CI/CD"]
+        },
+        {
+          "id": "devops",
+          "title": "Outils & DevOps",
+          "description": "Mise en place de pipelines d'intégration et de déploiement continus.",
+          "practices": ["Git", "Docker", "GitHub Actions", "Monitoring"]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Prêt à concrétiser votre projet ?",
+      "subtitle": "Discutons de la manière dont je peux vous aider à atteindre vos objectifs.",
+      "button": "Discutons de votre projet"
+    },
+    "projectDetails": {
+      "factura": {
+        "description": "Système complet de gestion de factures pour entreprises",
+        "longDescription": "Factura est une solution moderne de gestion de factures qui aide les entreprises à rationaliser leur processus de facturation. Construit avec React et Node.js, il propose des mises à jour en temps réel, des modèles personnalisables et des rapports détaillés."
+      },
+      "tourmada": {
+        "description": "Application mobile de guide touristique pour Madagascar",
+        "longDescription": "Tourmada est votre guide de poche pour les merveilles de Madagascar. Cette application React Native offre des cartes interactives, des recommandations locales et des aperçus culturels, facilitant la planification de voyage."
+      },
+      "theologix": {
+        "description": "Plateforme en ligne pour les études théologiques",
+        "longDescription": "Theologix est une plateforme d'apprentissage innovante dédiée aux études théologiques. Construite avec React et MongoDB, elle propose des cours interactifs, des forums de discussion et des bibliothèques de ressources."
+      }
     }
   },
   "contact": {
@@ -239,8 +320,8 @@
       "title": "Suivez-moi"
     },
     "faq": {
-      "title": "Questions Fréquemment Posées",
-      "subtitle": "Réponses rapides aux questions courantes sur le travail avec moi.",
+      "title": "Questions Fréquentes",
+      "subtitle": "Réponses rapides aux questions courantes sur la collaboration",
       "q1": {
         "question": "Quel est votre temps de réponse habituel ?",
         "answer": "Je réponds généralement dans les 24 heures pendant les jours ouvrables. Pour les questions urgentes, n'hésitez pas à appeler."
@@ -266,5 +347,111 @@
     "title": "OEKA - Ihantsa RAKOTONDRANAIVO",
     "description": "Développeur Full-Stack & IA spécialisé en React, Next.js, Flutter, Python. Création d'applications web et mobile modernes.",
     "keywords": "développeur, React, Next.js, Flutter, Python, IA, TypeScript, portfolio, Madagascar"
+  },
+  "notFound": {
+    "seo": {
+      "title": "Page non trouvée - Ihantsa Rakotondraivo",
+      "description": "La page que vous recherchez n'existe pas ou a été déplacée."
+    },
+    "title": "Oups ! Page introuvable",
+    "message": "Désolé, nous n'avons pas trouvé la page que vous recherchez.",
+    "ctaPrimary": "Retour à l'accueil",
+    "ctaSecondary": "Page précédente"
+  },
+  "scout": {
+    "seo": {
+      "title": "Scout - Ihantsa RAKOTONDRANAIVO",
+      "description": "Découvrez mon engagement dans le scoutisme : activités, valeurs et aventures avec les Scouts, Tily et Imaran Bato.",
+      "keywords": "scout, scoutisme, jeunesse, leadership, aventure, nature, Madagascar"
+    },
+    "hero": {
+      "title": "Mon Aventure Scoute",
+      "subtitle": "Le scoutisme m'a appris des valeurs essentielles : le leadership, le travail d'équipe et le respect de la nature.",
+      "mission": "À travers différentes branches, j'accompagne les jeunes dans leur développement personnel et leur découverte du monde.",
+      "description": "Chaque activité est une opportunité de grandir, d'apprendre et de créer des liens qui durent toute une vie."
+    },
+    "categories": {
+      "scouts": {
+        "description": "Les Scouts développent leur autonomie à travers des activités de plein air, des camps et des projets communautaires. C'est une période de découverte et d'apprentissage des compétences de vie."
+      },
+      "tily": {
+        "description": "Les Tily découvrent le monde à travers le jeu, l'exploration et la créativité. C'est le début de l'aventure scoute pour les plus jeunes, où l'imagination et l'amitié sont au cœur de chaque activité."
+      },
+      "imaranBato": {
+        "description": "Les Imaran Bato se préparent à devenir des leaders responsables à travers des défis, des projets de service et des aventures exigeantes. C'est l'étape de la maturité et de l'engagement."
+      }
+    },
+    "activities": {
+      "title": "Nos Activités",
+      "subtitle": "Des expériences enrichissantes qui forgent le caractère et créent des souvenirs inoubliables",
+      "camping": {
+        "title": "Camping & Bivouac",
+        "description": "Apprendre à vivre en harmonie avec la nature, développer l'autonomie et créer des liens forts autour du feu de camp."
+      },
+      "hiking": {
+        "title": "Randonnées & Exploration",
+        "description": "Découvrir les merveilles de Madagascar, développer l'endurance et apprendre à s'orienter dans la nature."
+      },
+      "leadership": {
+        "title": "Leadership & Équipe",
+        "description": "Développer des compétences de leadership, apprendre à travailler en équipe et prendre des responsabilités."
+      },
+      "games": {
+        "title": "Jeux & Découvertes",
+        "description": "Apprendre en s'amusant à travers des jeux éducatifs qui stimulent la créativité et l'imagination."
+      },
+      "crafts": {
+        "title": "Artisanat & Créativité",
+        "description": "Développer la dextérité et l'expression artistique à travers des activités manuelles variées."
+      },
+      "nature": {
+        "title": "Nature & Environnement",
+        "description": "Sensibiliser à la protection de l'environnement et apprendre à respecter la biodiversité."
+      },
+      "community": {
+        "title": "Service Communautaire",
+        "description": "S'engager dans des projets qui ont un impact positif sur la communauté et développer le sens civique."
+      },
+      "skills": {
+        "title": "Compétences Techniques",
+        "description": "Maîtriser des techniques avancées de survie, de secourisme et de gestion de projet."
+      },
+      "adventure": {
+        "title": "Grandes Aventures",
+        "description": "Relever des défis ambitieux qui repoussent les limites et forgent le caractère."
+      }
+    },
+    "profile": {
+      "title": "Mon Parcours Scout",
+      "totem": {
+        "description": "Mon totem OEKA Mikofo reflète l'esprit de leadership et la vision d'aigle que j'apporte au scoutisme. Totémisé pour reconnaître mon engagement et mes qualités de guide.",
+        "animal": {
+          "title": "Le Coua Bleu",
+          "description": "OEKA désigne le Coua Bleu de Madagascar (Coua caerulea), un oiseau endémique des forêts malgaches. Reconnu pour sa beauté distinctive avec son plumage bleu éclatant et sa crête élégante, le Coua Bleu symbolise la fierté nationale malgache. Cet oiseau représente la vision perçante, l'adaptabilité et la capacité à naviguer dans des environnements complexes - des qualités qui me caractérisent en tant que leader scout."
+        },
+        "character": {
+          "title": "L'Esprit d'Excellence",
+          "description": "Mikofo vient du mot malgache 'Milofo' qui signifie se concentrer intensément sur l'étude, perfectionner les choses et étudier avec acharnement. Cette qualité reflète mon caractère : la persévérance dans l'apprentissage, l'attention aux détails et la recherche constante de l'excellence. En tant que scout, cette qualité me pousse à toujours m'améliorer et à transmettre cette soif de perfectionnement aux jeunes que j'accompagne."
+        }
+      },
+      "journey": {
+        "description": "Depuis mes débuts en tant que jeune scout, j'ai gravi les échelons pour devenir chef, accompagnant les nouvelles générations dans leur découverte des valeurs scoutes."
+      },
+      "values": {
+        "description": "Le scoutisme m'a enseigné l'importance du service, du respect de la nature et du développement personnel à travers l'action collective.",
+        "solidarity": "Solidarité",
+        "nature": "Nature",
+        "excellence": "Excellence"
+      },
+      "stats": {
+        "years": "Années d'expérience",
+        "scouts": "Jeunes accompagnés"
+      }
+    },
+    "showcase": {
+      "title": "L'Esprit Scout en Action",
+      "description": "Chaque aventure est une opportunité de grandir, d'apprendre et de créer des souvenirs qui durent toute une vie.",
+      "alt": "Activités scoutes en pleine nature"
+    }
   }
 }

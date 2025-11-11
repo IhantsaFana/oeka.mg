@@ -1,7 +1,7 @@
 // import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Container } from '@/components/ui/Container';
-import { SEO } from '@/components/ui/SEO';
+import { Container } from '@/shared/components/ui/Container';
+import { SEO } from '@/shared/components/ui/SEO';
 import { 
   FaCalendar, 
   FaClock, 
@@ -242,3 +242,4 @@ export function Blog() {
     </>
   );
 }
+

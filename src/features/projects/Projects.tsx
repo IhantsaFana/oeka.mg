@@ -2,12 +2,12 @@ import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { FaStar, FaSearch } from 'react-icons/fa';
-import { SEO } from '@/components/ui/SEO';
-import { Container } from '@/components/ui/Container';
-import { StructuredData } from '@/components/seo/StructuredData';
+import { SEO } from '@/shared/components/ui/SEO';
+import { Container } from '@/shared/components/ui/Container';
+import { StructuredData } from '@/shared/components/seo/StructuredData';
 import { ProjectCard } from './components/ProjectCard';
 import { ProjectFilter } from './components/ProjectFilter';
-import { ProjectModal } from '@/components/ui/ProjectModal';
+import { ProjectModal } from '@/shared/components/ui/ProjectModal';
 import { projectsData } from './data/projectsData';
 import type { Project } from '@/types/project';
 
@@ -174,3 +174,4 @@ export function Projects() {
     </>
   );
 }
+

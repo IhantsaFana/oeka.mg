@@ -1,26 +1,28 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
-import { Layout } from '@/components/layout/Layout';
+import { Layout } from '@/shared/components/layout/Layout';
 import { Home } from '@/features/home/Home';
-import { About } from '@/features/about/About';
-import { Projects } from '@/features/projects/Projects';
+import { Dev } from '@/features/dev/Dev';
+import { Scout } from '@/features/scout/Scout';
 import { Contact } from '@/features/contact/Contact';
-import { Blog } from '@/features/blog/Blog';
+import { NotFoundPage } from '@/features/error/NotFoundPage';
+
+import { getLocalizedPath } from '@/shared/utils/routes';
 
 // Composant pour rediriger vers la langue détectée
 function RootRedirect() {
-  const supportedLangs = ['en', 'fr'];
+  const supportedLangs = ['en', 'fr'] as const;
   
   // 1. Priorité à la langue sauvegardée
-  const savedLang = localStorage.getItem('i18nextLng');
+  const savedLang = localStorage.getItem('i18nextLng') as typeof supportedLangs[number] | null;
   if (savedLang && supportedLangs.includes(savedLang)) {
-    return <Navigate to={`/${savedLang}`} replace />;
+    return <Navigate to={getLocalizedPath('/', savedLang)} replace />;
   }
   
   // 2. Sinon, détecte la langue du navigateur
-  const browserLang = navigator.language.split('-')[0];
+  const browserLang = navigator.language.split('-')[0] as typeof supportedLangs[number];
   const detectedLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
   
-  return <Navigate to={`/${detectedLang}`} replace />;
+  return <Navigate to={getLocalizedPath('/', detectedLang)} replace />;
 }
 
 export const router = createBrowserRouter([
@@ -37,25 +39,28 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'about',
-        element: <About />,
+        path: 'dev',
+        element: <Dev />,
       },
       {
-        path: 'projects',
-        element: <Projects />,
+        path: 'scout',
+        element: <Scout />,
       },
       {
         path: 'contact',
         element: <Contact />,
       },
+      // Route 404 pour les chemins non trouvés sous /:lang
       {
-        path: 'blog',
-        element: <Blog />,
+        path: '*',
+        element: <NotFoundPage />,
       },
     ],
   },
+  // Redirection pour les chemins non reconnus vers la page d'accueil de la langue par défaut
   {
     path: '*',
-    element: <Navigate to="/en" replace />,
+    element: <Navigate to="/" replace />,
   },
 ]);
+

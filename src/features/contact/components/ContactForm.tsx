@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { EmailService, type ContactFormData } from '@/services/emailService';
+import { EmailService, type ContactFormData } from '@/core/api/emailService';
 import { useToast } from '@/hooks/useToast';
-import { Toast } from '@/components/ui/Toast';
+import { Toast } from '@/shared/components/ui/Toast';
 
 interface FormErrors {
   name?: string;
@@ -213,3 +213,4 @@ export function ContactForm() {
     </>
   );
 }
+

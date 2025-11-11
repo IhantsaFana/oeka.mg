@@ -65,22 +65,22 @@ export function ContactInfo() {
             rel={method.link.startsWith('http') ? 'noopener noreferrer' : undefined}
             className="group block p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
           >
-            <div className="flex items-start gap-4">
-              <div className="group-hover:scale-110 transition-transform">
-                <method.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+            <div className="flex items-start gap-3 sm:gap-4">
+              <div className="group-hover:scale-110 transition-transform flex-shrink-0">
+                <method.icon className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600 dark:text-blue-400" />
               </div>
-              <div className="flex-1">
-                <h3 className="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <div className="flex-1 min-w-0">
+                <h3 className="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors text-sm sm:text-base">
                   {method.label}
                 </h3>
-                <p className="text-blue-600 dark:text-blue-400 font-medium">
+                <p className="text-blue-600 dark:text-blue-400 font-medium text-sm sm:text-base break-all">
                   {method.value}
                 </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-1">
                   {method.description}
                 </p>
               </div>
-              <div className="text-gray-400 group-hover:text-blue-600 transition-colors">
+              <div className="text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0 hidden sm:block">
                 →
               </div>
             </div>
@@ -141,3 +141,4 @@ export function ContactInfo() {
     </div>
   );
 }
+
