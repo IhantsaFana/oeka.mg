@@ -33,7 +33,7 @@ export function ScoutShowcase() {
               {/* Overlay Text */}
               <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 lg:p-12">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-3 md:mb-4">
-                  {t('scout.showcase.title')}
+                  L'Esprit <span style={{ fontFamily: 'cursive' }}>Scout</span> en Action
                 </h2>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-3xl">
                   {t('scout.showcase.description')}

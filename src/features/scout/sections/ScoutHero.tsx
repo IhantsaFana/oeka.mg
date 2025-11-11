@@ -10,9 +10,9 @@ const scoutImages = [
 ];
 
 const scoutLogos = [
-  { src: '/scout/scouts.png', alt: 'Scout' },
-  { src: '/scout/tily.png', alt: 'Tily' },
-  { src: '/scout/harambato.jpg', alt: 'Harambato' },
+  { src: '/scout/scouts.png', alt: 'Scout', url: 'https://scout.org' },
+  { src: '/scout/tily.png', alt: 'Tily', url: 'https://scout.mg' },
+  { src: '/scout/harambato.jpg', alt: 'Harambato', url: 'https://harambato.vercel.app' },
 ];
 
 export function ScoutHero() {
@@ -39,7 +39,7 @@ export function ScoutHero() {
               style={{ userSelect: 'text' }}
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 select-text">
-                {t('scout.hero.title')}
+                Mon <span className="text-blue-600 dark:text-blue-400" style={{ fontFamily: 'cursive' }}>Aventure</span> Scoute
               </h1>
               <div className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed space-y-3 md:space-y-4 select-text text-justify">
                 <p className="select-text">{t('scout.hero.subtitle')}</p>
@@ -69,8 +69,15 @@ export function ScoutHero() {
             {/* Scout Logos - Horizontal */}
             <div className="flex justify-center lg:justify-end items-center gap-3 sm:gap-4 md:gap-6 mb-8 md:mb-10 lg:mb-12">
               {scoutLogos.map((logo) => (
-                <div key={logo.alt} className="relative">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden bg-white dark:bg-gray-800 shadow-lg">
+                <a
+                  key={logo.alt}
+                  href={logo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative group transition-transform duration-300 hover:scale-110"
+                  aria-label={`Visiter ${logo.alt}`}
+                >
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden bg-white dark:bg-gray-800 shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                     <img
                       src={logo.src}
                       alt={logo.alt}
@@ -89,7 +96,7 @@ export function ScoutHero() {
                       }}
                     />
                   </div>
-                </div>
+                </a>
               ))}
             </div>
 

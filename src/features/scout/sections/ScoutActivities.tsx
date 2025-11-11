@@ -62,7 +62,7 @@ export function ScoutActivities() {
           />
           <div className="inline-block px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 md:mb-4">
-              {t('scout.activities.title')}
+              Nos Activités
             </h2>
             <div className="h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full" />
           </div>

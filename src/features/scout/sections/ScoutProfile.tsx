@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Container } from '@/shared/components/ui/Container';
 import { CurvedLines } from '@/shared/components/ui/CurvedLines';
-import { FaHandsHelping, FaLeaf, FaStar } from 'react-icons/fa';
+import { FaHandsHelping, FaLeaf, FaStar, FaFeatherAlt, FaBook } from 'react-icons/fa';
 
 export function ScoutProfile() {
   const { t } = useTranslation();
@@ -217,7 +217,7 @@ export function ScoutProfile() {
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              {t('scout.profile.title')}
+              Mon Parcours <span className="text-blue-600 dark:text-blue-400" style={{ fontFamily: 'cursive' }}>Scout</span>
             </h2>
             
             <div className="space-y-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
@@ -240,10 +240,10 @@ export function ScoutProfile() {
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">🦅</span>
+                <FaFeatherAlt className="text-white text-lg" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                OEKA - {t('scout.profile.totem.animal.title')}
+                <span style={{ fontFamily: 'cursive' }}>OEKA - Le Coua Bleu</span>
               </h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
@@ -255,10 +255,10 @@ export function ScoutProfile() {
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">📚</span>
+                <FaBook className="text-white text-lg" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                MIKOFO - {t('scout.profile.totem.character.title')}
+                <span style={{ fontFamily: 'cursive' }}>MIKOFO - L'Esprit d'Excellence</span>
               </h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
