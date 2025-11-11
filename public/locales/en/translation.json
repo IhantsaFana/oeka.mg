@@ -430,7 +430,15 @@
     "profile": {
       "title": "My Scouting Journey",
       "totem": {
-        "description": "My totem OEKA Mikofo reflects the leadership spirit and eagle vision I bring to scouting. Totemized to recognize my commitment and guiding qualities."
+        "description": "My totem OEKA Mikofo reflects the leadership spirit and eagle vision I bring to scouting. Totemized to recognize my commitment and guiding qualities.",
+        "animal": {
+          "title": "The Blue Coua",
+          "description": "OEKA refers to the Blue Coua of Madagascar (Coua caerulea), an endemic bird of Malagasy forests. Recognized for its distinctive beauty with brilliant blue plumage and elegant crest, the Blue Coua symbolizes Malagasy national pride. This bird represents keen vision, adaptability, and the ability to navigate complex environments - qualities that characterize me as a scout leader."
+        },
+        "character": {
+          "title": "The Spirit of Excellence",
+          "description": "Mikofo comes from the Malagasy word 'Milofo' which means to focus intensely on study, perfect things, and study with determination. This quality reflects my character: perseverance in learning, attention to detail, and the constant pursuit of excellence. As a scout, this quality drives me to always improve and pass on this thirst for perfection to the young people I guide."
+        }
       },
       "journey": {
         "description": "Since my beginnings as a young scout, I have climbed the ranks to become a leader, guiding new generations in discovering scout values."

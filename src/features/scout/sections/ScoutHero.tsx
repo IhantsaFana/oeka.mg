@@ -41,7 +41,7 @@ export function ScoutHero() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 select-text">
                 {t('scout.hero.title')}
               </h1>
-              <div className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed space-y-3 md:space-y-4 select-text">
+              <div className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed space-y-3 md:space-y-4 select-text text-justify">
                 <p className="select-text">{t('scout.hero.subtitle')}</p>
                 <p className="select-text">{t('scout.hero.mission')}</p>
                 <p className="hidden sm:block select-text">{t('scout.hero.description')}</p>

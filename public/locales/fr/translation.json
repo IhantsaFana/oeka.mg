@@ -424,7 +424,15 @@
     "profile": {
       "title": "Mon Parcours Scout",
       "totem": {
-        "description": "Mon totem OEKA Mikofo reflète l'esprit de leadership et la vision d'aigle que j'apporte au scoutisme. Totémisé pour reconnaître mon engagement et mes qualités de guide."
+        "description": "Mon totem OEKA Mikofo reflète l'esprit de leadership et la vision d'aigle que j'apporte au scoutisme. Totémisé pour reconnaître mon engagement et mes qualités de guide.",
+        "animal": {
+          "title": "Le Coua Bleu",
+          "description": "OEKA désigne le Coua Bleu de Madagascar (Coua caerulea), un oiseau endémique des forêts malgaches. Reconnu pour sa beauté distinctive avec son plumage bleu éclatant et sa crête élégante, le Coua Bleu symbolise la fierté nationale malgache. Cet oiseau représente la vision perçante, l'adaptabilité et la capacité à naviguer dans des environnements complexes - des qualités qui me caractérisent en tant que leader scout."
+        },
+        "character": {
+          "title": "L'Esprit d'Excellence",
+          "description": "Mikofo vient du mot malgache 'Milofo' qui signifie se concentrer intensément sur l'étude, perfectionner les choses et étudier avec acharnement. Cette qualité reflète mon caractère : la persévérance dans l'apprentissage, l'attention aux détails et la recherche constante de l'excellence. En tant que scout, cette qualité me pousse à toujours m'améliorer et à transmettre cette soif de perfectionnement aux jeunes que j'accompagne."
+        }
       },
       "journey": {
         "description": "Depuis mes débuts en tant que jeune scout, j'ai gravi les échelons pour devenir chef, accompagnant les nouvelles générations dans leur découverte des valeurs scoutes."
