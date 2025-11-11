@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Container } from '@/shared/components/ui/Container';
 import { Button } from '@/shared/components/ui/Button';
+import { CurvedLines } from '@/shared/components/ui/CurvedLines';
 import { StructuredData } from '@/shared/components/seo/StructuredData';
 
 export function Hero() {
@@ -10,6 +11,16 @@ export function Hero() {
     <>
       <StructuredData type="person" />
       <section id="hero" className="min-h-[calc(100vh-80px)] flex items-center relative overflow-hidden">
+        {/* Background decoration */}
+        <CurvedLines 
+          position="bottom" 
+          height="md" 
+          lines={4}
+          opacity="medium" 
+          color="blue" 
+          curvature="strong" 
+        />
+
         <Container className="relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
@@ -29,45 +40,32 @@ export function Hero() {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-4 sm:px-0">
                 <Button
                   to="/contact"
                   variant="primary"
                   size="lg"
-                  className="group flex items-center justify-center gap-2"
+                  className="group flex items-center justify-center gap-2 w-full sm:w-auto"
                 >
                   {t('home.cta.contact', 'Me contacter')}
                   <span className="group-hover:translate-x-1 transition-transform">
                     <i className="fas fa-arrow-right"></i>
                   </span>
                 </Button>
-                <div className="flex gap-2">
-                  <Button
-                    to="/dev"
-                    variant="outline"
-                    size="lg"
-                    className="group flex items-center gap-2"
-                  >
-                    <i className="fas fa-code"></i>
-                    {t('home.cta.portfolio', 'Mes projets')}
-                  </Button>
-                  <Button
-                    href="https://linkedin.com/in/ihantsa"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    variant="ghost"
-                    size="lg"
-                    className="rounded-full w-12 h-12 flex items-center justify-center"
-                    aria-label="LinkedIn"
-                  >
-                    <i className="fab fa-linkedin text-xl"></i>
-                  </Button>
-                </div>
+                <Button
+                  to="/dev"
+                  variant="outline"
+                  size="lg"
+                  className="group flex items-center justify-center gap-2 w-full sm:w-auto"
+                >
+                  <i className="fas fa-code"></i>
+                  {t('home.cta.portfolio', 'Mes projets')}
+                </Button>
               </div>
             </div>
 
-            {/* Right Illustration - Robot flottant */}
-            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
+            {/* Right Illustration - Robot flottant (masqué sur mobile) */}
+            <div className="hidden md:flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div className="relative">
                 {/* Ombre au sol fixe - ne bouge pas */}
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-40 h-6 bg-black/30 dark:bg-white/20 rounded-full blur-lg"></div>

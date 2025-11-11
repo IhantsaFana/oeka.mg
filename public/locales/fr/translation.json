@@ -237,6 +237,20 @@
       "title": "Prêt à concrétiser votre projet ?",
       "subtitle": "Discutons de la manière dont je peux vous aider à atteindre vos objectifs.",
       "button": "Discutons de votre projet"
+    },
+    "projectDetails": {
+      "factura": {
+        "description": "Système complet de gestion de factures pour entreprises",
+        "longDescription": "Factura est une solution moderne de gestion de factures qui aide les entreprises à rationaliser leur processus de facturation. Construit avec React et Node.js, il propose des mises à jour en temps réel, des modèles personnalisables et des rapports détaillés."
+      },
+      "tourmada": {
+        "description": "Application mobile de guide touristique pour Madagascar",
+        "longDescription": "Tourmada est votre guide de poche pour les merveilles de Madagascar. Cette application React Native offre des cartes interactives, des recommandations locales et des aperçus culturels, facilitant la planification de voyage."
+      },
+      "theologix": {
+        "description": "Plateforme en ligne pour les études théologiques",
+        "longDescription": "Theologix est une plateforme d'apprentissage innovante dédiée aux études théologiques. Construite avec React et MongoDB, elle propose des cours interactifs, des forums de discussion et des bibliothèques de ressources."
+      }
     }
   },
   "contact": {

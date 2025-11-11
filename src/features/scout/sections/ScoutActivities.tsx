@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Container } from '@/shared/components/ui/Container';
 import { ActivityCard } from '../components/ActivityCard';
+import { CurvedLines } from '@/shared/components/ui/CurvedLines';
 
 const activities = [
   {
@@ -50,6 +51,15 @@ export function ScoutActivities() {
           viewport={{ once: true }}
           className="text-center mb-8 sm:mb-10 md:mb-12"
         >
+          {/* Background decoration */}
+          <CurvedLines
+            position="full"
+            height="md"
+            lines={3}
+            opacity="medium"
+            color="blue"
+            curvature="strong"
+          />
           <div className="inline-block px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 md:mb-4">
               {t('scout.activities.title')}

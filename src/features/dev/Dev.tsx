@@ -22,14 +22,14 @@ export function Dev() {
       
       <main className="overflow-hidden">
         {/* Hero Section */}
-        <section className="relative py-12 md:py-20 lg:py-28 overflow-hidden">
+        <section className="relative py-8 sm:py-12 md:py-16 lg:py-24 overflow-hidden">
           <div className="absolute inset-0 opacity-30 dark:opacity-10">
             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC4xIj48L3JlY3Q+CjxwYXRoIGQ9Ik0tMSwxIEwxMDEsMTAxIE0xMDEsLTEgTC0xLDk5IE05OSwxIEwxLDEwMSBNMSwxIEw5OSw5OSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2Utb3BhY2l0eT0iMC4xIj48L3BhdG4+Cjwvc3ZnPg==')]">
             </div>
           </div>
           
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
               {/* Texte à gauche */}
               <motion.div 
                 initial={{ opacity: 0, x: -50 }}
@@ -37,25 +37,29 @@ export function Dev() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-center lg:text-left"
               >
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
                   {t('dev.hero.title', 'Développeur Full Stack')}
                 </h1>
-                <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                   {t('dev.hero.subtitle', 'Création d\'expériences numériques innovantes avec des technologies modernes')}
                 </p>
-                <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                  <a
+                <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 px-4 sm:px-0">
+                  <Button
                     href="#contact"
-                    className="px-8 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+                    variant="primary"
+                    size="lg"
+                    className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700"
                   >
                     {t('dev.hero.ctaPrimary', 'Me contacter')}
-                  </a>
-                  <a
+                  </Button>
+                  <Button
                     href="#projects"
-                    className="px-8 py-3 bg-white text-indigo-600 font-medium rounded-lg border border-indigo-200 hover:bg-indigo-50 transition-colors dark:bg-gray-800 dark:text-indigo-400 dark:border-gray-700 dark:hover:bg-gray-700"
+                    variant="secondary"
+                    size="lg"
+                    className="w-full sm:w-auto"
                   >
                     {t('dev.hero.ctaSecondary', 'Voir mes projets')}
-                  </a>
+                  </Button>
                 </div>
               </motion.div>
               
@@ -72,7 +76,7 @@ export function Dev() {
           </div>
           
           {/* Dégradé en bas de la section */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent dark:from-gray-900"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-t from-white to-transparent dark:from-gray-900"></div>
         </section>
 
         {/* Tech Stack */}
