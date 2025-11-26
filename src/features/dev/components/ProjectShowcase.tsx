@@ -4,20 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaArrowLeft, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { projectsData } from '../data/projects';
 
-// Filtrer uniquement les projets en vedette
-const featuredProjects = projectsData.filter(project => project.featured);
-
-// Mapper les données pour correspondre à l'interface attendue
-const projects = featuredProjects.map((project, index) => ({
-  id: index + 1,
-  title: project.title,
-  description: project.longDescription,
-  image: project.image,
-  stack: project.technologies,
-  github: project.githubUrl,
-  liveDemo: project.liveUrl
-}));
-
 const variants = {
   enter: (direction: number) => ({
     x: direction > 0 ? 1000 : -1000,
@@ -44,6 +30,19 @@ export function ProjectShowcase() {
   const { t } = useTranslation();
   const [[page, direction], setPage] = useState([0, 0]);
   const [autoPlay, setAutoPlay] = useState(true);
+
+  // Filtrer uniquement les projets en vedette et mapper avec traduction
+  const projects = projectsData
+    .filter(project => project.featured)
+    .map((project, index) => ({
+      id: index + 1,
+      title: project.title,
+      description: t(`dev.projectDetails.${project.id}.description`),
+      image: project.image,
+      stack: project.technologies,
+      github: project.githubUrl,
+      liveDemo: project.liveUrl
+    }));
 
   const projectIndex = ((page % projects.length) + projects.length) % projects.length;
   const project = projects[projectIndex];

@@ -81,21 +81,7 @@
     },
     "projects": {
       "title": "Featured Projects",
-      "description": "A selection of my recent development projects that showcase my skills and passion.",
-      "projectDetails": {
-        "factura": {
-          "description": "A comprehensive invoice management system for businesses",
-          "longDescription": "Factura is a modern invoice management solution that helps businesses streamline their billing process. Built with React and Node.js, it features real-time updates, customizable templates, and detailed reporting."
-        },
-        "tourmada": {
-          "description": "Mobile travel guide app for Madagascar",
-          "longDescription": "Tourmada is your pocket guide to Madagascar's wonders. This React Native app offers interactive maps, local recommendations, and cultural insights, making travel planning a breeze."
-        },
-        "theologix": {
-          "description": "Online platform for theological studies",
-          "longDescription": "Theologix is an innovative learning platform dedicated to theological studies. Built with React and MongoDB, it provides interactive courses, discussion forums, and resource libraries."
-        }
-      }
+      "description": "A selection of my recent development projects that showcase my skills and passion."
     },
     "hero": {
       "title": "Full Stack Developer",
@@ -128,6 +114,20 @@
       "title": "Ready to bring your project to life?",
       "subtitle": "Let's discuss how I can help you achieve your goals.",
       "button": "Let's Talk About Your Project"
+    },
+    "projectDetails": {
+      "factura": {
+        "description": "A comprehensive invoice management system for businesses",
+        "longDescription": "Factura is a modern invoice management solution that helps businesses streamline their billing process. Built with React and Node.js, it features real-time updates, customizable templates, and detailed reporting."
+      },
+      "tourmada": {
+        "description": "Mobile travel guide app for Madagascar",
+        "longDescription": "Tourmada is your pocket guide to Madagascar's wonders. This React Native app offers interactive maps, local recommendations, and cultural insights, making travel planning a breeze."
+      },
+      "theologix": {
+        "description": "Online platform for theological studies",
+        "longDescription": "Theologix is an innovative learning platform dedicated to theological studies. Built with React and MongoDB, it provides interactive courses, discussion forums, and resource libraries."
+      }
     }
   },
   "home": {
