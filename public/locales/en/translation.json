@@ -26,51 +26,62 @@
           "id": "agile",
           "title": "Agile Development",
           "description": "Agile/Scrum methodologies for iterative and collaborative development.",
-          "practices": ["Sprints", "Daily Stand-ups", "Retrospectives", "User Stories"]
+          "practices": [
+            "Sprints",
+            "Daily Stand-ups",
+            "Retrospectives",
+            "User Stories"
+          ]
         },
         {
           "id": "mobile",
           "title": "Mobile Development",
           "description": "Responsive design with a Mobile First approach for an optimal user experience.",
-          "practices": ["Responsive Design", "PWA", "Mobile Performance", "Touch-friendly UI"]
+          "practices": [
+            "Responsive Design",
+            "PWA",
+            "Mobile Performance",
+            "Touch-friendly UI"
+          ]
         },
         {
           "id": "architecture",
           "title": "Modern Architecture",
           "description": "Design of scalable and maintainable architectures.",
-          "practices": ["Microservices", "REST/GraphQL API", "Serverless", "JAMstack"]
+          "practices": [
+            "Microservices",
+            "REST/GraphQL API",
+            "Serverless",
+            "JAMstack"
+          ]
         },
         {
           "id": "security",
           "title": "Security & Quality",
           "description": "Integration of security best practices and quality assurance.",
-          "practices": ["Unit Testing", "Integration Testing", "OWASP", "CI/CD"]
+          "practices": [
+            "Unit Testing",
+            "Integration Testing",
+            "OWASP",
+            "CI/CD"
+          ]
         },
         {
           "id": "devops",
           "title": "Tools & DevOps",
           "description": "Implementation of continuous integration and deployment pipelines.",
-          "practices": ["Git", "Docker", "GitHub Actions", "Monitoring"]
+          "practices": [
+            "Git",
+            "Docker",
+            "GitHub Actions",
+            "Monitoring"
+          ]
         }
       ]
     },
     "projects": {
       "title": "Featured Projects",
-      "description": "A selection of my recent development projects that showcase my skills and passion.",
-      "projectDetails": {
-        "factura": {
-          "description": "A comprehensive invoice management system for businesses",
-          "longDescription": "Factura is a modern invoice management solution that helps businesses streamline their billing process. Built with React and Node.js, it features real-time updates, customizable templates, and detailed reporting."
-        },
-        "tourmada": {
-          "description": "Mobile travel guide app for Madagascar",
-          "longDescription": "Tourmada is your pocket guide to Madagascar's wonders. This React Native app offers interactive maps, local recommendations, and cultural insights, making travel planning a breeze."
-        },
-        "theologix": {
-          "description": "Online platform for theological studies",
-          "longDescription": "Theologix is an innovative learning platform dedicated to theological studies. Built with React and MongoDB, it provides interactive courses, discussion forums, and resource libraries."
-        }
-      }
+      "description": "A selection of my recent development projects that showcase my skills and passion."
     },
     "hero": {
       "title": "Full Stack Developer",
@@ -103,15 +114,29 @@
       "title": "Ready to bring your project to life?",
       "subtitle": "Let's discuss how I can help you achieve your goals.",
       "button": "Let's Talk About Your Project"
+    },
+    "projectDetails": {
+      "factura": {
+        "description": "A comprehensive invoice management system for businesses",
+        "longDescription": "Factura is a modern invoice management solution that helps businesses streamline their billing process. Built with React and Node.js, it features real-time updates, customizable templates, and detailed reporting."
+      },
+      "tourmada": {
+        "description": "Mobile travel guide app for Madagascar",
+        "longDescription": "Tourmada is your pocket guide to Madagascar's wonders. This React Native app offers interactive maps, local recommendations, and cultural insights, making travel planning a breeze."
+      },
+      "theologix": {
+        "description": "Online platform for theological studies",
+        "longDescription": "Theologix is an innovative learning platform dedicated to theological studies. Built with React and MongoDB, it provides interactive courses, discussion forums, and resource libraries."
+      }
     }
   },
   "home": {
     "seo": {
-      "title": "Ihantsa RAKOTONDRANAIVO - Personal Website",
+      "title": "Ihantsa RAKOTONDRANAIVO - OEKA Mikofo",
       "description": "Welcome to my personal website. Discover my journey, passions, and various activities from development to scouting."
     },
     "title": "Ihantsa RAKOTONDRANAIVO",
-    "subtitle": "Developer, Scout Leader & Volleyball Player",
+    "subtitle": "Developer, Scout Leader, Youth Volunteer",
     "description": "A passionate individual dedicated to technology, youth mentoring, and sports.",
     "cta": {
       "contact": "Contact Me",
@@ -123,7 +148,7 @@
     },
     "hello": "Hello, I'm",
     "welcome": "Welcome to my world",
-    "intro": "At 18, I'm exploring life through multiple lenses: as a developer, scout leader, and sports enthusiast. Join me in this journey of growth and discovery.",
+    "intro": "At 18, I'm exploring life through multiple lenses: as a developer, scout leader, and youth volunteer. Join me in this journey of growth and discovery.",
     "heroTitle": "Turning passion into impact",
     "heroHighlight": "passion",
     "followMe": "Follow me on",
@@ -158,7 +183,7 @@
       "subtitle": "Technologies and tools I master",
       "web": "Web Development",
       "mobile": "Mobile Development",
-      "ai": "Artificial Intelligence", 
+      "ai": "Artificial Intelligence",
       "webDesc": "React, Next.js, TypeScript, Tailwind CSS",
       "mobileDesc": "Flutter, React Native, cross-platform development",
       "aiDesc": "Python, Machine Learning, AI integration",
@@ -220,6 +245,11 @@
     "subtitle": "A showcase of my recent work and the technologies I've been exploring.",
     "viewProject": "View All Projects",
     "sourceCode": "Source code",
+    "viewOnline": "View online",
+    "previousProject": "Previous project",
+    "nextProject": "Next project",
+    "goToProject": "Go to project",
+    "featuredProject": "Featured project",
     "viewLive": "Live Demo",
     "viewCode": "View Code",
     "learnMore": "Learn More",

@@ -11,15 +11,15 @@ export function Contact() {
 
   return (
     <>
-      <SEO 
-        title={t('contact.title')} 
+      <SEO
+        title={t('contact.title')}
         description={t('contact.seo.description')}
         keywords={t('contact.seo.keywords')}
       />
       <StructuredData type="person" />
-      
+
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 md:py-20">
+      <section id="contact-hero" className="py-12 sm:py-16 md:py-20">
         <Container>
           <motion.div
             className="text-center max-w-3xl mx-auto px-4"
@@ -38,7 +38,7 @@ export function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white dark:bg-gray-900">
+      <section id="contact-info" className="py-12 sm:py-16 md:py-20 bg-white dark:bg-gray-900">
         <Container>
           <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12">
             {/* Formulaire de contact */}
@@ -68,7 +68,7 @@ export function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 sm:py-16 md:py-20">
+      <section id="contact-form" className="py-12 sm:py-16 md:py-20">
         <Container>
           <motion.div
             className="text-center mb-8 sm:mb-10 md:mb-12 px-4"

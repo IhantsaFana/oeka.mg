@@ -14,7 +14,7 @@
       "description": "Bienvenue sur mon site personnel. Découvrez mon parcours, mes passions et mes différentes activités, du développement au scoutisme."
     },
     "title": "Ihantsa RAKOTONDRANAIVO",
-    "subtitle": "Développeur, Chef Scout & Joueur de Volleyball",
+    "subtitle": "Développeur, Scout, Jeune Volontaire",
     "description": "Un passionné dédié à la technologie, au mentorat des jeunes et au sport.",
     "cta": {
       "contact": "Me contacter",
@@ -26,7 +26,7 @@
     },
     "hello": "Bonjour, je suis",
     "welcome": "Bienvenue dans mon monde",
-    "intro": "À 18 ans, j'explore la vie sous différentes facettes : en tant que développeur, chef scout et passionné de sport. Rejoignez-moi dans ce voyage de croissance et de découverte.",
+    "intro": "À 18 ans, j'explore la vie sous différentes facettes : en tant que développeur, scout et passionné de sport. Rejoignez-moi dans ce voyage de croissance et de découverte.",
     "heroTitle": "La passion guide mes actions",
     "heroHighlight": "passion",
     "followMe": "Suivez-moi sur",
@@ -35,7 +35,7 @@
       "paragraphs": {
         "personal": "Je suis Ihantsa RAKOTONDRANAIVO, un jeune Malgache de 18 ans passionné par la technologie et le développement des jeunes. Basé à Madagascar, je combine mon amour pour le développement avec une implication active dans le scoutisme et le volleyball.",
         "education": "Je poursuis actuellement mes études en tant que Spécialiste en IA & MLOps à l'ESMIA Antananarivo, combinant mon expertise technique avec mon désir d'avoir un impact positif à travers l'innovation.",
-        "interests": "Au-delà du code, je trouve ma joie dans le mentorat et le jeu avec les enfants à travers les activités scoutes. En tant que chef scout, j'aide les jeunes à développer des compétences de vie précieuses. Je trouve également l'esprit d'équipe et l'énergie dans la pratique du volleyball."
+        "interests": "Au-delà du code, je trouve ma joie dans le mentorat et le jeu avec les enfants à travers les activités scoutes. En tant que scout, j'aide les jeunes à développer des compétences de vie précieuses."
       }
     }
   },
@@ -127,6 +127,11 @@
     "featured": "À la une",
     "viewProject": "Voir Tous les Projets",
     "sourceCode": "Code source",
+    "viewOnline": "Voir en ligne",
+    "previousProject": "Projet précédent",
+    "nextProject": "Projet suivant",
+    "goToProject": "Aller au projet",
+    "featuredProject": "Projet en vedette",
     "recent": "Projets récents",
     "other": "Autres Projets",
     "modal": {
@@ -160,15 +165,21 @@
       "title": "Aucun projet trouvé",
       "description": "Essayez d'ajuster vos filtres pour voir plus de projets.",
       "reset": "Réinitialiser les Filtres"
-    },
-    "modal": {
-      "description": "Description",
-      "challenge": "Défi",
-      "solution": "Solution",
-      "technologies": "Technologies utilisées"
     }
   },
   "dev": {
+    "seo": {
+      "title": "Projets Dev & Compétences - Ihantsa RAKOTONDRANAIVO",
+      "description": "Explorez mes projets de développement et compétences techniques. Développeur full-stack spécialisé en React, Flutter et Python."
+    },
+    "techLogos": {
+      "title": "Technologies que j'aime",
+      "description": "Voici quelques-unes des technologies avec lesquelles je travaille régulièrement."
+    },
+    "projects": {
+      "title": "Projets en vedette",
+      "description": "Une sélection de mes projets de développement récents qui mettent en valeur mes compétences et ma passion."
+    },
     "hero": {
       "title": "Développeur Full Stack",
       "subtitle": "Création d'expériences numériques innovantes avec des technologies modernes",
@@ -205,31 +216,56 @@
           "id": "agile",
           "title": "Développement Agile",
           "description": "Méthodologies Agile/Scrum pour un développement itératif et collaboratif.",
-          "practices": ["Sprints", "Daily Stand-ups", "Rétrospectives", "User Stories"]
+          "practices": [
+            "Sprints",
+            "Daily Stand-ups",
+            "Rétrospectives",
+            "User Stories"
+          ]
         },
         {
           "id": "mobile",
           "title": "Développement Mobile",
           "description": "Conception responsive avec approche Mobile First pour une expérience utilisateur optimale.",
-          "practices": ["Design Responsive", "PWA", "Performance Mobile", "Touch-friendly UI"]
+          "practices": [
+            "Design Responsive",
+            "PWA",
+            "Performance Mobile",
+            "Touch-friendly UI"
+          ]
         },
         {
           "id": "architecture",
           "title": "Architecture Moderne",
           "description": "Conception d'architectures évolutives et maintenables.",
-          "practices": ["Microservices", "API REST/GraphQL", "Serverless", "JAMstack"]
+          "practices": [
+            "Microservices",
+            "API REST/GraphQL",
+            "Serverless",
+            "JAMstack"
+          ]
         },
         {
           "id": "security",
           "title": "Sécurité & Qualité",
           "description": "Intégration de bonnes pratiques de sécurité et d'assurance qualité.",
-          "practices": ["Tests unitaires", "Tests d'intégration", "OWASP", "CI/CD"]
+          "practices": [
+            "Tests unitaires",
+            "Tests d'intégration",
+            "OWASP",
+            "CI/CD"
+          ]
         },
         {
           "id": "devops",
           "title": "Outils & DevOps",
           "description": "Mise en place de pipelines d'intégration et de déploiement continus.",
-          "practices": ["Git", "Docker", "GitHub Actions", "Monitoring"]
+          "practices": [
+            "Git",
+            "Docker",
+            "GitHub Actions",
+            "Monitoring"
+          ]
         }
       ]
     },
@@ -256,7 +292,7 @@
   "contact": {
     "title": "Contact",
     "name": "Nom",
-    "email": "Email", 
+    "email": "Email",
     "message": "Message",
     "send": "Envoyer le message",
     "sending": "Envoi en cours...",

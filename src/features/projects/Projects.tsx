@@ -43,15 +43,15 @@ export function Projects() {
 
   return (
     <>
-      <SEO 
-        title={t('projects.title')} 
+      <SEO
+        title={t('projects.title')}
         description={t('projects.seo.description')}
         keywords={t('projects.seo.keywords')}
       />
       <StructuredData type="website" />
-      
+
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <section id="projects-hero" className="py-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
         <Container>
           <motion.div
             className="text-center"
@@ -65,7 +65,7 @@ export function Projects() {
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8">
               {t('projects.subtitle')}
             </p>
-            
+
             {/* Stats */}
             <div className="flex justify-center gap-8 text-center">
               <div>
@@ -86,7 +86,7 @@ export function Projects() {
       </section>
 
       {/* Projets */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section id="projects-all" className="py-20 bg-white dark:bg-gray-900">
         <Container>
           {/* Filtres */}
           <ProjectFilter
@@ -166,7 +166,7 @@ export function Projects() {
       </section>
 
       {/* Modal de détail du projet */}
-      <ProjectModal 
+      <ProjectModal
         project={selectedProject}
         isOpen={isModalOpen}
         onClose={handleCloseModal}

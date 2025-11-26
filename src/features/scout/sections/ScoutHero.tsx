@@ -19,7 +19,7 @@ export function ScoutHero() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-8 sm:py-12 md:py-16 lg:py-24 relative overflow-hidden">
+    <section id="scout-hero" className="py-8 sm:py-12 md:py-16 lg:py-24 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30 dark:opacity-10">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC4xIj48L3JlY3Q+CjxwYXRoIGQ9Ik0tMSwxIEwxMDEsMTAxIE0xMDEsLTEgTC0xLDk5IE05OSwxIEwxLDEwMSBNMSwxIEw5OSw5OSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2Utb3BhY2l0eT0iMC4xIj48L3BhdGg+Cjwvc3ZnPg==')]" />
@@ -39,7 +39,7 @@ export function ScoutHero() {
               style={{ userSelect: 'text' }}
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 select-text">
-                Mon <span className="text-blue-600 dark:text-blue-400" style={{ fontFamily: 'cursive' }}>Aventure</span> Scoute
+                {t('scout.hero.title')}
               </h1>
               <div className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed space-y-3 md:space-y-4 select-text text-justify">
                 <p className="select-text">{t('scout.hero.subtitle')}</p>

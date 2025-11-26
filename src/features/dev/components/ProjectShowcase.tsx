@@ -1,21 +1,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaArrowLeft, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { projectsData } from '../data/projects';
-
-// Filtrer uniquement les projets en vedette
-const featuredProjects = projectsData.filter(project => project.featured);
-
-// Mapper les données pour correspondre à l'interface attendue
-const projects = featuredProjects.map((project, index) => ({
-  id: index + 1,
-  title: project.title,
-  description: project.longDescription,
-  image: project.image,
-  stack: project.technologies,
-  github: project.githubUrl,
-  liveDemo: project.liveUrl
-}));
 
 const variants = {
   enter: (direction: number) => ({
@@ -40,20 +27,34 @@ const swipePower = (offset: number, velocity: number) => {
 };
 
 export function ProjectShowcase() {
+  const { t } = useTranslation();
   const [[page, direction], setPage] = useState([0, 0]);
   const [autoPlay, setAutoPlay] = useState(true);
-  
+
+  // Filtrer uniquement les projets en vedette et mapper avec traduction
+  const projects = projectsData
+    .filter(project => project.featured)
+    .map((project, index) => ({
+      id: index + 1,
+      title: project.title,
+      description: t(`dev.projectDetails.${project.id}.description`),
+      image: project.image,
+      stack: project.technologies,
+      github: project.githubUrl,
+      liveDemo: project.liveUrl
+    }));
+
   const projectIndex = ((page % projects.length) + projects.length) % projects.length;
   const project = projects[projectIndex];
 
   // Auto-avancement
   useEffect(() => {
     if (!autoPlay) return;
-    
+
     const timer = setInterval(() => {
       paginate(1);
     }, 5000);
-    
+
     return () => clearInterval(timer);
   }, [autoPlay, page]);
 
@@ -63,13 +64,13 @@ export function ProjectShowcase() {
 
   return (
     <div className="relative w-full h-full min-h-[500px] rounded-2xl overflow-hidden">
-      <div 
+      <div
         className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-blue-500/10 dark:from-indigo-900/20 dark:to-blue-900/20 rounded-2xl"
         style={{
           backgroundImage: 'radial-gradient(at 80% 20%, rgba(99, 102, 241, 0.1) 0px, transparent 50%), radial-gradient(at 20% 80%, rgba(59, 130, 246, 0.1) 0px, transparent 50%)'
         }}
       ></div>
-      
+
       <div className="relative z-10 h-full flex flex-col">
         <div className="flex-1 flex flex-col lg:flex-row items-center p-6 md:p-8">
           {/* Contenu texte à gauche */}
@@ -82,7 +83,7 @@ export function ProjectShowcase() {
               className="h-full flex flex-col justify-center"
             >
               <div className="inline-block px-4 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-300 rounded-full text-sm font-medium mb-4">
-                Projet en vedette
+                {t('projects.featuredProject')}
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 {project.title}
@@ -90,10 +91,10 @@ export function ProjectShowcase() {
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 {project.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.stack.map((tech) => (
-                  <span 
+                  <span
                     key={tech}
                     className="px-3 py-1 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-sm font-medium rounded-full shadow-sm border border-gray-200 dark:border-gray-700"
                   >
@@ -101,10 +102,10 @@ export function ProjectShowcase() {
                   </span>
                 ))}
               </div>
-              
+
               <div className="flex flex-wrap gap-4">
                 {project.github && (
-                  <a 
+                  <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -113,11 +114,11 @@ export function ProjectShowcase() {
                     onMouseLeave={() => setAutoPlay(true)}
                   >
                     <FaGithub className="mr-2" />
-                    Code Source
+                    {t('projects.sourceCode')}
                   </a>
                 )}
                 {project.liveDemo && (
-                  <a 
+                  <a
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -125,14 +126,14 @@ export function ProjectShowcase() {
                     onMouseEnter={() => setAutoPlay(false)}
                     onMouseLeave={() => setAutoPlay(true)}
                   >
-                    Voir en ligne
+                    {t('projects.viewOnline')}
                     <FaExternalLinkAlt className="ml-2" />
                   </a>
                 )}
               </div>
             </motion.div>
           </div>
-          
+
           {/* Image à droite */}
           <div className="w-full lg:w-1/2 h-64 md:h-80 lg:h-96 relative">
             <AnimatePresence initial={false} custom={direction}>
@@ -173,21 +174,21 @@ export function ProjectShowcase() {
                 </div>
               </motion.div>
             </AnimatePresence>
-            
+
             {/* Boutons de navigation */}
-            <button 
+            <button
               onClick={() => paginate(-1)}
               className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-lg z-10 text-gray-800 dark:text-white hover:bg-white dark:hover:bg-gray-700 transition-colors"
-              aria-label="Projet précédent"
+              aria-label={t('projects.previousProject')}
               onMouseEnter={() => setAutoPlay(false)}
               onMouseLeave={() => setAutoPlay(true)}
             >
               <FaArrowLeft />
             </button>
-            <button 
+            <button
               onClick={() => paginate(1)}
               className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full shadow-lg z-10 text-gray-800 dark:text-white hover:bg-white dark:hover:bg-gray-700 transition-colors"
-              aria-label="Projet suivant"
+              aria-label={t('projects.nextProject')}
               onMouseEnter={() => setAutoPlay(false)}
               onMouseLeave={() => setAutoPlay(true)}
             >
@@ -195,7 +196,7 @@ export function ProjectShowcase() {
             </button>
           </div>
         </div>
-        
+
         {/* Indicateurs de pagination */}
         <div className="flex justify-center gap-2 p-4">
           {projects.map((_, index) => (
@@ -205,12 +206,11 @@ export function ProjectShowcase() {
                 const direction = index > projectIndex ? 1 : -1;
                 setPage([index, direction]);
               }}
-              className={`w-3 h-3 rounded-full transition-all ${
-                index === projectIndex 
-                  ? 'w-8 bg-indigo-600 dark:bg-indigo-500' 
-                  : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
-              }`}
-              aria-label={`Aller au projet ${index + 1}`}
+              className={`w-3 h-3 rounded-full transition-all ${index === projectIndex
+                ? 'w-8 bg-indigo-600 dark:bg-indigo-500'
+                : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
+                }`}
+              aria-label={`${t('projects.goToProject')} ${index + 1}`}
               onMouseEnter={() => setAutoPlay(false)}
               onMouseLeave={() => setAutoPlay(true)}
             />
