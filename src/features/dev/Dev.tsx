@@ -44,7 +44,7 @@ export function Dev() {
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                   {t('dev.hero.subtitle', 'Création d\'expériences numériques innovantes avec des technologies modernes')}
                 </p>
-                <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 px-4 sm:px-0">
+                <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
                   <Button
                     href="#contact"
                     variant="primary"
