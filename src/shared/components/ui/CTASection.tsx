@@ -28,7 +28,7 @@ export function CTASection({
     return (
         <section id={id} className={`relative overflow-hidden py-24 md:py-32 ${className}`}>
             {/* Background with Gradient and Pattern */}
-            <div className="absolute inset-0 transition-colors duration-300 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+            <div className="absolute inset-0 transition-colors duration-300">
                 {/* Animated Gradient Mesh */}
                 <div className="absolute inset-0 opacity-40 dark:opacity-30">
                     <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-300 dark:bg-blue-600 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-30 dark:opacity-20 animate-blob"></div>
