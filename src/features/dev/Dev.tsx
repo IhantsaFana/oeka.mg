@@ -69,7 +69,7 @@ export function Dev() {
                 initial={{ opacity: 0, x: 50, scale: 0.9 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative z-10"
+                className="relative z-10 hidden lg:block"
               >
                 <ProjectShowcase />
               </motion.div>
