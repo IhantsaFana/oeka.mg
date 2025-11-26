@@ -20,7 +20,7 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
   return (
     <>
       {/* Mobile/Tablet: Slider simple */}
-      <div className="lg:hidden relative w-full mx-auto px-2 sm:px-0">
+      <div className="lg:hidden relative w-full mx-auto">
         <div className="relative aspect-[16/9] overflow-hidden rounded-lg sm:rounded-xl shadow-lg">
           <AnimatePresence mode="wait">
             <motion.div

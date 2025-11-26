@@ -80,8 +80,9 @@
       ]
     },
     "projects": {
-      "title": "Featured Projects",
-      "description": "A selection of my recent development projects that showcase my skills and passion."
+      "title": "Some Projects",
+      "description": "Here's a sample of my projects as a developer. Discover my technical and creative achievements.",
+      "viewAll": "View All Projects"
     },
     "hero": {
       "title": "Full Stack Developer",

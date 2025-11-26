@@ -40,7 +40,7 @@ export function Hero() {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 px-4 sm:px-0">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button
                   to="/contact"
                   variant="primary"

@@ -8,6 +8,7 @@ import { Methodologies } from './sections/Methodologies';
 import { Certifications } from '@/features/home/sections/Certifications';
 import { ProjectShowcase } from './components/ProjectShowcase';
 import { Button } from '@/shared/components/ui/Button';
+import { CTASection } from '@/shared/components/ui/CTASection';
 
 export function Dev() {
   const { t } = useTranslation();
@@ -43,7 +44,7 @@ export function Dev() {
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                   {t('dev.hero.subtitle', 'Création d\'expériences numériques innovantes avec des technologies modernes')}
                 </p>
-                <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 px-4 sm:px-0">
+                <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
                   <Button
                     href="#contact"
                     variant="primary"
@@ -68,7 +69,7 @@ export function Dev() {
                 initial={{ opacity: 0, x: 50, scale: 0.9 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative z-10"
+                className="relative z-10 hidden lg:block"
               >
                 <ProjectShowcase />
               </motion.div>
@@ -94,26 +95,16 @@ export function Dev() {
         <Certifications />
 
         {/* CTA Section */}
-        <section id="dev-cta" className="py-16 bg-gradient-to-r from-indigo-600 to-blue-600 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('dev.cta.title', 'Prêt à concrétiser votre projet ?')}
-            </h2>
-            <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-              {t('dev.cta.subtitle', 'Discutons de la manière dont je peux vous aider à atteindre vos objectifs.')}
-            </p>
-            <Button
-              to="/contact"
-              variant="secondary"
-              className="inline-flex items-center px-8 py-3 bg-white text-indigo-600 hover:bg-indigo-50"
-            >
-              {t('dev.cta.button', 'Discutons de votre projet')}
-              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </Button>
-          </div>
-        </section>
+        {/* CTA Section */}
+        <CTASection
+          id="dev-cta"
+          title={t('dev.cta.title', 'Prêt à concrétiser votre projet ?')}
+          subtitle={t('dev.cta.subtitle', 'Discutons de la manière dont je peux vous aider à atteindre vos objectifs.')}
+          primaryAction={{
+            text: t('dev.cta.button', 'Discutons de votre projet'),
+            href: '/contact'
+          }}
+        />
       </main>
     </>
   );

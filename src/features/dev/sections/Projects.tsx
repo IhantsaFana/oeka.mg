@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { Container } from '@/shared/components/ui/Container';
 import { ProjectCard } from '@/features/projects/components/ProjectCard';
 import { ProjectModal } from '@/shared/components/ui/ProjectModal';
+import { Button } from '@/shared/components/ui/Button';
 import { projectsData } from '@/features/projects/data/projectsData';
-import { FaStar } from 'react-icons/fa';
 import type { Project } from '@/types/project';
 
 export function Projects() {
@@ -20,6 +20,9 @@ export function Projects() {
     setSelectedProject(null);
   };
 
+  // Afficher seulement les 3 premiers projets
+  const featuredProjects = projectsData.slice(0, 3);
+
   return (
     <section id="projects" className="py-16 bg-gray-50 dark:bg-gray-900">
       <Container>
@@ -31,7 +34,6 @@ export function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white flex items-center justify-center gap-2">
-            <FaStar className="w-8 h-8 text-yellow-500" />
             {t('dev.projects.title')}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -39,9 +41,9 @@ export function Projects() {
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
+        {/* Projects Grid - 3 premiers projets */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {projectsData.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
@@ -54,8 +56,26 @@ export function Projects() {
           ))}
         </div>
 
+        {/* Bouton Voir tous les projets */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <Button
+            to="/projects"
+            variant="primary"
+            size="lg"
+            className="shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30"
+          >
+            {t('dev.projects.viewAll', 'Voir tous les projets')}
+          </Button>
+        </motion.div>
+
         {/* Modal de détail du projet */}
-        <ProjectModal 
+        <ProjectModal
           project={selectedProject}
           isOpen={!!selectedProject}
           onClose={handleCloseModal}

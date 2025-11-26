@@ -177,8 +177,9 @@
       "description": "Voici quelques-unes des technologies avec lesquelles je travaille régulièrement."
     },
     "projects": {
-      "title": "Projets en vedette",
-      "description": "Une sélection de mes projets de développement récents qui mettent en valeur mes compétences et ma passion."
+      "title": "Quelques projets",
+      "description": "Voici un échantillon de mes projets en tant que développeur. Découvrez mes réalisations techniques et créatives.",
+      "viewAll": "Voir tous les projets"
     },
     "hero": {
       "title": "Développeur Full Stack",
