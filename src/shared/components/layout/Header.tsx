@@ -10,7 +10,7 @@ export function Header() {
   const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  
+
   const navItems = [
     { key: 'home', path: '/' },
     { key: 'dev', path: '/dev' },
@@ -25,8 +25,8 @@ export function Header() {
       return location.pathname === `/${location.pathname.split('/')[1]}`;
     }
     // Pour les autres pages, vérifie si le chemin commence par la route
-    return location.pathname.endsWith(path) || 
-           location.pathname.includes(`${path}/`);
+    return location.pathname.endsWith(path) ||
+      location.pathname.includes(`${path}/`);
   };
 
   return (
@@ -35,15 +35,24 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Left Section - Logo + Navigation */}
           <div className="flex items-center gap-6">
-            {/* Logo avec favicon */}
+            {/* Logo adaptatif au thème */}
             <LocalizedLink
               to="/"
               className="flex items-center hover:opacity-80 transition-opacity"
             >
-              <img 
-                src="/favicon.png" 
-                alt="OEKA - Ihantsa RAKOTONDRANAIVO Portfolio Logo" 
-                className="w-8 h-8"
+              {/* Logo pour le mode clair */}
+              <img
+                src="/logo-light.png"
+                alt="OEKA - Ihantsa RAKOTONDRANAIVO Portfolio Logo"
+                className="w-8 h-8 dark:hidden"
+                width="32"
+                height="32"
+              />
+              {/* Logo pour le mode sombre */}
+              <img
+                src="/logo-dark.png"
+                alt="OEKA - Ihantsa RAKOTONDRANAIVO Portfolio Logo"
+                className="w-8 h-8 hidden dark:block"
                 width="32"
                 height="32"
               />
@@ -61,7 +70,7 @@ export function Header() {
                   className={`
                     font-medium transition-colors duration-300
                     ${isActive(item.path)
-                      ? 'text-blue-600 dark:text-blue-400' 
+                      ? 'text-blue-600 dark:text-blue-400'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
                     }
                   `}
@@ -90,10 +99,10 @@ export function Header() {
                 {t('nav.discoverProjects')}
               </LocalizedLink>
             </div>
-            
+
             {/* Language Switcher */}
             <LanguageSwitcher />
-            
+
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -121,7 +130,7 @@ export function Header() {
                   className={`
                     block px-4 py-3 font-medium transition-colors
                     ${isActive(item.path)
-                      ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' 
+                      ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20'
                       : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
                     }
                   `}
@@ -129,7 +138,7 @@ export function Header() {
                   {t(`nav.${item.key}`)}
                 </LocalizedLink>
               ))}
-              
+
               {/* Mobile CTA Buttons */}
               <div className="px-4 pt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
                 <LocalizedLink

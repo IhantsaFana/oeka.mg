@@ -29,12 +29,12 @@ export function ScoutProfile() {
   return (
     <section className="py-16 md:py-20 relative overflow-hidden">
       {/* Background decoration */}
-      <CurvedLines 
-        position="bottom" 
-        height="sm" 
-        opacity="strong" 
-        color="blue" 
-        curvature="strong" 
+      <CurvedLines
+        position="bottom"
+        height="sm"
+        opacity="strong"
+        color="blue"
+        curvature="strong"
       />
 
       <Container>
@@ -81,7 +81,7 @@ export function ScoutProfile() {
                   const radius = 140; // Distance from center
                   const x = Math.cos((angle * Math.PI) / 180) * radius;
                   const y = Math.sin((angle * Math.PI) / 180) * radius;
-                  
+
                   return (
                     <motion.div
                       key={index}
@@ -92,13 +92,13 @@ export function ScoutProfile() {
                         transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`
                       }}
                       initial={{ scale: 0, rotate: -180 }}
-                      animate={{ 
-                        scale: 1, 
+                      animate={{
+                        scale: 1,
                         rotate: 0,
                         y: [0, -10, 0]
                       }}
-                      transition={{ 
-                        duration: 0.8, 
+                      transition={{
+                        duration: 0.8,
                         delay: 0.5 + index * 0.2,
                         y: {
                           duration: 2,
@@ -148,7 +148,7 @@ export function ScoutProfile() {
                     const startY = 160 + Math.sin((angle * Math.PI) / 180) * startRadius;
                     const endX = 160 + Math.cos((angle * Math.PI) / 180) * endRadius;
                     const endY = 160 + Math.sin((angle * Math.PI) / 180) * endRadius;
-                    
+
                     return (
                       <motion.line
                         key={index}
@@ -202,13 +202,20 @@ export function ScoutProfile() {
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
-            {/* Totem Badge with Favicon */}
+            {/* Totem Badge avec Logo adaptatif */}
             <div className="inline-flex items-center gap-3 bg-white dark:bg-gray-800 rounded-full px-6 py-3 shadow-lg mb-6">
               <div className="w-8 h-8 rounded-full flex items-center justify-center">
+                {/* Logo pour le mode clair */}
                 <img
-                  src="/favicon.png"
+                  src="/logo-light.png"
                   alt="OEKA Logo"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:hidden"
+                />
+                {/* Logo pour le mode sombre */}
+                <img
+                  src="/logo-dark.png"
+                  alt="OEKA Logo"
+                  className="w-6 h-6 hidden dark:block"
                 />
               </div>
               <span className="font-bold text-blue-600 dark:text-blue-400 text-lg">
@@ -219,7 +226,7 @@ export function ScoutProfile() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Mon Parcours <span className="text-blue-600 dark:text-blue-400" style={{ fontFamily: 'cursive' }}>Scout</span>
             </h2>
-            
+
             <div className="space-y-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
               <p>{t('scout.profile.totem.description')}</p>
               <p>{t('scout.profile.journey.description')}</p>
