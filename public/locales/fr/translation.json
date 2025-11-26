@@ -168,6 +168,18 @@
     }
   },
   "dev": {
+    "seo": {
+      "title": "Projets Dev & Compétences - Ihantsa RAKOTONDRANAIVO",
+      "description": "Explorez mes projets de développement et compétences techniques. Développeur full-stack spécialisé en React, Flutter et Python."
+    },
+    "techLogos": {
+      "title": "Technologies que j'aime",
+      "description": "Voici quelques-unes des technologies avec lesquelles je travaille régulièrement."
+    },
+    "projects": {
+      "title": "Projets en vedette",
+      "description": "Une sélection de mes projets de développement récents qui mettent en valeur mes compétences et ma passion."
+    },
     "hero": {
       "title": "Développeur Full Stack",
       "subtitle": "Création d'expériences numériques innovantes avec des technologies modernes",
