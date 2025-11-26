@@ -27,7 +27,7 @@ export function ScoutProfile() {
   }, [couaImages.length]);
 
   return (
-    <section className="py-16 md:py-20 relative overflow-hidden">
+    <section id="scout-profile" className="py-16 md:py-20 relative overflow-hidden">
       {/* Background decoration */}
       <CurvedLines
         position="bottom"

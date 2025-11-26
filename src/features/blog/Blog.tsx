@@ -2,11 +2,11 @@
 import { motion } from 'framer-motion';
 import { Container } from '@/shared/components/ui/Container';
 import { SEO } from '@/shared/components/ui/SEO';
-import { 
-  FaCalendar, 
-  FaClock, 
+import {
+  FaCalendar,
+  FaClock,
   FaTag,
-  FaArrowRight 
+  FaArrowRight
 } from 'react-icons/fa';
 
 interface BlogPost {
@@ -67,14 +67,14 @@ export function Blog() {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Blog - Ihantsa RAKOTONDRANAIVO"
         description="Articles techniques sur le développement web, mobile et l'intelligence artificielle par Ihantsa RAKOTONDRANAIVO."
         keywords="blog, développement, React, Flutter, IA, tutoriels, articles techniques"
       />
-      
+
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <section id="blog-hero" className="py-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
         <Container>
           <motion.div
             className="text-center max-w-3xl mx-auto"
@@ -94,7 +94,7 @@ export function Blog() {
 
       {/* Featured Posts */}
       {featuredPosts.length > 0 && (
-        <section className="py-20 bg-white dark:bg-gray-900">
+        <section id="blog-featured" className="py-20 bg-white dark:bg-gray-900">
           <Container>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Articles à la une
@@ -112,15 +112,15 @@ export function Blog() {
                     <FaTag className="w-4 h-4" />
                     <span className="text-sm font-medium">À la une</span>
                   </div>
-                  
+
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
                     {post.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                     {post.excerpt}
                   </p>
-                  
+
                   <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-6">
                     <div className="flex items-center gap-4">
                       <div className="flex items-center gap-1">
@@ -133,7 +133,7 @@ export function Blog() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-6">
                     {post.tags.map((tag) => (
                       <span
@@ -144,7 +144,7 @@ export function Blog() {
                       </span>
                     ))}
                   </div>
-                  
+
                   <button className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:gap-3 transition-all">
                     Lire l'article
                     <FaArrowRight className="w-4 h-4" />
@@ -157,7 +157,7 @@ export function Blog() {
       )}
 
       {/* All Posts */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+      <section id="blog-categories" className="py-20 bg-gray-50 dark:bg-gray-800">
         <Container>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
             Tous les articles
@@ -186,11 +186,11 @@ export function Blog() {
                     </div>
                   </div>
                 </div>
-                
+
                 <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
                   {post.excerpt}
                 </p>
-                
+
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
@@ -202,7 +202,7 @@ export function Blog() {
                       </span>
                     ))}
                   </div>
-                  
+
                   <button className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-medium hover:gap-3 transition-all">
                     Lire l'article
                     <FaArrowRight className="w-4 h-4" />
@@ -215,7 +215,7 @@ export function Blog() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section id="blog-newsletter" className="py-20 bg-white dark:bg-gray-900">
         <Container>
           <motion.div
             className="text-center"

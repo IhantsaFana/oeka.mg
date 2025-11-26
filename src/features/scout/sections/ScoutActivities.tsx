@@ -41,7 +41,7 @@ export function ScoutActivities() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-12 sm:py-14 md:py-16 bg-gray-50 dark:bg-gray-900">
+    <section id="scout-activities" className="py-12 sm:py-14 md:py-16 bg-gray-50 dark:bg-gray-900">
       <Container>
         {/* Section Title */}
         <motion.div

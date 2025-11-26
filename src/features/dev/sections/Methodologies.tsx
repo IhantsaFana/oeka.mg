@@ -14,7 +14,7 @@ const methodologyIcons = {
 
 export function Methodologies() {
   const { t } = useTranslation();
-  
+
   // Type pour les méthodologies
   interface Methodology {
     id: string;
@@ -32,7 +32,7 @@ export function Methodologies() {
   };
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-900">
+    <section id="methodologies" className="py-16 bg-white dark:bg-gray-900">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ export function Methodologies() {
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {methodology.practices.map((practice: string, index: number) => (
-                    <span 
+                    <span
                       key={index}
                       className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 shadow-sm"
                     >

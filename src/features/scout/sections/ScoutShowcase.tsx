@@ -6,7 +6,7 @@ export function ScoutShowcase() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-12 sm:py-14 md:py-16 relative overflow-hidden">
+    <section id="scout-showcase" className="py-12 sm:py-14 md:py-16 relative overflow-hidden">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

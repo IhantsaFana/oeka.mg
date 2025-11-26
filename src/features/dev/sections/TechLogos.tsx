@@ -35,7 +35,7 @@ export function TechLogos() {
 
       // Intervalle pour continuer la rotation
       const interval = setInterval(() => {
-        setAutoSelectedIndex((prevIndex) => 
+        setAutoSelectedIndex((prevIndex) =>
           (prevIndex + 1) % technologies.length
         );
       }, 3000); // 3 secondes entre chaque sélection
@@ -59,10 +59,10 @@ export function TechLogos() {
   };
 
   return (
-    <section className="py-20">
+    <section id="tech-logos" className="py-20">
       <Container>
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -88,8 +88,8 @@ export function TechLogos() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ 
-                  duration: 0.4, 
+                transition={{
+                  duration: 0.4,
                   delay: index * 0.1,
                   type: "spring",
                   stiffness: 100
@@ -104,19 +104,18 @@ export function TechLogos() {
                   {hoveredTech === tech.name && (
                     <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur opacity-30 animate-pulse" />
                   )}
-                  
+
                   {/* Logo */}
                   <div className="relative z-10 aspect-square flex items-center justify-center">
                     <img
                       src={tech.logo}
                       alt={tech.name}
-                      className={`w-full h-full object-contain p-2 ${
-                        tech.name === 'Django' ? 'dark:invert' : ''
-                      }`}
+                      className={`w-full h-full object-contain p-2 ${tech.name === 'Django' ? 'dark:invert' : ''
+                        }`}
                       loading="lazy"
                     />
                   </div>
-                  
+
                   {/* Name */}
                   <p className="relative z-10 text-xs font-semibold text-center mt-2 text-gray-900 dark:text-white truncate">
                     {tech.name}
@@ -135,9 +134,9 @@ export function TechLogos() {
                 { x: 82, y: 52 }, { x: 45, y: 12 }, { x: 62, y: 68 },
                 { x: 32, y: 72 }
               ];
-              
+
               const position = positions[index] || { x: 50, y: 50 };
-              
+
               // Déterminer si ce logo est sélectionné
               const isUserHovered = hoveredTech === tech.name;
               const isAutoSelected = !isUserHovering && autoSelectedIndex === index && autoSelectedIndex >= 0;
@@ -153,8 +152,8 @@ export function TechLogos() {
                   }}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ 
-                    duration: 0.5, 
+                  transition={{
+                    duration: 0.5,
                     delay: index * 0.15,
                     type: "spring",
                     stiffness: 100
@@ -168,25 +167,25 @@ export function TechLogos() {
                     {/* Animated rings on selection */}
                     {isSelected && (
                       <>
-                        <motion.div 
+                        <motion.div
                           className="absolute -inset-8 bg-gradient-to-r from-blue-400/20 via-purple-500/20 to-blue-600/20 rounded-full blur-2xl"
-                          animate={{ 
+                          animate={{
                             scale: [1, 1.2, 1],
                             opacity: [0.5, 0.8, 0.5]
                           }}
-                          transition={{ 
+                          transition={{
                             duration: 2,
                             repeat: Infinity,
                             ease: "easeInOut"
                           }}
                         />
-                        <motion.div 
+                        <motion.div
                           className="absolute -inset-4 border-2 border-blue-400/40 rounded-full"
-                          animate={{ 
+                          animate={{
                             scale: [1, 1.1, 1],
                             rotate: [0, 180, 360]
                           }}
-                          transition={{ 
+                          transition={{
                             duration: 3,
                             repeat: Infinity,
                             ease: "linear"
@@ -194,18 +193,17 @@ export function TechLogos() {
                         />
                       </>
                     )}
-                    
+
                     {/* Logo Circle */}
                     <motion.div
-                      className={`relative w-20 h-20 lg:w-24 lg:h-24 bg-white dark:bg-gray-800 rounded-full p-4 lg:p-5 shadow-xl transition-all duration-300 border-2 ${
-                        isSelected
+                      className={`relative w-20 h-20 lg:w-24 lg:h-24 bg-white dark:bg-gray-800 rounded-full p-4 lg:p-5 shadow-xl transition-all duration-300 border-2 ${isSelected
                           ? 'border-blue-400 dark:border-blue-500 shadow-2xl'
                           : 'border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600'
-                      }`}
-                      animate={isSelected ? { 
+                        }`}
+                      animate={isSelected ? {
                         y: [0, -10, 0],
                       } : {}}
-                      transition={{ 
+                      transition={{
                         duration: 2,
                         repeat: Infinity,
                         ease: "easeInOut"
@@ -214,19 +212,18 @@ export function TechLogos() {
                       <img
                         src={tech.logo}
                         alt={tech.name}
-                        className={`w-full h-full object-contain ${
-                          tech.name === 'Django' ? 'dark:invert' : ''
-                        }`}
+                        className={`w-full h-full object-contain ${tech.name === 'Django' ? 'dark:invert' : ''
+                          }`}
                         loading="lazy"
                       />
-                      
+
                       {/* Shine effect on hover */}
                       <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </motion.div>
 
                     {/* Enhanced Tooltip */}
                     {isSelected && (
-                      <motion.div 
+                      <motion.div
                         className="absolute -top-20 left-1/2 transform -translate-x-1/2 whitespace-nowrap z-50"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -296,7 +293,7 @@ export function TechLogos() {
         </div>
 
         {/* Legend / Category indicators */}
-        <motion.div 
+        <motion.div
           className="mt-12 md:mt-16 flex flex-wrap justify-center gap-3 md:gap-4 px-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -304,7 +301,7 @@ export function TechLogos() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           {Array.from(new Set(technologies.map(t => t.category))).map((category) => (
-            <div 
+            <div
               key={category}
               className="flex items-center gap-2 bg-white dark:bg-gray-800 px-3 md:px-4 py-2 rounded-full shadow-md border border-gray-200 dark:border-gray-700"
             >
