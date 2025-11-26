@@ -39,7 +39,7 @@ export function ScoutHero() {
               style={{ userSelect: 'text' }}
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 select-text">
-                Mon <span className="text-blue-600 dark:text-blue-400" style={{ fontFamily: 'cursive' }}>Aventure</span> Scoute
+                {t('scout.hero.title')}
               </h1>
               <div className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed space-y-3 md:space-y-4 select-text text-justify">
                 <p className="select-text">{t('scout.hero.subtitle')}</p>

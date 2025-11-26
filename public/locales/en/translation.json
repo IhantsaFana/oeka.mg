@@ -26,31 +26,56 @@
           "id": "agile",
           "title": "Agile Development",
           "description": "Agile/Scrum methodologies for iterative and collaborative development.",
-          "practices": ["Sprints", "Daily Stand-ups", "Retrospectives", "User Stories"]
+          "practices": [
+            "Sprints",
+            "Daily Stand-ups",
+            "Retrospectives",
+            "User Stories"
+          ]
         },
         {
           "id": "mobile",
           "title": "Mobile Development",
           "description": "Responsive design with a Mobile First approach for an optimal user experience.",
-          "practices": ["Responsive Design", "PWA", "Mobile Performance", "Touch-friendly UI"]
+          "practices": [
+            "Responsive Design",
+            "PWA",
+            "Mobile Performance",
+            "Touch-friendly UI"
+          ]
         },
         {
           "id": "architecture",
           "title": "Modern Architecture",
           "description": "Design of scalable and maintainable architectures.",
-          "practices": ["Microservices", "REST/GraphQL API", "Serverless", "JAMstack"]
+          "practices": [
+            "Microservices",
+            "REST/GraphQL API",
+            "Serverless",
+            "JAMstack"
+          ]
         },
         {
           "id": "security",
           "title": "Security & Quality",
           "description": "Integration of security best practices and quality assurance.",
-          "practices": ["Unit Testing", "Integration Testing", "OWASP", "CI/CD"]
+          "practices": [
+            "Unit Testing",
+            "Integration Testing",
+            "OWASP",
+            "CI/CD"
+          ]
         },
         {
           "id": "devops",
           "title": "Tools & DevOps",
           "description": "Implementation of continuous integration and deployment pipelines.",
-          "practices": ["Git", "Docker", "GitHub Actions", "Monitoring"]
+          "practices": [
+            "Git",
+            "Docker",
+            "GitHub Actions",
+            "Monitoring"
+          ]
         }
       ]
     },
@@ -107,7 +132,7 @@
   },
   "home": {
     "seo": {
-      "title": "Ihantsa RAKOTONDRANAIVO - Personal Website",
+      "title": "Ihantsa RAKOTONDRANAIVO - OEKA Mikofo",
       "description": "Welcome to my personal website. Discover my journey, passions, and various activities from development to scouting."
     },
     "title": "Ihantsa RAKOTONDRANAIVO",
@@ -158,7 +183,7 @@
       "subtitle": "Technologies and tools I master",
       "web": "Web Development",
       "mobile": "Mobile Development",
-      "ai": "Artificial Intelligence", 
+      "ai": "Artificial Intelligence",
       "webDesc": "React, Next.js, TypeScript, Tailwind CSS",
       "mobileDesc": "Flutter, React Native, cross-platform development",
       "aiDesc": "Python, Machine Learning, AI integration",
@@ -220,6 +245,11 @@
     "subtitle": "A showcase of my recent work and the technologies I've been exploring.",
     "viewProject": "View All Projects",
     "sourceCode": "Source code",
+    "viewOnline": "View online",
+    "previousProject": "Previous project",
+    "nextProject": "Next project",
+    "goToProject": "Go to project",
+    "featuredProject": "Featured project",
     "viewLive": "Live Demo",
     "viewCode": "View Code",
     "learnMore": "Learn More",

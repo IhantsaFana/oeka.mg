@@ -75,98 +75,40 @@ export function ScoutProfile() {
                   />
                 </div>
 
-                {/* Orbiting Activity Images */}
-                {couaImages.slice(0, 4).map((_, index) => {
-                  const angle = (index * 90) - 45; // -45, 45, 135, 225 degrees
-                  const radius = 140; // Distance from center
-                  const x = Math.cos((angle * Math.PI) / 180) * radius;
-                  const y = Math.sin((angle * Math.PI) / 180) * radius;
-
-                  return (
-                    <motion.div
-                      key={index}
-                      className="absolute w-20 h-20 rounded-full overflow-hidden shadow-lg border-2 border-white dark:border-gray-600"
-                      style={{
-                        left: '50%',
-                        top: '50%',
-                        transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`
-                      }}
-                      initial={{ scale: 0, rotate: -180 }}
-                      animate={{
-                        scale: 1,
-                        rotate: 0,
-                        y: [0, -10, 0]
-                      }}
-                      transition={{
-                        duration: 0.8,
-                        delay: 0.5 + index * 0.2,
-                        y: {
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeInOut",
-                          delay: index * 0.5
-                        }
-                      }}
-                    >
-                      <div className="w-full h-full bg-gradient-to-br from-green-500 to-green-700">
-                        <AnimatePresence mode="wait">
-                          <motion.img
-                            key={`${index}-${Math.floor(currentImageIndex / 2)}`}
-                            src={couaImages[(currentImageIndex + index) % couaImages.length]}
-                            alt={`OEKA Activité ${index + 1}`}
-                            className="w-full h-full object-cover"
-                            loading="lazy"
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.8 }}
-                            transition={{ duration: 0.5 }}
-                            onError={(e) => {
-                              const target = e.target as HTMLImageElement;
-                              target.style.display = 'none';
-                              const parent = target.parentElement;
-                              if (parent && !parent.querySelector('.placeholder-activity')) {
-                                const placeholder = document.createElement('div');
-                                placeholder.className = 'placeholder-activity absolute inset-0 flex items-center justify-center text-white text-2xl';
-                                placeholder.textContent = '🏕️';
-                                parent.appendChild(placeholder);
-                              }
-                            }}
-                          />
-                        </AnimatePresence>
-                      </div>
-                    </motion.div>
-                  );
-                })}
-
-                {/* Connecting Lines */}
-                <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: -1 }}>
-                  {[0, 1, 2, 3].map((index) => {
-                    const angle = (index * 90) - 45;
-                    const startRadius = 160;
-                    const endRadius = 120;
-                    const startX = 160 + Math.cos((angle * Math.PI) / 180) * startRadius;
-                    const startY = 160 + Math.sin((angle * Math.PI) / 180) * startRadius;
-                    const endX = 160 + Math.cos((angle * Math.PI) / 180) * endRadius;
-                    const endY = 160 + Math.sin((angle * Math.PI) / 180) * endRadius;
-
-                    return (
-                      <motion.line
-                        key={index}
-                        x1={startX}
-                        y1={startY}
-                        x2={endX}
-                        y2={endY}
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeDasharray="4 4"
-                        className="text-blue-400 dark:text-blue-300 opacity-30"
-                        initial={{ pathLength: 0 }}
-                        animate={{ pathLength: 1 }}
-                        transition={{ duration: 1, delay: 1 + index * 0.2 }}
+                {/* Activity Status Indicator (Facebook style) */}
+                <motion.div
+                  className="absolute bottom-4 right-4 w-24 h-24 rounded-full overflow-hidden shadow-xl border-4 border-white dark:border-gray-800 z-10"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.5, type: "spring", stiffness: 260, damping: 20 }}
+                >
+                  <div className="w-full h-full bg-gradient-to-br from-green-500 to-green-700">
+                    <AnimatePresence mode="wait">
+                      <motion.img
+                        key={currentImageIndex}
+                        src={couaImages[currentImageIndex]}
+                        alt={`OEKA Activité ${currentImageIndex + 1}`}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const parent = target.parentElement;
+                          if (parent && !parent.querySelector('.placeholder-activity')) {
+                            const placeholder = document.createElement('div');
+                            placeholder.className = 'placeholder-activity absolute inset-0 flex items-center justify-center text-white text-2xl';
+                            placeholder.textContent = '🏕️';
+                            parent.appendChild(placeholder);
+                          }
+                        }}
                       />
-                    );
-                  })}
-                </svg>
+                    </AnimatePresence>
+                  </div>
+                </motion.div>
               </div>
             </div>
 
@@ -224,7 +166,7 @@ export function ScoutProfile() {
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Mon Parcours <span className="text-blue-600 dark:text-blue-400" style={{ fontFamily: 'cursive' }}>Scout</span>
+              {t('scout.profile.title')}
             </h2>
 
             <div className="space-y-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
@@ -250,7 +192,7 @@ export function ScoutProfile() {
                 <FaFeatherAlt className="text-white text-lg" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                <span style={{ fontFamily: 'cursive' }}>OEKA - Le Coua Bleu</span>
+                {t('scout.profile.totem.animal.title')}
               </h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
@@ -265,7 +207,7 @@ export function ScoutProfile() {
                 <FaBook className="text-white text-lg" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                <span style={{ fontFamily: 'cursive' }}>MIKOFO - L'Esprit d'Excellence</span>
+                {t('scout.profile.totem.character.title')}
               </h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">

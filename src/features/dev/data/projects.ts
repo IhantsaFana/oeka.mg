@@ -11,7 +11,7 @@ export const projectsData: Project[] = [
     category: 'fullstack',
     featured: true,
     liveUrl: 'https://factura.mg',
-    githubUrl: 'https://github.com/ihantsaCorp/factura',
+    githubUrl: 'https://github.com/IhantsaFana/factura',
     completedAt: '2024-12',
     challenge: 'factura.challenge',
     solution: 'factura.solution'
@@ -26,7 +26,7 @@ export const projectsData: Project[] = [
     category: 'mobile',
     featured: true,
     liveUrl: 'https://tourmada.com',
-    githubUrl: 'https://github.com/ihantsaCorp/tourmada',
+    githubUrl: 'https://github.com/IhantsaFana/tourmada',
     completedAt: '2024-06',
     challenge: 'tourmada.challenge',
     solution: 'tourmada.solution'
@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
     category: 'web',
     featured: true,
     liveUrl: 'https://theologix.org',
-    githubUrl: 'https://github.com/ihantsaCorp/theologix',
+    githubUrl: 'https://github.com/IhantsaFana/theologix',
     completedAt: '2023-12',
     challenge: 'theologix.challenge',
     solution: 'theologix.solution'

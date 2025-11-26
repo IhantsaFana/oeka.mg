@@ -127,6 +127,11 @@
     "featured": "À la une",
     "viewProject": "Voir Tous les Projets",
     "sourceCode": "Code source",
+    "viewOnline": "Voir en ligne",
+    "previousProject": "Projet précédent",
+    "nextProject": "Projet suivant",
+    "goToProject": "Aller au projet",
+    "featuredProject": "Projet en vedette",
     "recent": "Projets récents",
     "other": "Autres Projets",
     "modal": {
@@ -160,12 +165,6 @@
       "title": "Aucun projet trouvé",
       "description": "Essayez d'ajuster vos filtres pour voir plus de projets.",
       "reset": "Réinitialiser les Filtres"
-    },
-    "modal": {
-      "description": "Description",
-      "challenge": "Défi",
-      "solution": "Solution",
-      "technologies": "Technologies utilisées"
     }
   },
   "dev": {
@@ -205,31 +204,56 @@
           "id": "agile",
           "title": "Développement Agile",
           "description": "Méthodologies Agile/Scrum pour un développement itératif et collaboratif.",
-          "practices": ["Sprints", "Daily Stand-ups", "Rétrospectives", "User Stories"]
+          "practices": [
+            "Sprints",
+            "Daily Stand-ups",
+            "Rétrospectives",
+            "User Stories"
+          ]
         },
         {
           "id": "mobile",
           "title": "Développement Mobile",
           "description": "Conception responsive avec approche Mobile First pour une expérience utilisateur optimale.",
-          "practices": ["Design Responsive", "PWA", "Performance Mobile", "Touch-friendly UI"]
+          "practices": [
+            "Design Responsive",
+            "PWA",
+            "Performance Mobile",
+            "Touch-friendly UI"
+          ]
         },
         {
           "id": "architecture",
           "title": "Architecture Moderne",
           "description": "Conception d'architectures évolutives et maintenables.",
-          "practices": ["Microservices", "API REST/GraphQL", "Serverless", "JAMstack"]
+          "practices": [
+            "Microservices",
+            "API REST/GraphQL",
+            "Serverless",
+            "JAMstack"
+          ]
         },
         {
           "id": "security",
           "title": "Sécurité & Qualité",
           "description": "Intégration de bonnes pratiques de sécurité et d'assurance qualité.",
-          "practices": ["Tests unitaires", "Tests d'intégration", "OWASP", "CI/CD"]
+          "practices": [
+            "Tests unitaires",
+            "Tests d'intégration",
+            "OWASP",
+            "CI/CD"
+          ]
         },
         {
           "id": "devops",
           "title": "Outils & DevOps",
           "description": "Mise en place de pipelines d'intégration et de déploiement continus.",
-          "practices": ["Git", "Docker", "GitHub Actions", "Monitoring"]
+          "practices": [
+            "Git",
+            "Docker",
+            "GitHub Actions",
+            "Monitoring"
+          ]
         }
       ]
     },
@@ -256,7 +280,7 @@
   "contact": {
     "title": "Contact",
     "name": "Nom",
-    "email": "Email", 
+    "email": "Email",
     "message": "Message",
     "send": "Envoyer le message",
     "sending": "Envoi en cours...",
