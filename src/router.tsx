@@ -6,6 +6,13 @@ import { Scout } from '@/features/scout/Scout';
 import { SampanaMena90Page } from '@/features/scout/SampanaMena90Page';
 import { Contact } from '@/features/contact/Contact';
 import { NotFoundPage } from '@/features/error/NotFoundPage';
+import { BlogPage } from '@/features/blog/BlogPage';
+import { BlogPostPage } from '@/features/blog/BlogPostPage';
+import { LoginPage } from '@/features/admin/LoginPage';
+import { AdminBlog } from '@/features/admin/AdminBlog';
+import { AdminBlogEdit } from '@/features/admin/AdminBlogEdit';
+import { ProtectedRoute } from '@/features/admin/components/ProtectedRoute';
+import { AdminLayout } from '@/features/admin/components/AdminLayout';
 
 import { getLocalizedPath } from '@/shared/utils/routes';
 
@@ -27,6 +34,11 @@ function RootRedirect() {
 }
 
 export const router = createBrowserRouter([
+  // Routes Admin (Prioritaires)
+  {
+    path: '/admin/login',
+    element: <LoginPage />,
+  },
   {
     path: '/',
     element: <RootRedirect />,
@@ -55,10 +67,49 @@ export const router = createBrowserRouter([
         path: 'contact',
         element: <Contact />,
       },
+      {
+        path: 'blog',
+        element: <BlogPage />,
+      },
+      {
+        path: 'blog/:slug',
+        element: <BlogPostPage />,
+      },
       // Route 404 pour les chemins non trouvés sous /:lang
       {
         path: '*',
         element: <NotFoundPage />,
+      },
+    ],
+  },
+  // Routes Admin
+  {
+    path: '/admin',
+    element: <AdminLayout />,
+    children: [
+      {
+        path: 'blog',
+        element: (
+          <ProtectedRoute>
+            <AdminBlog />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'blog/new',
+        element: (
+          <ProtectedRoute>
+            <AdminBlogEdit />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'blog/edit/:id',
+        element: (
+          <ProtectedRoute>
+            <AdminBlogEdit />
+          </ProtectedRoute>
+        ),
       },
     ],
   },

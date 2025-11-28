@@ -1,165 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <!-- Page d'accueil - Toutes les langues -->
   <url>
-    <loc>https://oeka.mg/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/"/>
-    <lastmod>2025-11-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://oeka.mg/fr</loc>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en" />
   </url>
-  
   <url>
-    <loc>https://oeka.mg/en/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/"/>
-    <lastmod>2025-11-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://oeka.mg/en</loc>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en" />
   </url>
-  
   <url>
-    <loc>https://oeka.mg/mg/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/"/>
-    <lastmod>2025-11-28</lastmod>
+    <loc>https://oeka.mg/fr/about</loc>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr/about" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en/about" />
   </url>
-  
   <url>
-    <loc>https://oeka.mg/es/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/"/>
-    <lastmod>2025-11-28</lastmod>
+    <loc>https://oeka.mg/en/about</loc>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr/about" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en/about" />
   </url>
-  
   <url>
-    <loc>https://oeka.mg/zh/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/"/>
-    <lastmod>2025-11-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>https://oeka.mg/de/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/"/>
-    <lastmod>2025-11-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- Page Dev - Toutes les langues -->
-  <url>
-    <loc>https://oeka.mg/fr/dev</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/dev"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/dev"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/dev"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/dev"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/dev"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/dev"/>
-    <lastmod>2025-11-28</lastmod>
+    <loc>https://oeka.mg/fr/projects</loc>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr/projects" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en/projects" />
   </url>
-  
   <url>
-    <loc>https://oeka.mg/en/dev</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/dev"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/dev"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/dev"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/dev"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/dev"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/dev"/>
-    <lastmod>2025-11-28</lastmod>
+    <loc>https://oeka.mg/en/projects</loc>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr/projects" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en/projects" />
   </url>
-  
-  <!-- Page Scout - Toutes les langues -->
-  <url>
-    <loc>https://oeka.mg/fr/scout</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/scout"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/scout"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/scout"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/scout"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/scout"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/scout"/>
-    <lastmod>2025-11-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://oeka.mg/en/scout</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/scout"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/scout"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/scout"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/scout"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/scout"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/scout"/>
-    <lastmod>2025-11-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Page Contact - Toutes les langues -->
   <url>
     <loc>https://oeka.mg/fr/contact</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/contact"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/contact"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/contact"/>
-    <lastmod>2025-11-28</lastmod>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr/contact" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en/contact" />
   </url>
-  
   <url>
     <loc>https://oeka.mg/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://oeka.mg/fr/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://oeka.mg/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="mg" href="https://oeka.mg/mg/contact"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://oeka.mg/es/contact"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://oeka.mg/zh/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://oeka.mg/de/contact"/>
-    <lastmod>2025-11-28</lastmod>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr/contact" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en/contact" />
   </url>
-
+  <url>
+    <loc>https://oeka.mg/fr/blog</loc>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr/blog" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en/blog" />
+  </url>
+  <url>
+    <loc>https://oeka.mg/en/blog</loc>
+    <lastmod>2025-11-28T11:08:42.266Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="fr"
+                 href="https://oeka.mg/fr/blog" />
+    <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://oeka.mg/en/blog" />
+  </url>
 </urlset>
