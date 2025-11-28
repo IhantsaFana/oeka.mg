@@ -1,9 +1,30 @@
-# https://www.robotstxt.org/robotstxt.html
+# Robots.txt pour oeka.mg
+# Optimisé pour un meilleur référencement
+
 User-agent: *
 Allow: /
 
 # Sitemap
 Sitemap: https://oeka.mg/sitemap.xml
 
-# Disallow admin or private paths (if any in the future)
-# Disallow: /admin/
+# Crawl-delay (optionnel, pour éviter la surcharge)
+Crawl-delay: 1
+
+# Disallow certains fichiers/dossiers si nécessaire
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Allow important pages
+Allow: /fr/
+Allow: /en/
+Allow: /mg/
+Allow: /es/
+Allow: /zh/
+Allow: /de/
+Allow: /fr/dev
+Allow: /en/dev
+Allow: /fr/scout
+Allow: /en/scout
+Allow: /fr/contact
+Allow: /en/contact
