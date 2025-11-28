@@ -1,0 +1,494 @@
+{
+    "nav": {
+        "home": "首页",
+        "dev": "开发",
+        "scout": "童子军",
+        "fleurs": "花卉",
+        "contact": "联系",
+        "hireMe": "与我合作",
+        "discoverProjects": "查看我的作品"
+    },
+    "home": {
+        "seo": {
+            "title": "Ihantsa RAKOTONDRANAIVO - 个人网站",
+            "description": "欢迎来到我的个人网站。了解我的旅程、热情和各种活动，从开发到童子军。"
+        },
+        "title": "Ihantsa RAKOTONDRANAIVO",
+        "subtitle": "开发者、童子军领袖、青年志愿者",
+        "description": "一个致力于技术、青年指导和体育的热情人士。",
+        "cta": {
+            "contact": "联系我",
+            "portfolio": "查看我的项目",
+            "workTogether": "让我们合作",
+            "workTogetherSubtitle": "让我们讨论您的项目，看看我如何帮助您",
+            "startProject": "开始项目",
+            "learnMore": "了解更多"
+        },
+        "hello": "你好，我是",
+        "welcome": "欢迎来到我的世界",
+        "intro": "18岁时，我从多个角度探索生活：作为开发者、童子军领袖和青年志愿者。加入我的成长和发现之旅。",
+        "heroTitle": "热情引导我的行动",
+        "heroHighlight": "热情",
+        "followMe": "关注我",
+        "introduction": {
+            "title": "成长与发现之旅",
+            "paragraphs": {
+                "personal": "我是Ihantsa RAKOTONDRANAIVO，一位18岁的马达加斯加青年，热衷于技术和青年发展。我在马达加斯加，将我对开发的热爱与童子军和排球的积极参与相结合。",
+                "education": "我目前在ESMIA安塔那那利佛攻读人工智能和MLOps专业，将我的技术专长与通过创新产生积极影响的愿望相结合。",
+                "interests": "除了编码，我还通过童子军活动在指导和与孩子们玩耍中找到乐趣。作为童子军领袖，我帮助年轻人发展宝贵的生活技能。"
+            }
+        }
+    },
+    "about": {
+        "title": "关于",
+        "description": "热衷于现代技术和人工智能的全栈开发者。",
+        "seo": {
+            "description": "了解更多关于Ihantsa RAKOTONDRANAIVO的信息，专门从事React、Next.js、Flutter、Python的全栈开发者和AI工程师。",
+            "keywords": "关于，开发者，全栈，AI工程师，React，Next.js，Flutter，Python，经验，技能"
+        },
+        "intro": {
+            "paragraph1": "你好！我是Ihantsa RAKOTONDRANAIVO，一位热情的全栈开发者和AI工程师，位于马达加斯加。我专门使用尖端技术创建现代Web和移动应用程序。",
+            "paragraph2": "拥有超过5年的软件开发经验，我参与了从电子商务平台到AI驱动应用程序的各种项目。我特别热衷于React生态系统、Flutter移动开发和集成AI解决方案。",
+            "paragraph3": "当我不编码时，你会发现我在探索新技术、为开源项目做贡献或与开发者社区分享知识。我相信持续学习并跟上最新的行业趋势。"
+        },
+        "stats": {
+            "experience": "年经验",
+            "projects": "项目",
+            "technologies": "技术"
+        },
+        "skills": {
+            "title": "技能",
+            "subtitle": "我掌握的技术和工具",
+            "web": "Web开发",
+            "mobile": "移动开发",
+            "ai": "人工智能",
+            "webDesc": "React、Next.js、TypeScript、Tailwind CSS",
+            "mobileDesc": "Flutter、React Native、跨平台开发",
+            "aiDesc": "Python、机器学习、AI集成",
+            "stats": {
+                "technologies": "技术",
+                "experience": "年经验",
+                "projects": "项目",
+                "certifications": "认证"
+            }
+        },
+        "technologies": {
+            "title": "技术",
+            "subtitle": "我每天使用的工具和框架"
+        },
+        "timeline": {
+            "title": "专业经验",
+            "subtitle": "我作为开发者的旅程以及塑造我专业知识的经历。",
+            "tourmada": {
+                "title": "全栈Web和移动开发者（实习）",
+                "company": "Tourmada",
+                "description": "使用Django、React、Flutter、PostgreSQL和Gemini API设计和部署Tourmada平台。创建了具有Web和移动界面的综合旅游解决方案。"
+            },
+            "armh": {
+                "title": "自由Web开发者",
+                "company": "ARMH Consulting",
+                "description": "开发具有UX和基本SEO优化的响应式网站。为各种客户提供现代Web解决方案。"
+            },
+            "lutherienne": {
+                "title": "IT经理（实习）",
+                "company": "Imprimerie Luthérienne, Antananarivo",
+                "description": "分析生产流程并部署优化系统。管理IT基础设施并提高运营效率。"
+            },
+            "hackathon": {
+                "title": "AI驱动评估 - ESMIA黑客马拉松2025",
+                "company": "项目",
+                "description": "使用Gemini API创建React/Django原型，使考试互动化。开发了由AI驱动的创新评估平台。"
+            }
+        },
+        "certifications": {
+            "title": "认证和培训",
+            "subtitle": "持续学习和专业发展成就。",
+            "verified": "已验证",
+            "informatique": {
+                "name": "计算机科学专业学位",
+                "issuer": "ESMIA安塔那那利佛马达加斯加"
+            },
+            "anglais": {
+                "name": "英语口语 - B2级",
+                "issuer": "FLTC马达加斯加集团"
+            },
+            "francais": {
+                "name": "法语口语 - B1级",
+                "issuer": "FLTC马达加斯加集团"
+            }
+        }
+    },
+    "projects": {
+        "title": "项目",
+        "subtitle": "发现我最近的项目和我使用的技术。",
+        "viewLive": "在线演示",
+        "viewCode": "查看代码",
+        "learnMore": "了解更多",
+        "featured": "精选",
+        "viewProject": "查看所有项目",
+        "sourceCode": "源代码",
+        "viewOnline": "在线查看",
+        "previousProject": "上一个项目",
+        "nextProject": "下一个项目",
+        "goToProject": "转到项目",
+        "featuredProject": "精选项目",
+        "recent": "最近项目",
+        "other": "其他项目",
+        "modal": {
+            "description": "描述",
+            "challenge": "挑战",
+            "solution": "解决方案",
+            "technologies": "使用的技术"
+        },
+        "seo": {
+            "description": "探索Ihantsa RAKOTONDRANAIVO的作品集，包括使用React、Next.js、Flutter、Python和AI技术构建的Web和移动应用程序。",
+            "keywords": "项目，作品集，React，Next.js，Flutter，Python，AI，Web开发，移动开发，全栈"
+        },
+        "stats": {
+            "total": "总项目",
+            "featured": "精选",
+            "technologies": "技术"
+        },
+        "categories": {
+            "all": "全部",
+            "web": "Web",
+            "mobile": "移动",
+            "ai": "AI",
+            "fullstack": "全栈"
+        },
+        "filters": {
+            "categories": "按类别筛选",
+            "technologies": "按技术筛选",
+            "showing": "显示结果"
+        },
+        "noResults": {
+            "title": "未找到项目",
+            "description": "尝试调整您的筛选器以查看更多项目。",
+            "reset": "重置筛选器"
+        }
+    },
+    "dev": {
+        "seo": {
+            "title": "开发项目和技能 - Ihantsa RAKOTONDRANAIVO",
+            "description": "探索我的开发项目和技术技能。专门从事React、Flutter和Python的全栈开发者。"
+        },
+        "techLogos": {
+            "title": "我喜欢的技术",
+            "description": "这里是我经常使用的一些技术。"
+        },
+        "projects": {
+            "title": "一些项目",
+            "description": "这是我作为开发者的项目样本。发现我的技术和创意成就。",
+            "viewAll": "查看所有项目"
+        },
+        "hero": {
+            "title": "全栈开发者",
+            "subtitle": "使用现代技术创建创新的数字体验",
+            "ctaPrimary": "联系我",
+            "ctaSecondary": "查看我的项目"
+        },
+        "experience": {
+            "title": "专业经验",
+            "subtitle": "我在软件开发和Web技术方面的旅程。",
+            "viewDetails": "查看详情"
+        },
+        "skills": {
+            "title": "技术技能",
+            "subtitle": "我的技能和技术专长概述。",
+            "legend": {
+                "title": "技能水平",
+                "advanced": "高级（80-100%）",
+                "intermediate": "中级（60-79%）",
+                "beginner": "初级（< 60%）"
+            }
+        },
+        "education": {
+            "title": "培训和认证",
+            "subtitle": "我的学术背景和专业认证。",
+            "viewDetails": "查看详情",
+            "downloadCV": "下载我的完整简历"
+        },
+        "methodologies": {
+            "title": "方法论和最佳实践",
+            "subtitle": "质量开发的方法和实践。",
+            "practices": "关键实践",
+            "items": [
+                {
+                    "id": "agile",
+                    "title": "敏捷开发",
+                    "description": "用于迭代和协作开发的敏捷/Scrum方法论。",
+                    "practices": [
+                        "冲刺",
+                        "每日站会",
+                        "回顾",
+                        "用户故事"
+                    ]
+                },
+                {
+                    "id": "mobile",
+                    "title": "移动开发",
+                    "description": "采用移动优先方法的响应式设计，以获得最佳用户体验。",
+                    "practices": [
+                        "响应式设计",
+                        "PWA",
+                        "移动性能",
+                        "触摸友好界面"
+                    ]
+                },
+                {
+                    "id": "architecture",
+                    "title": "现代架构",
+                    "description": "可扩展和可维护架构的设计。",
+                    "practices": [
+                        "微服务",
+                        "REST/GraphQL API",
+                        "无服务器",
+                        "JAMstack"
+                    ]
+                },
+                {
+                    "id": "security",
+                    "title": "安全和质量",
+                    "description": "集成安全最佳实践和质量保证。",
+                    "practices": [
+                        "单元测试",
+                        "集成测试",
+                        "OWASP",
+                        "CI/CD"
+                    ]
+                },
+                {
+                    "id": "devops",
+                    "title": "工具和DevOps",
+                    "description": "实施持续集成和部署管道。",
+                    "practices": [
+                        "Git",
+                        "Docker",
+                        "GitHub Actions",
+                        "监控"
+                    ]
+                }
+            ]
+        },
+        "cta": {
+            "title": "准备好实现您的项目了吗？",
+            "subtitle": "让我们讨论我如何帮助您实现目标。",
+            "button": "让我们谈谈您的项目"
+        },
+        "projectDetails": {
+            "factura": {
+                "description": "企业综合发票管理系统",
+                "longDescription": "Factura是一个现代化的发票管理解决方案，帮助企业简化其计费流程。使用React和Node.js构建，具有实时更新、可自定义模板和详细报告功能。"
+            },
+            "tourmada": {
+                "description": "马达加斯加移动旅游指南应用",
+                "longDescription": "Tourmada是您探索马达加斯加奇迹的口袋指南。这个React Native应用程序提供交互式地图、本地推荐和文化见解，使旅行规划变得轻而易举。"
+            },
+            "theologix": {
+                "description": "神学研究在线平台",
+                "longDescription": "Theologix是一个专门用于神学研究的创新学习平台。使用React和MongoDB构建，提供互动课程、讨论论坛和资源库。"
+            }
+        }
+    },
+    "contact": {
+        "title": "联系",
+        "name": "姓名",
+        "email": "电子邮件",
+        "message": "消息",
+        "send": "发送消息",
+        "sending": "发送中...",
+        "success": "消息发送成功！我会尽快回复您。",
+        "error": "发送消息时出错。请重试。",
+        "intro": "有项目吗？有问题吗？请随时联系我。",
+        "privacy": "您的信息是安全的，仅用于回复您的询问。",
+        "seo": {
+            "description": "联系Ihantsa RAKOTONDRANAIVO进行Web开发、移动应用、AI项目。可接受自由职业工作和合作。",
+            "keywords": "联系，招聘开发者，自由职业，Web开发，移动应用，AI项目，合作"
+        },
+        "form": {
+            "title": "给我发消息"
+        },
+        "placeholders": {
+            "name": "您的全名",
+            "email": "your.email@example.com",
+            "message": "告诉我您的项目或问题..."
+        },
+        "validation": {
+            "nameRequired": "姓名是必需的",
+            "nameMinLength": "姓名必须至少2个字符",
+            "emailRequired": "电子邮件是必需的",
+            "emailInvalid": "请输入有效的电子邮件地址",
+            "messageRequired": "消息是必需的",
+            "messageMinLength": "消息必须至少10个字符",
+            "formErrors": "请修正上述错误"
+        },
+        "emailjs": {
+            "notConfigured": "电子邮件服务尚未配置。",
+            "useEmailClient": "您想打开您的电子邮件客户端吗？"
+        },
+        "emailClient": {
+            "opened": "电子邮件客户端已打开。请从那里发送您的消息。"
+        },
+        "info": {
+            "title": "保持联系",
+            "subtitle": "我总是对新机会和有趣的项目感兴趣。让我们讨论如何合作。",
+            "email": {
+                "label": "电子邮件",
+                "description": "专业咨询的最佳联系方式"
+            },
+            "linkedin": {
+                "label": "LinkedIn",
+                "description": "与我专业联系"
+            },
+            "github": {
+                "label": "GitHub",
+                "description": "查看我的代码和贡献"
+            },
+            "phone": {
+                "label": "电话",
+                "description": "仅限紧急咨询"
+            }
+        },
+        "availability": {
+            "status": "可接受新项目",
+            "description": "我目前接受自由职业工作和有趣的合作"
+        },
+        "social": {
+            "title": "关注我"
+        },
+        "faq": {
+            "title": "常见问题",
+            "subtitle": "关于合作的常见问题的快速答案",
+            "q1": {
+                "question": "您的典型响应时间是多少？",
+                "answer": "我通常在工作日的24小时内回复。对于紧急事项，请随时致电。"
+            },
+            "q2": {
+                "question": "您与国际客户合作吗？",
+                "answer": "当然！我与世界各地的客户合作，并适应不同的时区。"
+            },
+            "q3": {
+                "question": "您专门从事哪些技术？",
+                "answer": "我专门从事React、Next.js、TypeScript、Flutter、Python和AI集成。我一直在学习新技术。"
+            },
+            "q4": {
+                "question": "您提供持续支持吗？",
+                "answer": "是的，我为我开发的所有项目提供维护和支持服务。让我们讨论您的需求。"
+            }
+        }
+    },
+    "footer": {
+        "rights": "版权所有。"
+    },
+    "meta": {
+        "title": "OEKA - Ihantsa RAKOTONDRANAIVO",
+        "description": "专门从事React、Next.js、Flutter、Python的全栈和AI开发者。创建现代Web和移动应用程序。",
+        "keywords": "开发者，React，Next.js，Flutter，Python，AI，TypeScript，作品集，马达加斯加"
+    },
+    "notFound": {
+        "seo": {
+            "title": "页面未找到 - Ihantsa Rakotondraivo",
+            "description": "您要查找的页面不存在或已移动。"
+        },
+        "title": "哎呀！页面未找到",
+        "message": "抱歉，我们找不到您要查找的页面。",
+        "ctaPrimary": "返回首页",
+        "ctaSecondary": "上一页"
+    },
+    "scout": {
+        "seo": {
+            "title": "童子军 - Ihantsa RAKOTONDRANAIVO",
+            "description": "发现我对童子军的承诺：与童子军、Tily和Imaran Bato的活动、价值观和冒险。",
+            "keywords": "童子军，童军运动，青年，领导力，冒险，自然，马达加斯加"
+        },
+        "hero": {
+            "title": "我的童子军冒险",
+            "subtitle": "童子军教会了我基本价值观：领导力、团队合作和对自然的尊重。",
+            "mission": "通过不同的分支，我引导年轻人进行个人发展和发现世界。",
+            "description": "每项活动都是成长、学习和创造终生纽带的机会。"
+        },
+        "categories": {
+            "scouts": {
+                "description": "童子军通过户外活动、露营和社区项目发展他们的自主性。这是发现和学习生活技能的时期。"
+            },
+            "tily": {
+                "description": "Tily通过游戏、探索和创造力发现世界。这是最年轻者童子军冒险的开始，想象力和友谊是每项活动的核心。"
+            },
+            "imaranBato": {
+                "description": "Imaran Bato通过挑战、服务项目和要求严格的冒险准备成为负责任的领导者。这是成熟和承诺的阶段。"
+            }
+        },
+        "activities": {
+            "title": "我们的活动",
+            "subtitle": "丰富的经历塑造性格并创造难忘的回忆",
+            "camping": {
+                "title": "露营和野营",
+                "description": "学会与自然和谐相处，发展自主性并在篝火旁建立牢固的纽带。"
+            },
+            "hiking": {
+                "title": "徒步和探索",
+                "description": "发现马达加斯加的奇迹，培养耐力并学会在自然中导航。"
+            },
+            "leadership": {
+                "title": "领导力和团队",
+                "description": "发展领导技能，学会团队合作并承担责任。"
+            },
+            "games": {
+                "title": "游戏和发现",
+                "description": "通过激发创造力和想象力的教育游戏在玩乐中学习。"
+            },
+            "crafts": {
+                "title": "手工艺和创造力",
+                "description": "通过各种手工活动发展灵巧性和艺术表达。"
+            },
+            "nature": {
+                "title": "自然和环境",
+                "description": "提高对环境保护的认识并学会尊重生物多样性。"
+            },
+            "community": {
+                "title": "社区服务",
+                "description": "参与对社区产生积极影响的项目并发展公民意识。"
+            },
+            "skills": {
+                "title": "技术技能",
+                "description": "掌握高级生存、急救和项目管理技术。"
+            },
+            "adventure": {
+                "title": "伟大的冒险",
+                "description": "面对雄心勃勃的挑战，突破界限并塑造性格。"
+            }
+        },
+        "profile": {
+            "title": "我的童子军之旅",
+            "totem": {
+                "description": "我的图腾OEKA Mikofo反映了我为童子军带来的领导精神和鹰眼视野。图腾化以认可我的承诺和指导品质。",
+                "animal": {
+                    "title": "蓝鹃",
+                    "description": "OEKA指的是马达加斯加的蓝鹃（Coua caerulea），这是马达加斯加森林的特有鸟类。以其独特的美丽而闻名，拥有明亮的蓝色羽毛和优雅的冠羽，蓝鹃象征着马达加斯加的民族自豪感。这只鸟代表敏锐的视野、适应性和在复杂环境中导航的能力 - 这些品质是我作为童子军领袖的特征。"
+                },
+                "character": {
+                    "title": "卓越精神",
+                    "description": "Mikofo来自马达加斯加语'Milofo'，意思是专注于学习、完善事物并坚定地学习。这种品质反映了我的性格：在学习中的毅力、对细节的关注和对卓越的不断追求。作为童子军，这种品质驱使我不断改进并将这种对完美的渴望传递给我指导的年轻人。"
+                }
+            },
+            "journey": {
+                "description": "从我作为年轻童子军的开始，我已经晋升为领导者，引导新一代发现童子军价值观。"
+            },
+            "values": {
+                "description": "童子军教会了我服务的重要性、对自然的尊重以及通过集体行动实现个人发展。",
+                "solidarity": "团结",
+                "nature": "自然",
+                "excellence": "卓越"
+            },
+            "stats": {
+                "years": "年经验",
+                "scouts": "指导的年轻人"
+            }
+        },
+        "showcase": {
+            "title": "童子军精神在行动",
+            "description": "每次冒险都是成长、学习和创造终生回忆的机会。",
+            "alt": "大自然中的童子军活动"
+        }
+    }
+}

@@ -9,17 +9,17 @@ i18n
   .use(initReactI18next) // Passe l'instance i18n à react-i18next
   .init({
     fallbackLng: 'en', // Langue par défaut
-    supportedLngs: ['en', 'fr'], // Langues supportées
+    supportedLngs: ['en', 'fr', 'mg', 'es', 'zh', 'de'], // Langues supportées: Anglais, Français, Malagasy, Espagnol, Chinois, Allemand
     debug: import.meta.env.DEV, // Debug en mode développement
-    
+
     interpolation: {
       escapeValue: false, // React échappe déjà le HTML
     },
-    
+
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json', // Chemin des fichiers de traduction
     },
-    
+
     detection: {
       order: ['path', 'localStorage', 'navigator'], // Ordre de détection
       lookupFromPathIndex: 0, // Index du segment de langue dans l'URL
