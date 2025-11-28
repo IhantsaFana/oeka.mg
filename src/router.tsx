@@ -6,6 +6,12 @@ import { Scout } from '@/features/scout/Scout';
 import { SampanaMena90Page } from '@/features/scout/SampanaMena90Page';
 import { Contact } from '@/features/contact/Contact';
 import { NotFoundPage } from '@/features/error/NotFoundPage';
+import { BlogPage } from '@/features/blog/BlogPage';
+import { BlogPostPage } from '@/features/blog/BlogPostPage';
+import { AdminLogin } from '@/features/admin/AdminLogin';
+import { AdminBlog } from '@/features/admin/AdminBlog';
+import { AdminBlogEdit } from '@/features/admin/AdminBlogEdit';
+import { ProtectedRoute } from '@/features/admin/components/ProtectedRoute';
 
 import { getLocalizedPath } from '@/shared/utils/routes';
 
@@ -55,12 +61,49 @@ export const router = createBrowserRouter([
         path: 'contact',
         element: <Contact />,
       },
+      {
+        path: 'blog',
+        element: <BlogPage />,
+      },
+      {
+        path: 'blog/:slug',
+        element: <BlogPostPage />,
+      },
       // Route 404 pour les chemins non trouvés sous /:lang
       {
         path: '*',
         element: <NotFoundPage />,
       },
     ],
+  },
+  // Routes Admin (sans langue)
+  {
+    path: '/admin/login',
+    element: <AdminLogin />,
+  },
+  {
+    path: '/admin/blog',
+    element: (
+      <ProtectedRoute>
+        <AdminBlog />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: '/admin/blog/new',
+    element: (
+      <ProtectedRoute>
+        <AdminBlogEdit />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: '/admin/blog/edit/:id',
+    element: (
+      <ProtectedRoute>
+        <AdminBlogEdit />
+      </ProtectedRoute>
+    ),
   },
   // Redirection pour les chemins non reconnus vers la page d'accueil de la langue par défaut
   {

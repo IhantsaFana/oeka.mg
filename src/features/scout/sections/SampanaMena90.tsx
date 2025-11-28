@@ -4,7 +4,7 @@ import { Container } from '@/shared/components/ui/Container';
 import { FaCalendarAlt, FaMapMarkerAlt, FaUsers } from 'react-icons/fa';
 
 const SampanaMena90 = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const content = {
     fr: {

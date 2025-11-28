@@ -29,15 +29,24 @@ export default defineConfig({
     },
   },
   build: {
-    chunkSizeWarningLimit: 1000, // Augmenter la limite à 1MB
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
         manualChunks: {
-          // Séparer les vendors en chunks
+          // Core React
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-vendor': ['framer-motion', 'react-helmet-async'],
+
+          // UI Libraries
+          'ui-vendor': ['framer-motion', 'react-helmet-async', 'react-icons'],
+
+          // Firebase (Lourd !)
+          'firebase-vendor': ['firebase/app', 'firebase/auth', 'firebase/firestore', 'firebase/storage'],
+
+          // Markdown Editor & Viewer (Lourd !)
+          'markdown-vendor': ['react-simplemde-editor', 'easymde', 'react-markdown'],
+
+          // I18n
           'i18n-vendor': ['react-i18next', 'i18next'],
-          'icons-vendor': ['react-icons']
         }
       }
     }
