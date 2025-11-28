@@ -3,6 +3,7 @@ import { Layout } from '@/shared/components/layout/Layout';
 import { Home } from '@/features/home/Home';
 import { Dev } from '@/features/dev/Dev';
 import { Scout } from '@/features/scout/Scout';
+import { SampanaMena90Page } from '@/features/scout/SampanaMena90Page';
 import { Contact } from '@/features/contact/Contact';
 import { NotFoundPage } from '@/features/error/NotFoundPage';
 
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: 'scout',
         element: <Scout />,
+      },
+      {
+        path: 'scout/sampana-mena-90-taona',
+        element: <SampanaMena90Page />,
       },
       {
         path: 'contact',
