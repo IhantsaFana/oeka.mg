@@ -1,0 +1,494 @@
+{
+    "nav": {
+        "home": "Fandraisana",
+        "dev": "Dev",
+        "scout": "Scout",
+        "fleurs": "Voninkazo",
+        "contact": "Fifandraisana",
+        "hireMe": "Hiara-miasa",
+        "discoverProjects": "Hijery ny asako"
+    },
+    "home": {
+        "seo": {
+            "title": "Ihantsa RAKOTONDRANAIVO - OEKA Mikofo",
+            "description": "Tongasoa eto amin'ny tranonkalako. Fantaro ny diako, ny tiako ary ny hetsika samihafa, avy amin'ny fampandrosoana ka hatramin'ny scout."
+        },
+        "title": "Ihantsa RAKOTONDRANAIVO",
+        "subtitle": "Mpamorona, Mpitarika Scout, Mpirotsaka an-tsitrapo ho an'ny Tanora",
+        "description": "Olona tia ny teknolojia, ny fitarihana tanora ary ny fanatanjahantena.",
+        "cta": {
+            "contact": "Mifandraisa amiko",
+            "portfolio": "Ny tetikasako",
+            "workTogether": "Andeha hiara-hiasa",
+            "workTogetherSubtitle": "Aoka hiresaka momba ny tetikasanao ary hahitako izay ahafahako manampy anao",
+            "startProject": "Manomboka tetikasa",
+            "learnMore": "Mahalalà bebe kokoa"
+        },
+        "hello": "Manao ahoana, izaho dia",
+        "welcome": "Tongasoa eto amin'ny tontolon'ny",
+        "intro": "Amin'ny faha-18 taonako, mikaroka ny fiainana amin'ny fomba maro aho: mpamorona, mpitarika scout, ary mpirotsaka an-tsitrapo ho an'ny tanora. Miaraha amiko amin'ity dia fitomboana sy fahitana ity.",
+        "heroTitle": "Ny fitiavana no mitarika ny asako",
+        "heroHighlight": "fitiavana",
+        "followMe": "Araho aho amin'ny",
+        "introduction": {
+            "title": "Dia Fitomboana sy Fahitana",
+            "paragraphs": {
+                "personal": "Izaho dia Ihantsa RAKOTONDRANAIVO, tanora Malagasy 18 taona tia ny teknolojia sy ny fampandrosoana ny tanora. Mipetraka any Madagasikara, mampifangaro ny fitiavako ny fampandrosoana amin'ny fandraisana anjara mavitrika amin'ny scout sy ny volleyball.",
+                "education": "Mianatra amin'izao fotoana izao aho ho Manam-pahaizana momba ny AI sy MLOps ao amin'ny ESMIA Antananarivo, mampifangaro ny fahaizako ara-teknika amin'ny faniriako hanao fiantraikana tsara amin'ny alalan'ny fanavaozana.",
+                "interests": "Ankoatra ny fandaharana, mahita hafaliana amin'ny fitarihana sy ny filalaovana amin'ny ankizy amin'ny alalan'ny hetsika scout aho. Amin'ny maha mpitarika scout ahy, manampy ny tanora hampivelatra fahaiza-manao ilaina amin'ny fiainana aho."
+            }
+        }
+    },
+    "about": {
+        "title": "Momba",
+        "description": "Mpamorona Full-Stack tia ny teknolojia maoderina sy ny faharanitan-tsaina artifisialy.",
+        "seo": {
+            "description": "Mahalalà bebe kokoa momba an'i Ihantsa RAKOTONDRANAIVO, Mpamorona Full-Stack sy Injeniera AI manam-pahaizana momba ny React, Next.js, Flutter, Python.",
+            "keywords": "momba, mpamorona, full-stack, injeniera AI, React, Next.js, Flutter, Python, traikefa, fahaiza-manao"
+        },
+        "intro": {
+            "paragraph1": "Manao ahoana! Izaho dia Ihantsa RAKOTONDRANAIVO, Mpamorona Full-Stack sy Injeniera AI tia ny asany mipetraka any Madagasikara. Manam-pahaizana amin'ny famoronana rindranasa tranonkala sy finday maoderina mampiasa teknolojia avo lenta aho.",
+            "paragraph2": "Manana traikefa mihoatra ny 5 taona amin'ny fampandrosoana rindranasa aho, efa niasa tamin'ny tetikasa samihafa manomboka amin'ny sehatra varotra elektronika ka hatramin'ny rindranasa mandeha amin'ny AI. Tena tia ny tontolo React, Flutter ho an'ny fampandrosoana finday, ary ny fampidirana vahaolana AI aho.",
+            "paragraph3": "Rehefa tsy manao fandaharana aho, hahita ahy mijery teknolojia vaovao, mandray anjara amin'ny tetikasa open-source, na mizara fahalalana amin'ny vondrom-piarahamonina mpamorona. Mino ny fianarana tsy tapaka sy ny fijanonana amin'ny fironana farany amin'ny indostria aho."
+        },
+        "stats": {
+            "experience": "Taona Traikefa",
+            "projects": "Tetikasa",
+            "technologies": "Teknolojia"
+        },
+        "skills": {
+            "title": "Fahaiza-manao",
+            "subtitle": "Teknolojia sy fitaovana feheziko",
+            "web": "Fampandrosoana Tranonkala",
+            "mobile": "Fampandrosoana Finday",
+            "ai": "Faharanitan-tsaina Artifisialy",
+            "webDesc": "React, Next.js, TypeScript, Tailwind CSS",
+            "mobileDesc": "Flutter, React Native, fampandrosoana cross-platform",
+            "aiDesc": "Python, Machine Learning, fampidirana AI",
+            "stats": {
+                "technologies": "Teknolojia",
+                "experience": "Taona Traikefa",
+                "projects": "Tetikasa",
+                "certifications": "Fanamarinana"
+            }
+        },
+        "technologies": {
+            "title": "Teknolojia",
+            "subtitle": "Ny fitaovana sy frameworks ampiasaiko isan'andro"
+        },
+        "timeline": {
+            "title": "Traikefa Matihanina",
+            "subtitle": "Ny diako amin'ny maha mpamorona ahy sy ny traikefa namorona ny fahaizako.",
+            "tourmada": {
+                "title": "Mpamorona Full-Stack Web sy Finday (Fampianarana)",
+                "company": "Tourmada",
+                "description": "Nanamboatra sy nametraka ny sehatra Tourmada miaraka amin'ny Django, React, Flutter, PostgreSQL, ary Gemini API. Namorona vahaolana fizahan-tany feno miaraka amin'ny interface tranonkala sy finday."
+            },
+            "armh": {
+                "title": "Mpamorona Tranonkala Freelance",
+                "company": "ARMH Consulting",
+                "description": "Nanamboatra tranonkala responsive miaraka amin'ny fanatsarana UX sy SEO fototra. Nanolotra vahaolana tranonkala maoderina ho an'ny mpanjifa samihafa."
+            },
+            "lutherienne": {
+                "title": "Mpitantana IT (Fampianarana)",
+                "company": "Imprimerie Luthérienne, Antananarivo",
+                "description": "Nandinika ny fizotran'ny famokarana ary nametraka rafitra fanatsarana. Nitantana ny fotodrafitrasa IT ary nanatsara ny fahombiazana amin'ny asa."
+            },
+            "hackathon": {
+                "title": "Fanombanana mandeha amin'ny AI - Hackathon ESMIA 2025",
+                "company": "Tetikasa",
+                "description": "Namorona prototype React/Django miaraka amin'ny Gemini API mba hahatonga ny fanadinana ho interactive. Nanamboatra sehatra fanombanana vaovao mandeha amin'ny AI."
+            }
+        },
+        "certifications": {
+            "title": "Fanamarinana sy Fiofanana",
+            "subtitle": "Fianarana tsy tapaka sy zava-bita amin'ny fampandrosoana matihanina.",
+            "verified": "Voamarina",
+            "informatique": {
+                "name": "Diplaoma matihanina momba ny Informatika",
+                "issuer": "ESMIA Antananarivo Madagasikara"
+            },
+            "anglais": {
+                "name": "Teny Anglisy Miteny - Ambaratonga B2",
+                "issuer": "FLTC Madagascar Group"
+            },
+            "francais": {
+                "name": "Teny Frantsay Miteny - Ambaratonga B1",
+                "issuer": "FLTC Madagascar Group"
+            }
+        }
+    },
+    "projects": {
+        "title": "Tetikasa",
+        "subtitle": "Fantaro ny tetikasako farany sy ny teknolojia ampiasaiko.",
+        "viewLive": "Demo Mivantana",
+        "viewCode": "Hijery ny Code",
+        "learnMore": "Mahalalà bebe kokoa",
+        "featured": "Nasongadina",
+        "viewProject": "Hijery ny Tetikasa Rehetra",
+        "sourceCode": "Code loharano",
+        "viewOnline": "Hijery an-tserasera",
+        "previousProject": "Tetikasa teo aloha",
+        "nextProject": "Tetikasa manaraka",
+        "goToProject": "Mankany amin'ny tetikasa",
+        "featuredProject": "Tetikasa nasongadina",
+        "recent": "Tetikasa Farany",
+        "other": "Tetikasa Hafa",
+        "modal": {
+            "description": "Famaritana",
+            "challenge": "Fanamby",
+            "solution": "Vahaolana",
+            "technologies": "Teknolojia nampiasaina"
+        },
+        "seo": {
+            "description": "Jereo ny portfolio an'i Ihantsa RAKOTONDRANAIVO miaraka amin'ny rindranasa tranonkala sy finday namboarina tamin'ny React, Next.js, Flutter, Python, ary teknolojia AI.",
+            "keywords": "tetikasa, portfolio, React, Next.js, Flutter, Python, AI, fampandrosoana tranonkala, fampandrosoana finday, full-stack"
+        },
+        "stats": {
+            "total": "Tetikasa Rehetra",
+            "featured": "Nasongadina",
+            "technologies": "Teknolojia"
+        },
+        "categories": {
+            "all": "Rehetra",
+            "web": "Tranonkala",
+            "mobile": "Finday",
+            "ai": "AI",
+            "fullstack": "Full-Stack"
+        },
+        "filters": {
+            "categories": "Sivana araka ny Sokajy",
+            "technologies": "Sivana araka ny Teknolojia",
+            "showing": "Vokatra aseho"
+        },
+        "noResults": {
+            "title": "Tsy nahita tetikasa",
+            "description": "Andramo ny manitsy ny sivana mba hahitana tetikasa bebe kokoa.",
+            "reset": "Avereno ny Sivana"
+        }
+    },
+    "dev": {
+        "seo": {
+            "title": "Tetikasa Dev sy Fahaiza-manao - Ihantsa RAKOTONDRANAIVO",
+            "description": "Jereo ny tetikasa fampandrosoana sy fahaiza-manao ara-teknika. Mpamorona full-stack manam-pahaizana momba ny React, Flutter, ary Python."
+        },
+        "techLogos": {
+            "title": "Teknolojia tiako",
+            "description": "Ireto ny teknolojia sasany iasako tsy tapaka."
+        },
+        "projects": {
+            "title": "Tetikasa sasany",
+            "description": "Ity ny santionan'ny tetikasako amin'ny maha mpamorona ahy. Fantaro ny zava-bitako ara-teknika sy famoronana.",
+            "viewAll": "Hijery ny tetikasa rehetra"
+        },
+        "hero": {
+            "title": "Mpamorona Full Stack",
+            "subtitle": "Famoronana traikefa nomerika vaovao miaraka amin'ny teknolojia maoderina",
+            "ctaPrimary": "Mifandraisa amiko",
+            "ctaSecondary": "Hijery ny tetikasako"
+        },
+        "experience": {
+            "title": "Traikefa Matihanina",
+            "subtitle": "Ny diako amin'ny fampandrosoana rindranasa sy teknolojia tranonkala.",
+            "viewDetails": "Hijery ny antsipiriany"
+        },
+        "skills": {
+            "title": "Fahaiza-manao Ara-teknika",
+            "subtitle": "Fijery ankapobeny ny fahaiza-manao sy fahaizako ara-teknika.",
+            "legend": {
+                "title": "Ambaratonga fahaiza-manao",
+                "advanced": "Avo lenta (80-100%)",
+                "intermediate": "Antonony (60-79%)",
+                "beginner": "Vao manomboka (< 60%)"
+            }
+        },
+        "education": {
+            "title": "Fiofanana sy Fanamarinana",
+            "subtitle": "Ny diaviako ara-pianarana sy fanamarinana matihanina.",
+            "viewDetails": "Hijery ny antsipiriany",
+            "downloadCV": "Alao ny CV feno"
+        },
+        "methodologies": {
+            "title": "Fomba Fiasa sy Fomba Tsara Indrindra",
+            "subtitle": "Fomba fiasa sy fomba fanao ho an'ny fampandrosoana kalitao.",
+            "practices": "Fomba Fanao Lehibe",
+            "items": [
+                {
+                    "id": "agile",
+                    "title": "Fampandrosoana Agile",
+                    "description": "Fomba fiasa Agile/Scrum ho an'ny fampandrosoana iterative sy fiaraha-miasa.",
+                    "practices": [
+                        "Sprints",
+                        "Daily Stand-ups",
+                        "Retrospectives",
+                        "User Stories"
+                    ]
+                },
+                {
+                    "id": "mobile",
+                    "title": "Fampandrosoana Finday",
+                    "description": "Famolavolana responsive miaraka amin'ny fomba fiasa Mobile First ho an'ny traikefa mpampiasa tsara indrindra.",
+                    "practices": [
+                        "Design Responsive",
+                        "PWA",
+                        "Performance Finday",
+                        "UI mora ampiasaina"
+                    ]
+                },
+                {
+                    "id": "architecture",
+                    "title": "Rafitra Maoderina",
+                    "description": "Famolavolana rafitra azo itarina sy azo karakaraina.",
+                    "practices": [
+                        "Microservices",
+                        "API REST/GraphQL",
+                        "Serverless",
+                        "JAMstack"
+                    ]
+                },
+                {
+                    "id": "security",
+                    "title": "Fiarovana sy Kalitao",
+                    "description": "Fampidirana fomba tsara indrindra momba ny fiarovana sy fiantohana kalitao.",
+                    "practices": [
+                        "Fitsapana Unit",
+                        "Fitsapana Integration",
+                        "OWASP",
+                        "CI/CD"
+                    ]
+                },
+                {
+                    "id": "devops",
+                    "title": "Fitaovana sy DevOps",
+                    "description": "Fametrahana pipeline fampidirana sy fametrahana tsy tapaka.",
+                    "practices": [
+                        "Git",
+                        "Docker",
+                        "GitHub Actions",
+                        "Fanaraha-maso"
+                    ]
+                }
+            ]
+        },
+        "cta": {
+            "title": "Vonona ny hanatanteraka ny tetikasanao?",
+            "subtitle": "Aoka hiresaka momba izay ahafahako manampy anao hahatratra ny tanjonao.",
+            "button": "Aoka hiresaka momba ny tetikasanao"
+        },
+        "projectDetails": {
+            "factura": {
+                "description": "Rafitra feno fitantanana faktiora ho an'ny orinasa",
+                "longDescription": "Factura dia vahaolana maoderina fitantanana faktiora izay manampy ny orinasa hanatsara ny fizotran'ny faktiora. Namboarina tamin'ny React sy Node.js, manome fanavaozana amin'ny fotoana tena izy, môdely azo ovaina, ary tatitra amin'ny antsipiriany."
+            },
+            "tourmada": {
+                "description": "Rindranasa finday mpitari-dalana fizahan-tany ho an'i Madagasikara",
+                "longDescription": "Tourmada dia mpitari-dalana ao am-paosy ho an'ny fahagagana ao Madagasikara. Ity rindranasa React Native ity dia manolotra sarintany interactive, tolo-kevitra eo an-toerana, ary fomba fijery ara-kolontsaina, manamora ny fanomanana dia."
+            },
+            "theologix": {
+                "description": "Sehatra an-tserasera ho an'ny fianarana teolojia",
+                "longDescription": "Theologix dia sehatra fianarana vaovao natokana ho an'ny fianarana teolojia. Namboarina tamin'ny React sy MongoDB, manolotra fampianarana interactive, forum fifanakalozan-kevitra, ary trano famakiam-boky loharano."
+            }
+        }
+    },
+    "contact": {
+        "title": "Fifandraisana",
+        "name": "Anarana",
+        "email": "Mailaka",
+        "message": "Hafatra",
+        "send": "Alefaso ny hafatra",
+        "sending": "Mandefa...",
+        "success": "Lasa soa aman-tsara ny hafatra! Hamaly anao tsy ho ela aho.",
+        "error": "Nisy olana tamin'ny fandefasana ny hafatra. Andramo indray azafady.",
+        "intro": "Manana tetikasa? Fanontaniana? Aza misalasala mifandray amiko.",
+        "privacy": "Azo antoka ny fampahalalana momba anao ary hampiasaina hamaly ny fanontanianao ihany.",
+        "seo": {
+            "description": "Mifandraisa amin'i Ihantsa RAKOTONDRANAIVO ho an'ny fampandrosoana tranonkala, rindranasa finday, tetikasa AI. Afaka mandray asa freelance sy fiaraha-miasa.",
+            "keywords": "fifandraisana, manakarama mpamorona, freelance, fampandrosoana tranonkala, rindranasa finday, tetikasa AI, fiaraha-miasa"
+        },
+        "form": {
+            "title": "Alefaso hafatra amiko"
+        },
+        "placeholders": {
+            "name": "Ny anaranao feno",
+            "email": "ny.mailaka@ohatra.com",
+            "message": "Lazao amiko ny tetikasanao na fanontanianao..."
+        },
+        "validation": {
+            "nameRequired": "Ilaina ny anarana",
+            "nameMinLength": "Ny anarana dia tokony ho 2 litera fara fahakeliny",
+            "emailRequired": "Ilaina ny mailaka",
+            "emailInvalid": "Azafady ampidiro adiresy mailaka marina",
+            "messageRequired": "Ilaina ny hafatra",
+            "messageMinLength": "Ny hafatra dia tokony ho 10 litera fara fahakeliny",
+            "formErrors": "Azafady amboary ireo lesoka etsy ambony"
+        },
+        "emailjs": {
+            "notConfigured": "Tsy mbola voalamina ny serivisy mailaka.",
+            "useEmailClient": "Te hanokatra ny mpanjifa mailaka ve ianao?"
+        },
+        "emailClient": {
+            "opened": "Nisokatra ny mpanjifa mailaka. Azafady alefaso avy eo ny hafatrao."
+        },
+        "info": {
+            "title": "Aoka hifandray",
+            "subtitle": "Liana foana amin'ny fahafahana vaovao sy tetikasa mahaliana aho. Aoka hiresaka momba izay ahafahantsika miara-miasa.",
+            "email": {
+                "label": "Mailaka",
+                "description": "Fomba tsara indrindra hifandraisana amiko ho an'ny fangatahana matihanina"
+            },
+            "linkedin": {
+                "label": "LinkedIn",
+                "description": "Mifandray amiko amin'ny matihanina"
+            },
+            "github": {
+                "label": "GitHub",
+                "description": "Jereo ny code sy ny fandraisan'anjara nataoko"
+            },
+            "phone": {
+                "label": "Telefaonina",
+                "description": "Ho an'ny fangatahana maika ihany"
+            }
+        },
+        "availability": {
+            "status": "Afaka mandray tetikasa vaovao",
+            "description": "Mandray asa freelance sy fiaraha-miasa mahaliana amin'izao fotoana izao aho"
+        },
+        "social": {
+            "title": "Araho aho"
+        },
+        "faq": {
+            "title": "Fanontaniana Matetika",
+            "subtitle": "Valiny haingana amin'ny fanontaniana mahazatra momba ny fiaraha-miasa",
+            "q1": {
+                "question": "Inona ny fotoana famaliana mahazatra anao?",
+                "answer": "Mamaly ao anatin'ny 24 ora mandritra ny andro fiasana aho. Ho an'ny raharaha maika, aza misalasala miantso."
+            },
+            "q2": {
+                "question": "Miasa amin'ny mpanjifa iraisam-pirenena ve ianao?",
+                "answer": "Eny tokoa! Miasa amin'ny mpanjifa maneran-tany aho ary mora amin'ny ora samihafa."
+            },
+            "q3": {
+                "question": "Inona ny teknolojia manam-pahaizana anao?",
+                "answer": "Manam-pahaizana momba ny React, Next.js, TypeScript, Flutter, Python, ary fampidirana AI aho. Mianatra teknolojia vaovao foana aho."
+            },
+            "q4": {
+                "question": "Manome fanohanana mitohy ve ianao?",
+                "answer": "Eny, manome serivisy fikojakojana sy fanohanana ho an'ny tetikasa rehetra amboariko aho. Aoka hiresaka momba ny filànanao."
+            }
+        }
+    },
+    "footer": {
+        "rights": "Zo rehetra voaaro."
+    },
+    "meta": {
+        "title": "OEKA - Ihantsa RAKOTONDRANAIVO",
+        "description": "Mpamorona Full-Stack sy AI manam-pahaizana momba ny React, Next.js, Flutter, Python. Famoronana rindranasa tranonkala sy finday maoderina.",
+        "keywords": "mpamorona, React, Next.js, Flutter, Python, AI, TypeScript, portfolio, Madagasikara"
+    },
+    "notFound": {
+        "seo": {
+            "title": "Tsy Hita ny Pejy - Ihantsa Rakotondraivo",
+            "description": "Ny pejy tadiavinao dia tsy misy na nafindra."
+        },
+        "title": "Indrisy! Tsy Hita ny Pejy",
+        "message": "Miala tsiny, tsy nahita ny pejy tadiavinao izahay.",
+        "ctaPrimary": "Hiverina any amin'ny fandraisana",
+        "ctaSecondary": "Pejy teo aloha"
+    },
+    "scout": {
+        "seo": {
+            "title": "Scout - Ihantsa RAKOTONDRANAIVO",
+            "description": "Fantaro ny fanoloran-tenako amin'ny scout: hetsika, soatoavina ary zava-nitranga miaraka amin'ny Scouts, Tily ary Imaran Bato.",
+            "keywords": "scout, scoutisme, tanora, fitarihana, zava-nitranga, natiora, Madagasikara"
+        },
+        "hero": {
+            "title": "Ny Zava-Nitranga Scout-ko",
+            "subtitle": "Ny scout dia nampianatra ahy soatoavina tena ilaina: fitarihana, fiaraha-miasa ary fanajana ny natiora.",
+            "mission": "Amin'ny alalan'ny sampana samihafa, mitarika ny tanora amin'ny fampandrosoana manokana sy fahitana izao tontolo izao aho.",
+            "description": "Ny hetsika tsirairay dia fahafahana hitombo, hianatra ary hamorona fifandraisana maharitra mandritra ny fiainana."
+        },
+        "categories": {
+            "scouts": {
+                "description": "Ny Scouts dia mampivelatra ny fahaleovantenany amin'ny alalan'ny hetsika an-kalamanjana, toby ary tetikasa vondrom-piarahamonina. Fotoana fahitana sy fianarana fahaiza-manao fiainana izany."
+            },
+            "tily": {
+                "description": "Ny Tily dia mahita izao tontolo izao amin'ny alalan'ny lalao, fikarohana ary famoronana. Fanombohana ny zava-nitranga scout ho an'ny tanora indrindra izany, izay ny sary an-tsaina sy ny fisakaizana no fon'ny hetsika tsirairay."
+            },
+            "imaranBato": {
+                "description": "Ny Imaran Bato dia miomana ho lasa mpitarika tompon'andraikitra amin'ny alalan'ny fanamby, tetikasa serivisy ary zava-nitranga sarotra. Dingana fahamatorana sy fanoloran-tena izany."
+            }
+        },
+        "activities": {
+            "title": "Ny Hetsika Ataonay",
+            "subtitle": "Traikefa mampanan-karena izay mamorona toetra ary mamorona fahatsiarovana tsy hay hadinoina",
+            "camping": {
+                "title": "Camping sy Bivouac",
+                "description": "Mianatra miaina mirindra amin'ny natiora, mampivelatra fahaleovantenana ary mamorona fifandraisana matanjaka manodidina ny afon'ny toby."
+            },
+            "hiking": {
+                "title": "Fitsangantsanganana sy Fikarohana",
+                "description": "Mahita ny fahagagana ao Madagasikara, mampivelatra faharetana ary mianatra mitady lalana amin'ny natiora."
+            },
+            "leadership": {
+                "title": "Fitarihana sy Ekipa",
+                "description": "Mampivelatra fahaiza-manao fitarihana, mianatra miasa am-piaraha-miasa ary mandray andraikitra."
+            },
+            "games": {
+                "title": "Lalao sy Fahitana",
+                "description": "Mianatra am-pifaliana amin'ny alalan'ny lalao fanabeazana izay manentana ny famoronana sy ny sary an-tsaina."
+            },
+            "crafts": {
+                "title": "Asa Tanana sy Famoronana",
+                "description": "Mampivelatra ny fahaiza-manao sy ny fanehoana ara-javakanto amin'ny alalan'ny hetsika tanana samihafa."
+            },
+            "nature": {
+                "title": "Natiora sy Tontolo Iainana",
+                "description": "Mampahafantatra momba ny fiarovana ny tontolo iainana ary mianatra manaja ny zavamananaina."
+            },
+            "community": {
+                "title": "Serivisy Vondrom-piarahamonina",
+                "description": "Mandray anjara amin'ny tetikasa manana fiantraikana tsara eo amin'ny vondrom-piarahamonina ary mampivelatra ny fahatsapana olom-pirenena."
+            },
+            "skills": {
+                "title": "Fahaiza-manao Ara-teknika",
+                "description": "Mahay teknika avo lenta momba ny fahavelomana, vonjy maika ary fitantanana tetikasa."
+            },
+            "adventure": {
+                "title": "Zava-Nitranga Lehibe",
+                "description": "Miatrika fanamby lehibe izay manosika ny fetra ary mamorona toetra."
+            }
+        },
+        "profile": {
+            "title": "Ny Diako Scout",
+            "totem": {
+                "description": "Ny totem-ko OEKA Mikofo dia maneho ny fanahy fitarihana sy ny fahitana voromahery izay ento amin'ny scout. Totemisée mba hanamarinana ny fanoloran-tenako sy ny toetra mpitarika.",
+                "animal": {
+                    "title": "Ny Oeka",
+                    "description": "OEKA dia manondro ny Coua Manga ao Madagasikara (Coua caerulea), vorona tsy fahita any amin'ny ala malagasy. Fantatra amin'ny hatsarany miavaka miaraka amin'ny volom-borona manga mamirapiratra sy satro-boninahitra kanto, ny Coua Manga dia maneho ny fireharehana nasionaly malagasy. Ity vorona ity dia maneho fahitana maranitra, fahaiza-mampifanaraka, ary ny fahafahana mitety tontolo sarotra - toetra izay mampiavaka ahy amin'ny maha mpitarika scout ahy."
+                },
+                "character": {
+                    "title": "Ny Fanahy Fahaiza-manao Tsara",
+                    "description": "Mikofo dia avy amin'ny teny malagasy 'Milofo' izay midika hoe mifantoka mafy amin'ny fianarana, manatsara zavatra, ary mianatra amin'ny fahatapahan-kevitra. Ity toetra ity dia maneho ny toetro: faharetana amin'ny fianarana, fiheverana ny antsipiriany, ary ny fikatsahana tsy tapaka ny fahaiza-manao tsara. Amin'ny maha scout ahy, ity toetra ity dia manosika ahy hanatsara tena foana ary hampita ity hetaheta fahaiza-manao tsara ity amin'ny tanora tarihinko."
+                }
+            },
+            "journey": {
+                "description": "Hatramin'ny nanombohako tamin'ny maha scout tanora ahy, dia niakatra ny ambaratonga ho lasa mpitarika, mitarika ny taranaka vaovao amin'ny fahitana ny soatoavina scout."
+            },
+            "values": {
+                "description": "Ny scout dia nampianatra ahy ny maha-zava-dehibe ny serivisy, ny fanajana ny natiora, ary ny fampandrosoana manokana amin'ny alalan'ny hetsika iombonana.",
+                "solidarity": "Firaisan-kina",
+                "nature": "Natiora",
+                "excellence": "Fahaiza-manao Tsara"
+            },
+            "stats": {
+                "years": "Taona traikefa",
+                "scouts": "Tanora notarihina"
+            }
+        },
+        "showcase": {
+            "title": "Ny Fanahy Scout amin'ny Asa",
+            "description": "Ny zava-nitranga tsirairay dia fahafahana hitombo, hianatra ary hamorona fahatsiarovana maharitra mandritra ny fiainana.",
+            "alt": "Hetsika scout amin'ny natiora"
+        }
+    }
+}

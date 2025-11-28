@@ -1,0 +1,494 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "dev": "Dev",
+        "scout": "Scout",
+        "fleurs": "Flores",
+        "contact": "Contacto",
+        "hireMe": "Trabajemos juntos",
+        "discoverProjects": "Ver mis proyectos"
+    },
+    "home": {
+        "seo": {
+            "title": "Ihantsa RAKOTONDRANAIVO - Sitio Personal",
+            "description": "Bienvenido a mi sitio web personal. Descubre mi trayectoria, pasiones y diversas actividades, desde el desarrollo hasta el escultismo."
+        },
+        "title": "Ihantsa RAKOTONDRANAIVO",
+        "subtitle": "Desarrollador, Scout, Joven Voluntario",
+        "description": "Un apasionado dedicado a la tecnología, la mentoría juvenil y el deporte.",
+        "cta": {
+            "contact": "Contáctame",
+            "portfolio": "Ver mis proyectos",
+            "workTogether": "Trabajemos juntos",
+            "workTogetherSubtitle": "Hablemos de tu proyecto y veamos cómo puedo ayudarte",
+            "startProject": "Iniciar un proyecto",
+            "learnMore": "Saber más"
+        },
+        "hello": "Hola, soy",
+        "welcome": "Bienvenido a mi mundo",
+        "intro": "A los 18 años, exploro la vida desde múltiples perspectivas: como desarrollador, líder scout y voluntario juvenil. Únete a mí en este viaje de crecimiento y descubrimiento.",
+        "heroTitle": "La pasión guía mis acciones",
+        "heroHighlight": "pasión",
+        "followMe": "Sígueme en",
+        "introduction": {
+            "title": "Un Viaje de Crecimiento y Descubrimiento",
+            "paragraphs": {
+                "personal": "Soy Ihantsa RAKOTONDRANAIVO, un joven malgache de 18 años apasionado por la tecnología y el desarrollo juvenil. Basado en Madagascar, combino mi amor por el desarrollo con una participación activa en el escultismo y el voleibol.",
+                "education": "Actualmente estoy cursando mis estudios como Especialista en IA y MLOps en ESMIA Antananarivo, combinando mi experiencia técnica con mi deseo de tener un impacto positivo a través de la innovación.",
+                "interests": "Más allá del código, encuentro alegría en la mentoría y el juego con niños a través de actividades scouts. Como líder scout, ayudo a los jóvenes a desarrollar habilidades valiosas para la vida."
+            }
+        }
+    },
+    "about": {
+        "title": "Acerca de",
+        "description": "Desarrollador Full-Stack apasionado por las tecnologías modernas y la inteligencia artificial.",
+        "seo": {
+            "description": "Conoce más sobre Ihantsa RAKOTONDRANAIVO, Desarrollador Full-Stack e Ingeniero de IA especializado en React, Next.js, Flutter, Python.",
+            "keywords": "acerca de, desarrollador, full-stack, ingeniero IA, React, Next.js, Flutter, Python, experiencia, habilidades"
+        },
+        "intro": {
+            "paragraph1": "¡Hola! Soy Ihantsa RAKOTONDRANAIVO, un apasionado Desarrollador Full-Stack e Ingeniero de IA basado en Madagascar. Me especializo en crear aplicaciones web y móviles modernas utilizando tecnologías de vanguardia.",
+            "paragraph2": "Con más de 5 años de experiencia en desarrollo de software, he trabajado en proyectos diversos que van desde plataformas de comercio electrónico hasta aplicaciones impulsadas por IA. Me apasiona especialmente el ecosistema React, Flutter para desarrollo móvil e integración de soluciones de IA.",
+            "paragraph3": "Cuando no estoy programando, me encontrarás explorando nuevas tecnologías, contribuyendo a proyectos de código abierto o compartiendo conocimientos con la comunidad de desarrolladores. Creo en el aprendizaje continuo y en mantenerse actualizado con las últimas tendencias de la industria."
+        },
+        "stats": {
+            "experience": "Años Exp.",
+            "projects": "Proyectos",
+            "technologies": "Tecnologías"
+        },
+        "skills": {
+            "title": "Habilidades",
+            "subtitle": "Tecnologías y herramientas que domino",
+            "web": "Desarrollo Web",
+            "mobile": "Desarrollo Móvil",
+            "ai": "Inteligencia Artificial",
+            "webDesc": "React, Next.js, TypeScript, Tailwind CSS",
+            "mobileDesc": "Flutter, React Native, desarrollo multiplataforma",
+            "aiDesc": "Python, Machine Learning, integración de IA",
+            "stats": {
+                "technologies": "Tecnologías",
+                "experience": "Años Exp.",
+                "projects": "Proyectos",
+                "certifications": "Certificaciones"
+            }
+        },
+        "technologies": {
+            "title": "Tecnologías",
+            "subtitle": "Las herramientas y frameworks que uso a diario"
+        },
+        "timeline": {
+            "title": "Experiencia Profesional",
+            "subtitle": "Mi trayectoria como desarrollador y las experiencias que han dado forma a mi experiencia.",
+            "tourmada": {
+                "title": "Desarrollador Full-Stack Web y Móvil (Pasantía)",
+                "company": "Tourmada",
+                "description": "Diseñé e implementé la plataforma Tourmada con Django, React, Flutter, PostgreSQL y Gemini API. Creación de una solución turística completa con interfaces web y móvil."
+            },
+            "armh": {
+                "title": "Desarrollador Web Freelance",
+                "company": "ARMH Consulting",
+                "description": "Desarrollo de sitios web responsivos con optimización UX y SEO básico. Entrega de soluciones web modernas para diversos clientes."
+            },
+            "lutherienne": {
+                "title": "Responsable de TI (Pasantía)",
+                "company": "Imprimerie Luthérienne, Antananarivo",
+                "description": "Análisis de flujos de producción e implementación de un sistema de optimización. Gestión del parque informático y mejora de la eficiencia operativa."
+            },
+            "hackathon": {
+                "title": "Evaluación Asistida por IA - Hackathon ESMIA 2025",
+                "company": "Proyecto",
+                "description": "Creación de un prototipo React/Django con Gemini API para hacer los exámenes interactivos. Desarrollo de una plataforma de evaluación innovadora impulsada por IA."
+            }
+        },
+        "certifications": {
+            "title": "Certificaciones y Formación",
+            "subtitle": "Aprendizaje continuo y logros de desarrollo profesional.",
+            "verified": "Verificado",
+            "informatique": {
+                "name": "Licenciatura Profesional en Informática",
+                "issuer": "ESMIA Antananarivo Madagascar"
+            },
+            "anglais": {
+                "name": "Inglés Hablado - Nivel B2",
+                "issuer": "FLTC Madagascar Group"
+            },
+            "francais": {
+                "name": "Francés Hablado - Nivel B1",
+                "issuer": "FLTC Madagascar Group"
+            }
+        }
+    },
+    "projects": {
+        "title": "Proyectos",
+        "subtitle": "Descubre mis proyectos recientes y las tecnologías que utilizo.",
+        "viewLive": "Demo en Vivo",
+        "viewCode": "Ver el Código",
+        "learnMore": "Saber más",
+        "featured": "Destacados",
+        "viewProject": "Ver Todos los Proyectos",
+        "sourceCode": "Código fuente",
+        "viewOnline": "Ver en línea",
+        "previousProject": "Proyecto anterior",
+        "nextProject": "Proyecto siguiente",
+        "goToProject": "Ir al proyecto",
+        "featuredProject": "Proyecto destacado",
+        "recent": "Proyectos recientes",
+        "other": "Otros Proyectos",
+        "modal": {
+            "description": "Descripción",
+            "challenge": "Desafío",
+            "solution": "Solución",
+            "technologies": "Tecnologías utilizadas"
+        },
+        "seo": {
+            "description": "Explora el portafolio de Ihantsa RAKOTONDRANAIVO con aplicaciones web y móviles construidas con React, Next.js, Flutter, Python y tecnologías de IA.",
+            "keywords": "proyectos, portafolio, React, Next.js, Flutter, Python, IA, desarrollo web, desarrollo móvil, full-stack"
+        },
+        "stats": {
+            "total": "Proyectos Totales",
+            "featured": "Destacados",
+            "technologies": "Tecnologías"
+        },
+        "categories": {
+            "all": "Todos",
+            "web": "Web",
+            "mobile": "Móvil",
+            "ai": "IA",
+            "fullstack": "Full-Stack"
+        },
+        "filters": {
+            "categories": "Filtrar por Categoría",
+            "technologies": "Filtrar por Tecnología",
+            "showing": "Resultados mostrados"
+        },
+        "noResults": {
+            "title": "No se encontraron proyectos",
+            "description": "Intenta ajustar tus filtros para ver más proyectos.",
+            "reset": "Restablecer Filtros"
+        }
+    },
+    "dev": {
+        "seo": {
+            "title": "Proyectos Dev y Habilidades - Ihantsa RAKOTONDRANAIVO",
+            "description": "Explora mis proyectos de desarrollo y habilidades técnicas. Desarrollador full-stack especializado en React, Flutter y Python."
+        },
+        "techLogos": {
+            "title": "Tecnologías que amo",
+            "description": "Aquí hay algunas de las tecnologías con las que trabajo regularmente."
+        },
+        "projects": {
+            "title": "Algunos proyectos",
+            "description": "Aquí hay una muestra de mis proyectos como desarrollador. Descubre mis logros técnicos y creativos.",
+            "viewAll": "Ver todos los proyectos"
+        },
+        "hero": {
+            "title": "Desarrollador Full Stack",
+            "subtitle": "Creación de experiencias digitales innovadoras con tecnologías modernas",
+            "ctaPrimary": "Contáctame",
+            "ctaSecondary": "Ver mis proyectos"
+        },
+        "experience": {
+            "title": "Experiencia Profesional",
+            "subtitle": "Mi trayectoria en el desarrollo de software y tecnologías web.",
+            "viewDetails": "Ver detalles"
+        },
+        "skills": {
+            "title": "Habilidades Técnicas",
+            "subtitle": "Una visión general de mis habilidades y experiencia técnica.",
+            "legend": {
+                "title": "Niveles de habilidad",
+                "advanced": "Avanzado (80-100%)",
+                "intermediate": "Intermedio (60-79%)",
+                "beginner": "Principiante (< 60%)"
+            }
+        },
+        "education": {
+            "title": "Formación y Certificaciones",
+            "subtitle": "Mi trayectoria académica y certificaciones profesionales.",
+            "viewDetails": "Ver detalles",
+            "downloadCV": "Descargar mi CV completo"
+        },
+        "methodologies": {
+            "title": "Metodologías y Buenas Prácticas",
+            "subtitle": "Enfoques y prácticas para un desarrollo de calidad.",
+            "practices": "Prácticas clave",
+            "items": [
+                {
+                    "id": "agile",
+                    "title": "Desarrollo Ágil",
+                    "description": "Metodologías Agile/Scrum para un desarrollo iterativo y colaborativo.",
+                    "practices": [
+                        "Sprints",
+                        "Daily Stand-ups",
+                        "Retrospectivas",
+                        "User Stories"
+                    ]
+                },
+                {
+                    "id": "mobile",
+                    "title": "Desarrollo Móvil",
+                    "description": "Diseño responsivo con enfoque Mobile First para una experiencia de usuario óptima.",
+                    "practices": [
+                        "Diseño Responsivo",
+                        "PWA",
+                        "Rendimiento Móvil",
+                        "Interfaz táctil"
+                    ]
+                },
+                {
+                    "id": "architecture",
+                    "title": "Arquitectura Moderna",
+                    "description": "Diseño de arquitecturas escalables y mantenibles.",
+                    "practices": [
+                        "Microservicios",
+                        "API REST/GraphQL",
+                        "Serverless",
+                        "JAMstack"
+                    ]
+                },
+                {
+                    "id": "security",
+                    "title": "Seguridad y Calidad",
+                    "description": "Integración de buenas prácticas de seguridad y aseguramiento de calidad.",
+                    "practices": [
+                        "Pruebas unitarias",
+                        "Pruebas de integración",
+                        "OWASP",
+                        "CI/CD"
+                    ]
+                },
+                {
+                    "id": "devops",
+                    "title": "Herramientas y DevOps",
+                    "description": "Implementación de pipelines de integración y despliegue continuos.",
+                    "practices": [
+                        "Git",
+                        "Docker",
+                        "GitHub Actions",
+                        "Monitoreo"
+                    ]
+                }
+            ]
+        },
+        "cta": {
+            "title": "¿Listo para dar vida a tu proyecto?",
+            "subtitle": "Hablemos de cómo puedo ayudarte a alcanzar tus objetivos.",
+            "button": "Hablemos de tu proyecto"
+        },
+        "projectDetails": {
+            "factura": {
+                "description": "Sistema completo de gestión de facturas para empresas",
+                "longDescription": "Factura es una solución moderna de gestión de facturas que ayuda a las empresas a optimizar su proceso de facturación. Construido con React y Node.js, ofrece actualizaciones en tiempo real, plantillas personalizables e informes detallados."
+            },
+            "tourmada": {
+                "description": "Aplicación móvil de guía turística para Madagascar",
+                "longDescription": "Tourmada es tu guía de bolsillo para las maravillas de Madagascar. Esta aplicación React Native ofrece mapas interactivos, recomendaciones locales y perspectivas culturales, facilitando la planificación de viajes."
+            },
+            "theologix": {
+                "description": "Plataforma en línea para estudios teológicos",
+                "longDescription": "Theologix es una plataforma de aprendizaje innovadora dedicada a estudios teológicos. Construida con React y MongoDB, ofrece cursos interactivos, foros de discusión y bibliotecas de recursos."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "message": "Mensaje",
+        "send": "Enviar mensaje",
+        "sending": "Enviando...",
+        "success": "¡Mensaje enviado con éxito! Te responderé pronto.",
+        "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+        "intro": "¿Tienes un proyecto? ¿Una pregunta? No dudes en contactarme.",
+        "privacy": "Tu información está segura y solo se utilizará para responder a tu consulta.",
+        "seo": {
+            "description": "Contacta a Ihantsa RAKOTONDRANAIVO para desarrollo web, aplicaciones móviles, proyectos de IA. Disponible para trabajo freelance y colaboraciones.",
+            "keywords": "contacto, contratar desarrollador, freelance, desarrollo web, aplicaciones móviles, proyectos IA, colaboración"
+        },
+        "form": {
+            "title": "Envíame un mensaje"
+        },
+        "placeholders": {
+            "name": "Tu nombre completo",
+            "email": "tu.correo@ejemplo.com",
+            "message": "Cuéntame sobre tu proyecto o pregunta..."
+        },
+        "validation": {
+            "nameRequired": "El nombre es obligatorio",
+            "nameMinLength": "El nombre debe tener al menos 2 caracteres",
+            "emailRequired": "El correo electrónico es obligatorio",
+            "emailInvalid": "Por favor, introduce una dirección de correo electrónico válida",
+            "messageRequired": "El mensaje es obligatorio",
+            "messageMinLength": "El mensaje debe tener al menos 10 caracteres",
+            "formErrors": "Por favor, corrige los errores anteriores"
+        },
+        "emailjs": {
+            "notConfigured": "El servicio de correo electrónico aún no está configurado.",
+            "useEmailClient": "¿Te gustaría abrir tu cliente de correo electrónico en su lugar?"
+        },
+        "emailClient": {
+            "opened": "Cliente de correo electrónico abierto. Por favor, envía tu mensaje desde allí."
+        },
+        "info": {
+            "title": "Mantengámonos conectados",
+            "subtitle": "Siempre estoy interesado en nuevas oportunidades y proyectos interesantes. Hablemos de cómo podemos trabajar juntos.",
+            "email": {
+                "label": "Correo electrónico",
+                "description": "Mejor manera de contactarme para consultas profesionales"
+            },
+            "linkedin": {
+                "label": "LinkedIn",
+                "description": "Conéctate conmigo profesionalmente"
+            },
+            "github": {
+                "label": "GitHub",
+                "description": "Consulta mi código y contribuciones"
+            },
+            "phone": {
+                "label": "Teléfono",
+                "description": "Solo para consultas urgentes"
+            }
+        },
+        "availability": {
+            "status": "Disponible para nuevos proyectos",
+            "description": "Actualmente acepto trabajos freelance y colaboraciones interesantes"
+        },
+        "social": {
+            "title": "Sígueme"
+        },
+        "faq": {
+            "title": "Preguntas Frecuentes",
+            "subtitle": "Respuestas rápidas a preguntas comunes sobre la colaboración",
+            "q1": {
+                "question": "¿Cuál es tu tiempo de respuesta habitual?",
+                "answer": "Generalmente respondo dentro de las 24 horas durante los días hábiles. Para preguntas urgentes, no dudes en llamar."
+            },
+            "q2": {
+                "question": "¿Trabajas con clientes internacionales?",
+                "answer": "¡Absolutamente! Trabajo con clientes de todo el mundo y me siento cómodo con diferentes zonas horarias."
+            },
+            "q3": {
+                "question": "¿En qué tecnologías te especializas?",
+                "answer": "Me especializo en React, Next.js, TypeScript, Flutter, Python e integración de IA. Siempre estoy aprendiendo nuevas tecnologías."
+            },
+            "q4": {
+                "question": "¿Ofreces soporte continuo?",
+                "answer": "Sí, proporciono servicios de mantenimiento y soporte para todos los proyectos que desarrollo. Hablemos de tus necesidades."
+            }
+        }
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados."
+    },
+    "meta": {
+        "title": "OEKA - Ihantsa RAKOTONDRANAIVO",
+        "description": "Desarrollador Full-Stack e IA especializado en React, Next.js, Flutter, Python. Creación de aplicaciones web y móviles modernas.",
+        "keywords": "desarrollador, React, Next.js, Flutter, Python, IA, TypeScript, portafolio, Madagascar"
+    },
+    "notFound": {
+        "seo": {
+            "title": "Página no encontrada - Ihantsa Rakotondraivo",
+            "description": "La página que buscas no existe o ha sido movida."
+        },
+        "title": "¡Ups! Página no encontrada",
+        "message": "Lo sentimos, no pudimos encontrar la página que buscas.",
+        "ctaPrimary": "Volver al inicio",
+        "ctaSecondary": "Página anterior"
+    },
+    "scout": {
+        "seo": {
+            "title": "Scout - Ihantsa RAKOTONDRANAIVO",
+            "description": "Descubre mi compromiso con el escultismo: actividades, valores y aventuras con los Scouts, Tily e Imaran Bato.",
+            "keywords": "scout, escultismo, juventud, liderazgo, aventura, naturaleza, Madagascar"
+        },
+        "hero": {
+            "title": "Mi Aventura Scout",
+            "subtitle": "El escultismo me ha enseñado valores esenciales: liderazgo, trabajo en equipo y respeto por la naturaleza.",
+            "mission": "A través de diferentes ramas, guío a los jóvenes en su desarrollo personal y descubrimiento del mundo.",
+            "description": "Cada actividad es una oportunidad para crecer, aprender y crear lazos que duran toda la vida."
+        },
+        "categories": {
+            "scouts": {
+                "description": "Los Scouts desarrollan su autonomía a través de actividades al aire libre, campamentos y proyectos comunitarios. Es un período de descubrimiento y aprendizaje de habilidades para la vida."
+            },
+            "tily": {
+                "description": "Los Tily descubren el mundo a través del juego, la exploración y la creatividad. Es el comienzo de la aventura scout para los más jóvenes, donde la imaginación y la amistad están en el corazón de cada actividad."
+            },
+            "imaranBato": {
+                "description": "Los Imaran Bato se preparan para convertirse en líderes responsables a través de desafíos, proyectos de servicio y aventuras exigentes. Es la etapa de madurez y compromiso."
+            }
+        },
+        "activities": {
+            "title": "Nuestras Actividades",
+            "subtitle": "Experiencias enriquecedoras que forjan el carácter y crean recuerdos inolvidables",
+            "camping": {
+                "title": "Camping y Vivac",
+                "description": "Aprender a vivir en armonía con la naturaleza, desarrollar autonomía y crear lazos fuertes alrededor de la fogata."
+            },
+            "hiking": {
+                "title": "Senderismo y Exploración",
+                "description": "Descubrir las maravillas de Madagascar, desarrollar resistencia y aprender a orientarse en la naturaleza."
+            },
+            "leadership": {
+                "title": "Liderazgo y Equipo",
+                "description": "Desarrollar habilidades de liderazgo, aprender a trabajar en equipo y asumir responsabilidades."
+            },
+            "games": {
+                "title": "Juegos y Descubrimientos",
+                "description": "Aprender mientras te diviertes a través de juegos educativos que estimulan la creatividad y la imaginación."
+            },
+            "crafts": {
+                "title": "Artesanía y Creatividad",
+                "description": "Desarrollar destreza y expresión artística a través de diversas actividades manuales."
+            },
+            "nature": {
+                "title": "Naturaleza y Medio Ambiente",
+                "description": "Sensibilizar sobre la protección del medio ambiente y aprender a respetar la biodiversidad."
+            },
+            "community": {
+                "title": "Servicio Comunitario",
+                "description": "Participar en proyectos que tienen un impacto positivo en la comunidad y desarrollar el sentido cívico."
+            },
+            "skills": {
+                "title": "Habilidades Técnicas",
+                "description": "Dominar técnicas avanzadas de supervivencia, primeros auxilios y gestión de proyectos."
+            },
+            "adventure": {
+                "title": "Grandes Aventuras",
+                "description": "Enfrentar desafíos ambiciosos que empujan los límites y forjan el carácter."
+            }
+        },
+        "profile": {
+            "title": "Mi Trayectoria Scout",
+            "totem": {
+                "description": "Mi tótem OEKA Mikofo refleja el espíritu de liderazgo y la visión de águila que aporto al escultismo. Totemizado para reconocer mi compromiso y cualidades de guía.",
+                "animal": {
+                    "title": "El Coua Azul",
+                    "description": "OEKA se refiere al Coua Azul de Madagascar (Coua caerulea), un ave endémica de los bosques malgaches. Reconocido por su belleza distintiva con plumaje azul brillante y cresta elegante, el Coua Azul simboliza el orgullo nacional malgache. Esta ave representa visión aguda, adaptabilidad y la capacidad de navegar en entornos complejos - cualidades que me caracterizan como líder scout."
+                },
+                "character": {
+                    "title": "El Espíritu de Excelencia",
+                    "description": "Mikofo proviene de la palabra malgache 'Milofo' que significa concentrarse intensamente en el estudio, perfeccionar las cosas y estudiar con determinación. Esta cualidad refleja mi carácter: perseverancia en el aprendizaje, atención al detalle y la búsqueda constante de la excelencia. Como scout, esta cualidad me impulsa a mejorar siempre y transmitir esta sed de perfeccionamiento a los jóvenes que guío."
+                }
+            },
+            "journey": {
+                "description": "Desde mis inicios como joven scout, he escalado los rangos para convertirme en líder, guiando a las nuevas generaciones en su descubrimiento de los valores scouts."
+            },
+            "values": {
+                "description": "El escultismo me ha enseñado la importancia del servicio, el respeto por la naturaleza y el desarrollo personal a través de la acción colectiva.",
+                "solidarity": "Solidaridad",
+                "nature": "Naturaleza",
+                "excellence": "Excelencia"
+            },
+            "stats": {
+                "years": "Años de experiencia",
+                "scouts": "Jóvenes guiados"
+            }
+        },
+        "showcase": {
+            "title": "El Espíritu Scout en Acción",
+            "description": "Cada aventura es una oportunidad para crecer, aprender y crear recuerdos que duran toda la vida.",
+            "alt": "Actividades scouts en plena naturaleza"
+        }
+    }
+}

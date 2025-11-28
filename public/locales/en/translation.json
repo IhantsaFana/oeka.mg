@@ -8,129 +8,6 @@
     "hireMe": "Work with me",
     "discoverProjects": "View my work"
   },
-  "dev": {
-    "seo": {
-      "title": "Dev Projects & Skills - Ihantsa RAKOTONDRANAIVO",
-      "description": "Explore my development projects and technical skills. Full-stack developer specializing in React, Flutter, and Python."
-    },
-    "techLogos": {
-      "title": "Technologies I Love",
-      "description": "Here are some of the technologies I work with regularly."
-    },
-    "methodologies": {
-      "title": "Methodologies & Best Practices",
-      "subtitle": "Approaches and practices for quality development.",
-      "practices": "Key Practices",
-      "items": [
-        {
-          "id": "agile",
-          "title": "Agile Development",
-          "description": "Agile/Scrum methodologies for iterative and collaborative development.",
-          "practices": [
-            "Sprints",
-            "Daily Stand-ups",
-            "Retrospectives",
-            "User Stories"
-          ]
-        },
-        {
-          "id": "mobile",
-          "title": "Mobile Development",
-          "description": "Responsive design with a Mobile First approach for an optimal user experience.",
-          "practices": [
-            "Responsive Design",
-            "PWA",
-            "Mobile Performance",
-            "Touch-friendly UI"
-          ]
-        },
-        {
-          "id": "architecture",
-          "title": "Modern Architecture",
-          "description": "Design of scalable and maintainable architectures.",
-          "practices": [
-            "Microservices",
-            "REST/GraphQL API",
-            "Serverless",
-            "JAMstack"
-          ]
-        },
-        {
-          "id": "security",
-          "title": "Security & Quality",
-          "description": "Integration of security best practices and quality assurance.",
-          "practices": [
-            "Unit Testing",
-            "Integration Testing",
-            "OWASP",
-            "CI/CD"
-          ]
-        },
-        {
-          "id": "devops",
-          "title": "Tools & DevOps",
-          "description": "Implementation of continuous integration and deployment pipelines.",
-          "practices": [
-            "Git",
-            "Docker",
-            "GitHub Actions",
-            "Monitoring"
-          ]
-        }
-      ]
-    },
-    "projects": {
-      "title": "Some Projects",
-      "description": "Here's a sample of my projects as a developer. Discover my technical and creative achievements.",
-      "viewAll": "View All Projects"
-    },
-    "hero": {
-      "title": "Full Stack Developer",
-      "subtitle": "Creating innovative digital experiences with modern technologies",
-      "ctaPrimary": "Contact Me",
-      "ctaSecondary": "View My Projects"
-    },
-    "experience": {
-      "title": "Professional Experience",
-      "subtitle": "My journey in software development and web technologies.",
-      "viewDetails": "View Details"
-    },
-    "skills": {
-      "title": "Technical Skills",
-      "subtitle": "An overview of my skills and technical expertise.",
-      "legend": {
-        "title": "Skill Levels",
-        "advanced": "Advanced (80-100%)",
-        "intermediate": "Intermediate (60-79%)",
-        "beginner": "Beginner (< 60%)"
-      }
-    },
-    "education": {
-      "title": "Education & Certifications",
-      "subtitle": "My academic background and professional certifications.",
-      "viewDetails": "View Details",
-      "downloadCV": "Download My Full CV"
-    },
-    "cta": {
-      "title": "Ready to bring your project to life?",
-      "subtitle": "Let's discuss how I can help you achieve your goals.",
-      "button": "Let's Talk About Your Project"
-    },
-    "projectDetails": {
-      "factura": {
-        "description": "A comprehensive invoice management system for businesses",
-        "longDescription": "Factura is a modern invoice management solution that helps businesses streamline their billing process. Built with React and Node.js, it features real-time updates, customizable templates, and detailed reporting."
-      },
-      "tourmada": {
-        "description": "Mobile travel guide app for Madagascar",
-        "longDescription": "Tourmada is your pocket guide to Madagascar's wonders. This React Native app offers interactive maps, local recommendations, and cultural insights, making travel planning a breeze."
-      },
-      "theologix": {
-        "description": "Online platform for theological studies",
-        "longDescription": "Theologix is an innovative learning platform dedicated to theological studies. Built with React and MongoDB, it provides interactive courses, discussion forums, and resource libraries."
-      }
-    }
-  },
   "home": {
     "seo": {
       "title": "Ihantsa RAKOTONDRANAIVO - OEKA Mikofo",
@@ -288,6 +165,129 @@
       "challenge": "Challenge",
       "solution": "Solution",
       "technologies": "Technologies Used"
+    }
+  },
+  "dev": {
+    "seo": {
+      "title": "Dev Projects & Skills - Ihantsa RAKOTONDRANAIVO",
+      "description": "Explore my development projects and technical skills. Full-stack developer specializing in React, Flutter, and Python."
+    },
+    "techLogos": {
+      "title": "Technologies I Love",
+      "description": "Here are some of the technologies I work with regularly."
+    },
+    "projects": {
+      "title": "Some Projects",
+      "description": "Here's a sample of my projects as a developer. Discover my technical and creative achievements.",
+      "viewAll": "View All Projects"
+    },
+    "hero": {
+      "title": "Full Stack Developer",
+      "subtitle": "Creating innovative digital experiences with modern technologies",
+      "ctaPrimary": "Contact Me",
+      "ctaSecondary": "View My Projects"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "subtitle": "My journey in software development and web technologies.",
+      "viewDetails": "View Details"
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "subtitle": "An overview of my skills and technical expertise.",
+      "legend": {
+        "title": "Skill Levels",
+        "advanced": "Advanced (80-100%)",
+        "intermediate": "Intermediate (60-79%)",
+        "beginner": "Beginner (< 60%)"
+      }
+    },
+    "education": {
+      "title": "Education & Certifications",
+      "subtitle": "My academic background and professional certifications.",
+      "viewDetails": "View Details",
+      "downloadCV": "Download My Full CV"
+    },
+    "methodologies": {
+      "title": "Methodologies & Best Practices",
+      "subtitle": "Approaches and practices for quality development.",
+      "practices": "Key Practices",
+      "items": [
+        {
+          "id": "agile",
+          "title": "Agile Development",
+          "description": "Agile/Scrum methodologies for iterative and collaborative development.",
+          "practices": [
+            "Sprints",
+            "Daily Stand-ups",
+            "Retrospectives",
+            "User Stories"
+          ]
+        },
+        {
+          "id": "mobile",
+          "title": "Mobile Development",
+          "description": "Responsive design with a Mobile First approach for an optimal user experience.",
+          "practices": [
+            "Responsive Design",
+            "PWA",
+            "Mobile Performance",
+            "Touch-friendly UI"
+          ]
+        },
+        {
+          "id": "architecture",
+          "title": "Modern Architecture",
+          "description": "Design of scalable and maintainable architectures.",
+          "practices": [
+            "Microservices",
+            "REST/GraphQL API",
+            "Serverless",
+            "JAMstack"
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Security & Quality",
+          "description": "Integration of security best practices and quality assurance.",
+          "practices": [
+            "Unit Testing",
+            "Integration Testing",
+            "OWASP",
+            "CI/CD"
+          ]
+        },
+        {
+          "id": "devops",
+          "title": "Tools & DevOps",
+          "description": "Implementation of continuous integration and deployment pipelines.",
+          "practices": [
+            "Git",
+            "Docker",
+            "GitHub Actions",
+            "Monitoring"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to bring your project to life?",
+      "subtitle": "Let's discuss how I can help you achieve your goals.",
+      "button": "Let's Talk About Your Project"
+    },
+    "projectDetails": {
+      "factura": {
+        "description": "A comprehensive invoice management system for businesses",
+        "longDescription": "Factura is a modern invoice management solution that helps businesses streamline their billing process. Built with React and Node.js, it features real-time updates, customizable templates, and detailed reporting."
+      },
+      "tourmada": {
+        "description": "Mobile travel guide app for Madagascar",
+        "longDescription": "Tourmada is your pocket guide to Madagascar's wonders. This React Native app offers interactive maps, local recommendations, and cultural insights, making travel planning a breeze."
+      },
+      "theologix": {
+        "description": "Online platform for theological studies",
+        "longDescription": "Theologix is an innovative learning platform dedicated to theological studies. Built with React and MongoDB, it provides interactive courses, discussion forums, and resource libraries."
+      }
     }
   },
   "contact": {

@@ -10,18 +10,18 @@ import { getLocalizedPath } from '@/shared/utils/routes';
 
 // Composant pour rediriger vers la langue détectée
 function RootRedirect() {
-  const supportedLangs = ['en', 'fr'] as const;
-  
+  const supportedLangs = ['en', 'fr', 'mg', 'es', 'zh', 'de'] as const;
+
   // 1. Priorité à la langue sauvegardée
   const savedLang = localStorage.getItem('i18nextLng') as typeof supportedLangs[number] | null;
   if (savedLang && supportedLangs.includes(savedLang)) {
     return <Navigate to={getLocalizedPath('/', savedLang)} replace />;
   }
-  
+
   // 2. Sinon, détecte la langue du navigateur
   const browserLang = navigator.language.split('-')[0] as typeof supportedLangs[number];
   const detectedLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
-  
+
   return <Navigate to={getLocalizedPath('/', detectedLang)} replace />;
 }
 

@@ -1,0 +1,494 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "dev": "Dev",
+        "scout": "Pfadfinder",
+        "fleurs": "Blumen",
+        "contact": "Kontakt",
+        "hireMe": "Zusammenarbeiten",
+        "discoverProjects": "Meine Projekte ansehen"
+    },
+    "home": {
+        "seo": {
+            "title": "Ihantsa RAKOTONDRANAIVO - Persönliche Website",
+            "description": "Willkommen auf meiner persönlichen Website. Entdecken Sie meinen Werdegang, meine Leidenschaften und verschiedene Aktivitäten, von der Entwicklung bis zur Pfadfinderarbeit."
+        },
+        "title": "Ihantsa RAKOTONDRANAIVO",
+        "subtitle": "Entwickler, Pfadfinderleiter, Jugendfreiwilliger",
+        "description": "Ein leidenschaftlicher Mensch, der sich der Technologie, der Jugendbetreuung und dem Sport widmet.",
+        "cta": {
+            "contact": "Kontaktieren Sie mich",
+            "portfolio": "Meine Projekte ansehen",
+            "workTogether": "Lassen Sie uns zusammenarbeiten",
+            "workTogetherSubtitle": "Lassen Sie uns über Ihr Projekt sprechen und sehen, wie ich Ihnen helfen kann",
+            "startProject": "Projekt starten",
+            "learnMore": "Mehr erfahren"
+        },
+        "hello": "Hallo, ich bin",
+        "welcome": "Willkommen in meiner Welt",
+        "intro": "Mit 18 Jahren erkunde ich das Leben aus mehreren Perspektiven: als Entwickler, Pfadfinderleiter und Jugendfreiwilliger. Begleiten Sie mich auf dieser Reise des Wachstums und der Entdeckung.",
+        "heroTitle": "Leidenschaft leitet meine Handlungen",
+        "heroHighlight": "Leidenschaft",
+        "followMe": "Folgen Sie mir auf",
+        "introduction": {
+            "title": "Eine Reise des Wachstums und der Entdeckung",
+            "paragraphs": {
+                "personal": "Ich bin Ihantsa RAKOTONDRANAIVO, ein 18-jähriger Madagasse, der sich für Technologie und Jugendentwicklung begeistert. Mit Sitz in Madagaskar verbinde ich meine Liebe zur Entwicklung mit aktivem Engagement in der Pfadfinderarbeit und im Volleyball.",
+                "education": "Ich studiere derzeit als KI- und MLOps-Spezialist an der ESMIA Antananarivo und verbinde mein technisches Fachwissen mit meinem Wunsch, durch Innovation einen positiven Einfluss zu haben.",
+                "interests": "Über das Programmieren hinaus finde ich Freude daran, Kinder durch Pfadfinderaktivitäten zu betreuen und mit ihnen zu spielen. Als Pfadfinderleiter helfe ich jungen Menschen, wertvolle Lebenskompetenzen zu entwickeln."
+            }
+        }
+    },
+    "about": {
+        "title": "Über mich",
+        "description": "Full-Stack-Entwickler mit Leidenschaft für moderne Technologien und künstliche Intelligenz.",
+        "seo": {
+            "description": "Erfahren Sie mehr über Ihantsa RAKOTONDRANAIVO, Full-Stack-Entwickler und KI-Ingenieur, spezialisiert auf React, Next.js, Flutter, Python.",
+            "keywords": "über, Entwickler, Full-Stack, KI-Ingenieur, React, Next.js, Flutter, Python, Erfahrung, Fähigkeiten"
+        },
+        "intro": {
+            "paragraph1": "Hallo! Ich bin Ihantsa RAKOTONDRANAIVO, ein leidenschaftlicher Full-Stack-Entwickler und KI-Ingenieur mit Sitz in Madagaskar. Ich bin auf die Erstellung moderner Web- und Mobilanwendungen mit modernsten Technologien spezialisiert.",
+            "paragraph2": "Mit über 5 Jahren Erfahrung in der Softwareentwicklung habe ich an verschiedenen Projekten gearbeitet, von E-Commerce-Plattformen bis hin zu KI-gestützten Anwendungen. Ich bin besonders begeistert vom React-Ökosystem, Flutter für die mobile Entwicklung und der Integration von KI-Lösungen.",
+            "paragraph3": "Wenn ich nicht programmiere, finden Sie mich beim Erkunden neuer Technologien, beim Beitragen zu Open-Source-Projekten oder beim Teilen von Wissen mit der Entwickler-Community. Ich glaube an kontinuierliches Lernen und daran, mit den neuesten Branchentrends Schritt zu halten."
+        },
+        "stats": {
+            "experience": "Jahre Erf.",
+            "projects": "Projekte",
+            "technologies": "Technologien"
+        },
+        "skills": {
+            "title": "Fähigkeiten",
+            "subtitle": "Technologien und Werkzeuge, die ich beherrsche",
+            "web": "Webentwicklung",
+            "mobile": "Mobile Entwicklung",
+            "ai": "Künstliche Intelligenz",
+            "webDesc": "React, Next.js, TypeScript, Tailwind CSS",
+            "mobileDesc": "Flutter, React Native, plattformübergreifende Entwicklung",
+            "aiDesc": "Python, Machine Learning, KI-Integration",
+            "stats": {
+                "technologies": "Technologien",
+                "experience": "Jahre Erf.",
+                "projects": "Projekte",
+                "certifications": "Zertifizierungen"
+            }
+        },
+        "technologies": {
+            "title": "Technologien",
+            "subtitle": "Die Werkzeuge und Frameworks, die ich täglich verwende"
+        },
+        "timeline": {
+            "title": "Berufserfahrung",
+            "subtitle": "Mein Weg als Entwickler und die Erfahrungen, die mein Fachwissen geprägt haben.",
+            "tourmada": {
+                "title": "Full-Stack Web- und Mobile-Entwickler (Praktikum)",
+                "company": "Tourmada",
+                "description": "Entwurf und Bereitstellung der Tourmada-Plattform mit Django, React, Flutter, PostgreSQL und Gemini API. Erstellung einer umfassenden Tourismuslösung mit Web- und Mobilschnittstellen."
+            },
+            "armh": {
+                "title": "Freiberuflicher Webentwickler",
+                "company": "ARMH Consulting",
+                "description": "Entwicklung responsiver Websites mit UX- und grundlegender SEO-Optimierung. Bereitstellung moderner Weblösungen für verschiedene Kunden."
+            },
+            "lutherienne": {
+                "title": "IT-Manager (Praktikum)",
+                "company": "Imprimerie Luthérienne, Antananarivo",
+                "description": "Analyse von Produktionsabläufen und Bereitstellung eines Optimierungssystems. Verwaltung der IT-Infrastruktur und Verbesserung der Betriebseffizienz."
+            },
+            "hackathon": {
+                "title": "KI-gestützte Bewertung - ESMIA Hackathon 2025",
+                "company": "Projekt",
+                "description": "Erstellung eines React/Django-Prototyps mit Gemini API, um Prüfungen interaktiv zu gestalten. Entwicklung einer innovativen, KI-gestützten Bewertungsplattform."
+            }
+        },
+        "certifications": {
+            "title": "Zertifizierungen und Ausbildung",
+            "subtitle": "Kontinuierliches Lernen und berufliche Entwicklungserfolge.",
+            "verified": "Verifiziert",
+            "informatique": {
+                "name": "Beruflicher Abschluss in Informatik",
+                "issuer": "ESMIA Antananarivo Madagaskar"
+            },
+            "anglais": {
+                "name": "Gesprochenes Englisch - Niveau B2",
+                "issuer": "FLTC Madagascar Group"
+            },
+            "francais": {
+                "name": "Gesprochenes Französisch - Niveau B1",
+                "issuer": "FLTC Madagascar Group"
+            }
+        }
+    },
+    "projects": {
+        "title": "Projekte",
+        "subtitle": "Entdecken Sie meine neuesten Projekte und die Technologien, die ich verwende.",
+        "viewLive": "Live-Demo",
+        "viewCode": "Code ansehen",
+        "learnMore": "Mehr erfahren",
+        "featured": "Hervorgehoben",
+        "viewProject": "Alle Projekte ansehen",
+        "sourceCode": "Quellcode",
+        "viewOnline": "Online ansehen",
+        "previousProject": "Vorheriges Projekt",
+        "nextProject": "Nächstes Projekt",
+        "goToProject": "Zum Projekt gehen",
+        "featuredProject": "Hervorgehobenes Projekt",
+        "recent": "Neueste Projekte",
+        "other": "Andere Projekte",
+        "modal": {
+            "description": "Beschreibung",
+            "challenge": "Herausforderung",
+            "solution": "Lösung",
+            "technologies": "Verwendete Technologien"
+        },
+        "seo": {
+            "description": "Erkunden Sie das Portfolio von Ihantsa RAKOTONDRANAIVO mit Web- und Mobilanwendungen, die mit React, Next.js, Flutter, Python und KI-Technologien erstellt wurden.",
+            "keywords": "Projekte, Portfolio, React, Next.js, Flutter, Python, KI, Webentwicklung, Mobile Entwicklung, Full-Stack"
+        },
+        "stats": {
+            "total": "Gesamtprojekte",
+            "featured": "Hervorgehoben",
+            "technologies": "Technologien"
+        },
+        "categories": {
+            "all": "Alle",
+            "web": "Web",
+            "mobile": "Mobil",
+            "ai": "KI",
+            "fullstack": "Full-Stack"
+        },
+        "filters": {
+            "categories": "Nach Kategorie filtern",
+            "technologies": "Nach Technologie filtern",
+            "showing": "Angezeigte Ergebnisse"
+        },
+        "noResults": {
+            "title": "Keine Projekte gefunden",
+            "description": "Versuchen Sie, Ihre Filter anzupassen, um mehr Projekte zu sehen.",
+            "reset": "Filter zurücksetzen"
+        }
+    },
+    "dev": {
+        "seo": {
+            "title": "Dev-Projekte und Fähigkeiten - Ihantsa RAKOTONDRANAIVO",
+            "description": "Erkunden Sie meine Entwicklungsprojekte und technischen Fähigkeiten. Full-Stack-Entwickler, spezialisiert auf React, Flutter und Python."
+        },
+        "techLogos": {
+            "title": "Technologien, die ich liebe",
+            "description": "Hier sind einige der Technologien, mit denen ich regelmäßig arbeite."
+        },
+        "projects": {
+            "title": "Einige Projekte",
+            "description": "Hier ist eine Auswahl meiner Projekte als Entwickler. Entdecken Sie meine technischen und kreativen Errungenschaften.",
+            "viewAll": "Alle Projekte ansehen"
+        },
+        "hero": {
+            "title": "Full-Stack-Entwickler",
+            "subtitle": "Erstellung innovativer digitaler Erlebnisse mit modernen Technologien",
+            "ctaPrimary": "Kontaktieren Sie mich",
+            "ctaSecondary": "Meine Projekte ansehen"
+        },
+        "experience": {
+            "title": "Berufserfahrung",
+            "subtitle": "Mein Weg in der Softwareentwicklung und Webtechnologien.",
+            "viewDetails": "Details ansehen"
+        },
+        "skills": {
+            "title": "Technische Fähigkeiten",
+            "subtitle": "Ein Überblick über meine Fähigkeiten und technisches Fachwissen.",
+            "legend": {
+                "title": "Fähigkeitsstufen",
+                "advanced": "Fortgeschritten (80-100%)",
+                "intermediate": "Mittelstufe (60-79%)",
+                "beginner": "Anfänger (< 60%)"
+            }
+        },
+        "education": {
+            "title": "Ausbildung und Zertifizierungen",
+            "subtitle": "Mein akademischer Hintergrund und berufliche Zertifizierungen.",
+            "viewDetails": "Details ansehen",
+            "downloadCV": "Meinen vollständigen Lebenslauf herunterladen"
+        },
+        "methodologies": {
+            "title": "Methodologien und Best Practices",
+            "subtitle": "Ansätze und Praktiken für qualitativ hochwertige Entwicklung.",
+            "practices": "Schlüsselpraktiken",
+            "items": [
+                {
+                    "id": "agile",
+                    "title": "Agile Entwicklung",
+                    "description": "Agile/Scrum-Methodologien für iterative und kollaborative Entwicklung.",
+                    "practices": [
+                        "Sprints",
+                        "Daily Stand-ups",
+                        "Retrospektiven",
+                        "User Stories"
+                    ]
+                },
+                {
+                    "id": "mobile",
+                    "title": "Mobile Entwicklung",
+                    "description": "Responsives Design mit Mobile-First-Ansatz für optimale Benutzererfahrung.",
+                    "practices": [
+                        "Responsives Design",
+                        "PWA",
+                        "Mobile Performance",
+                        "Touch-freundliche UI"
+                    ]
+                },
+                {
+                    "id": "architecture",
+                    "title": "Moderne Architektur",
+                    "description": "Entwurf skalierbarer und wartbarer Architekturen.",
+                    "practices": [
+                        "Microservices",
+                        "REST/GraphQL API",
+                        "Serverless",
+                        "JAMstack"
+                    ]
+                },
+                {
+                    "id": "security",
+                    "title": "Sicherheit und Qualität",
+                    "description": "Integration von Sicherheits-Best-Practices und Qualitätssicherung.",
+                    "practices": [
+                        "Unit-Tests",
+                        "Integrationstests",
+                        "OWASP",
+                        "CI/CD"
+                    ]
+                },
+                {
+                    "id": "devops",
+                    "title": "Tools und DevOps",
+                    "description": "Implementierung von kontinuierlichen Integrations- und Bereitstellungs-Pipelines.",
+                    "practices": [
+                        "Git",
+                        "Docker",
+                        "GitHub Actions",
+                        "Monitoring"
+                    ]
+                }
+            ]
+        },
+        "cta": {
+            "title": "Bereit, Ihr Projekt zum Leben zu erwecken?",
+            "subtitle": "Lassen Sie uns besprechen, wie ich Ihnen helfen kann, Ihre Ziele zu erreichen.",
+            "button": "Lassen Sie uns über Ihr Projekt sprechen"
+        },
+        "projectDetails": {
+            "factura": {
+                "description": "Umfassendes Rechnungsverwaltungssystem für Unternehmen",
+                "longDescription": "Factura ist eine moderne Rechnungsverwaltungslösung, die Unternehmen hilft, ihren Abrechnungsprozess zu optimieren. Mit React und Node.js erstellt, bietet es Echtzeit-Updates, anpassbare Vorlagen und detaillierte Berichte."
+            },
+            "tourmada": {
+                "description": "Mobile Reiseführer-App für Madagaskar",
+                "longDescription": "Tourmada ist Ihr Taschenführer für die Wunder Madagaskars. Diese React Native App bietet interaktive Karten, lokale Empfehlungen und kulturelle Einblicke und macht die Reiseplanung zum Kinderspiel."
+            },
+            "theologix": {
+                "description": "Online-Plattform für theologische Studien",
+                "longDescription": "Theologix ist eine innovative Lernplattform für theologische Studien. Mit React und MongoDB erstellt, bietet sie interaktive Kurse, Diskussionsforen und Ressourcenbibliotheken."
+            }
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "send": "Nachricht senden",
+        "sending": "Wird gesendet...",
+        "success": "Nachricht erfolgreich gesendet! Ich werde mich bald bei Ihnen melden.",
+        "error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.",
+        "intro": "Haben Sie ein Projekt? Eine Frage? Zögern Sie nicht, mich zu kontaktieren.",
+        "privacy": "Ihre Informationen sind sicher und werden nur verwendet, um auf Ihre Anfrage zu antworten.",
+        "seo": {
+            "description": "Kontaktieren Sie Ihantsa RAKOTONDRANAIVO für Webentwicklung, mobile Apps, KI-Projekte. Verfügbar für freiberufliche Arbeit und Kooperationen.",
+            "keywords": "Kontakt, Entwickler einstellen, Freiberufler, Webentwicklung, mobile Apps, KI-Projekte, Zusammenarbeit"
+        },
+        "form": {
+            "title": "Senden Sie mir eine Nachricht"
+        },
+        "placeholders": {
+            "name": "Ihr vollständiger Name",
+            "email": "ihre.email@beispiel.com",
+            "message": "Erzählen Sie mir von Ihrem Projekt oder Ihrer Frage..."
+        },
+        "validation": {
+            "nameRequired": "Name ist erforderlich",
+            "nameMinLength": "Name muss mindestens 2 Zeichen lang sein",
+            "emailRequired": "E-Mail ist erforderlich",
+            "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+            "messageRequired": "Nachricht ist erforderlich",
+            "messageMinLength": "Nachricht muss mindestens 10 Zeichen lang sein",
+            "formErrors": "Bitte beheben Sie die oben genannten Fehler"
+        },
+        "emailjs": {
+            "notConfigured": "Der E-Mail-Dienst ist noch nicht konfiguriert.",
+            "useEmailClient": "Möchten Sie stattdessen Ihren E-Mail-Client öffnen?"
+        },
+        "emailClient": {
+            "opened": "E-Mail-Client geöffnet. Bitte senden Sie Ihre Nachricht von dort."
+        },
+        "info": {
+            "title": "Bleiben wir in Verbindung",
+            "subtitle": "Ich bin immer an neuen Möglichkeiten und interessanten Projekten interessiert. Lassen Sie uns besprechen, wie wir zusammenarbeiten können.",
+            "email": {
+                "label": "E-Mail",
+                "description": "Beste Möglichkeit, mich für berufliche Anfragen zu erreichen"
+            },
+            "linkedin": {
+                "label": "LinkedIn",
+                "description": "Verbinden Sie sich beruflich mit mir"
+            },
+            "github": {
+                "label": "GitHub",
+                "description": "Sehen Sie sich meinen Code und meine Beiträge an"
+            },
+            "phone": {
+                "label": "Telefon",
+                "description": "Nur für dringende Anfragen"
+            }
+        },
+        "availability": {
+            "status": "Verfügbar für neue Projekte",
+            "description": "Ich nehme derzeit freiberufliche Arbeit und interessante Kooperationen an"
+        },
+        "social": {
+            "title": "Folgen Sie mir"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen",
+            "subtitle": "Schnelle Antworten auf häufige Fragen zur Zusammenarbeit",
+            "q1": {
+                "question": "Wie ist Ihre typische Antwortzeit?",
+                "answer": "Ich antworte in der Regel innerhalb von 24 Stunden an Werktagen. Bei dringenden Angelegenheiten können Sie gerne anrufen."
+            },
+            "q2": {
+                "question": "Arbeiten Sie mit internationalen Kunden?",
+                "answer": "Absolut! Ich arbeite mit Kunden weltweit und bin mit verschiedenen Zeitzonen vertraut."
+            },
+            "q3": {
+                "question": "Auf welche Technologien sind Sie spezialisiert?",
+                "answer": "Ich bin auf React, Next.js, TypeScript, Flutter, Python und KI-Integration spezialisiert. Ich lerne immer neue Technologien."
+            },
+            "q4": {
+                "question": "Bieten Sie laufenden Support an?",
+                "answer": "Ja, ich biete Wartungs- und Support-Services für alle Projekte, die ich entwickle. Lassen Sie uns über Ihre Bedürfnisse sprechen."
+            }
+        }
+    },
+    "footer": {
+        "rights": "Alle Rechte vorbehalten."
+    },
+    "meta": {
+        "title": "OEKA - Ihantsa RAKOTONDRANAIVO",
+        "description": "Full-Stack- und KI-Entwickler, spezialisiert auf React, Next.js, Flutter, Python. Erstellung moderner Web- und Mobilanwendungen.",
+        "keywords": "Entwickler, React, Next.js, Flutter, Python, KI, TypeScript, Portfolio, Madagaskar"
+    },
+    "notFound": {
+        "seo": {
+            "title": "Seite nicht gefunden - Ihantsa Rakotondraivo",
+            "description": "Die gesuchte Seite existiert nicht oder wurde verschoben."
+        },
+        "title": "Hoppla! Seite nicht gefunden",
+        "message": "Entschuldigung, wir konnten die gesuchte Seite nicht finden.",
+        "ctaPrimary": "Zurück zur Startseite",
+        "ctaSecondary": "Vorherige Seite"
+    },
+    "scout": {
+        "seo": {
+            "title": "Pfadfinder - Ihantsa RAKOTONDRANAIVO",
+            "description": "Entdecken Sie mein Engagement in der Pfadfinderarbeit: Aktivitäten, Werte und Abenteuer mit den Pfadfindern, Tily und Imaran Bato.",
+            "keywords": "Pfadfinder, Pfadfinderbewegung, Jugend, Führung, Abenteuer, Natur, Madagaskar"
+        },
+        "hero": {
+            "title": "Mein Pfadfinder-Abenteuer",
+            "subtitle": "Die Pfadfinderarbeit hat mir wesentliche Werte beigebracht: Führung, Teamarbeit und Respekt vor der Natur.",
+            "mission": "Durch verschiedene Zweige leite ich junge Menschen in ihrer persönlichen Entwicklung und Entdeckung der Welt.",
+            "description": "Jede Aktivität ist eine Gelegenheit zu wachsen, zu lernen und Bindungen zu schaffen, die ein Leben lang halten."
+        },
+        "categories": {
+            "scouts": {
+                "description": "Pfadfinder entwickeln ihre Autonomie durch Outdoor-Aktivitäten, Camps und Gemeinschaftsprojekte. Es ist eine Zeit der Entdeckung und des Lernens von Lebenskompetenzen."
+            },
+            "tily": {
+                "description": "Tily entdecken die Welt durch Spiel, Erkundung und Kreativität. Es ist der Beginn des Pfadfinder-Abenteuers für die Jüngsten, wo Fantasie und Freundschaft im Mittelpunkt jeder Aktivität stehen."
+            },
+            "imaranBato": {
+                "description": "Imaran Bato bereiten sich darauf vor, verantwortungsvolle Führungskräfte zu werden, durch Herausforderungen, Dienstprojekte und anspruchsvolle Abenteuer. Es ist die Phase der Reife und des Engagements."
+            }
+        },
+        "activities": {
+            "title": "Unsere Aktivitäten",
+            "subtitle": "Bereichernde Erfahrungen, die den Charakter formen und unvergessliche Erinnerungen schaffen",
+            "camping": {
+                "title": "Camping und Biwak",
+                "description": "Lernen Sie, in Harmonie mit der Natur zu leben, entwickeln Sie Autonomie und schaffen Sie starke Bindungen am Lagerfeuer."
+            },
+            "hiking": {
+                "title": "Wandern und Erkundung",
+                "description": "Entdecken Sie die Wunder Madagaskars, bauen Sie Ausdauer auf und lernen Sie, sich in der Natur zu orientieren."
+            },
+            "leadership": {
+                "title": "Führung und Team",
+                "description": "Entwickeln Sie Führungsqualitäten, lernen Sie Teamarbeit und übernehmen Sie Verantwortung."
+            },
+            "games": {
+                "title": "Spiele und Entdeckungen",
+                "description": "Lernen Sie beim Spielen durch Lernspiele, die Kreativität und Fantasie anregen."
+            },
+            "crafts": {
+                "title": "Handwerk und Kreativität",
+                "description": "Entwickeln Sie Geschicklichkeit und künstlerischen Ausdruck durch verschiedene manuelle Aktivitäten."
+            },
+            "nature": {
+                "title": "Natur und Umwelt",
+                "description": "Sensibilisieren Sie für Umweltschutz und lernen Sie, die Biodiversität zu respektieren."
+            },
+            "community": {
+                "title": "Gemeindedienst",
+                "description": "Engagieren Sie sich in Projekten, die positive Auswirkungen auf die Gemeinschaft haben und entwickeln Sie Bürgersinn."
+            },
+            "skills": {
+                "title": "Technische Fähigkeiten",
+                "description": "Beherrschen Sie fortgeschrittene Überlebens-, Erste-Hilfe- und Projektmanagement-Techniken."
+            },
+            "adventure": {
+                "title": "Große Abenteuer",
+                "description": "Stellen Sie sich ehrgeizigen Herausforderungen, die Grenzen verschieben und den Charakter formen."
+            }
+        },
+        "profile": {
+            "title": "Mein Pfadfinder-Weg",
+            "totem": {
+                "description": "Mein Totem OEKA Mikofo spiegelt den Führungsgeist und die Adlervision wider, die ich in die Pfadfinderarbeit einbringe. Totemisiert, um mein Engagement und meine Führungsqualitäten anzuerkennen.",
+                "animal": {
+                    "title": "Der Blaue Seidenkuckuck",
+                    "description": "OEKA bezieht sich auf den Blauen Seidenkuckuck von Madagaskar (Coua caerulea), einen endemischen Vogel der madagassischen Wälder. Bekannt für seine unverwechselbare Schönheit mit brillantem blauen Gefieder und eleganter Haube, symbolisiert der Blaue Seidenkuckuck den madagassischen Nationalstolz. Dieser Vogel repräsentiert scharfe Vision, Anpassungsfähigkeit und die Fähigkeit, in komplexen Umgebungen zu navigieren - Qualitäten, die mich als Pfadfinderleiter charakterisieren."
+                },
+                "character": {
+                    "title": "Der Geist der Exzellenz",
+                    "description": "Mikofo kommt vom madagassischen Wort 'Milofo', was bedeutet, sich intensiv auf das Studium zu konzentrieren, Dinge zu perfektionieren und mit Entschlossenheit zu studieren. Diese Qualität spiegelt meinen Charakter wider: Ausdauer beim Lernen, Liebe zum Detail und das ständige Streben nach Exzellenz. Als Pfadfinder treibt mich diese Qualität dazu an, mich ständig zu verbessern und diesen Durst nach Perfektion an die jungen Menschen weiterzugeben, die ich leite."
+                }
+            },
+            "journey": {
+                "description": "Seit meinen Anfängen als junger Pfadfinder bin ich in den Rängen aufgestiegen, um Leiter zu werden und neue Generationen bei der Entdeckung der Pfadfinderwerte zu leiten."
+            },
+            "values": {
+                "description": "Die Pfadfinderarbeit hat mir die Bedeutung von Dienst, Respekt vor der Natur und persönlicher Entwicklung durch kollektives Handeln beigebracht.",
+                "solidarity": "Solidarität",
+                "nature": "Natur",
+                "excellence": "Exzellenz"
+            },
+            "stats": {
+                "years": "Jahre Erfahrung",
+                "scouts": "Betreute Jugendliche"
+            }
+        },
+        "showcase": {
+            "title": "Der Pfadfindergeist in Aktion",
+            "description": "Jedes Abenteuer ist eine Gelegenheit zu wachsen, zu lernen und Erinnerungen zu schaffen, die ein Leben lang halten.",
+            "alt": "Pfadfinderaktivitäten in der Natur"
+        }
+    }
+}
