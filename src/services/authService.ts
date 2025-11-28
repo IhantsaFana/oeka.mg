@@ -3,8 +3,22 @@ import {
     signOut,
     onAuthStateChanged,
     type User,
+    GoogleAuthProvider,
+    signInWithPopup
 } from 'firebase/auth';
 import { auth } from '@/config/firebase';
+
+// Connexion avec Google
+export const loginWithGoogle = async (): Promise<User> => {
+    try {
+        const provider = new GoogleAuthProvider();
+        const result = await signInWithPopup(auth, provider);
+        return result.user;
+    } catch (error: any) {
+        console.error('Error logging in with Google:', error);
+        throw new Error(getAuthErrorMessage(error.code));
+    }
+};
 
 // Connexion avec email et mot de passe
 export const loginWithEmail = async (email: string, password: string): Promise<User> => {
@@ -52,6 +66,8 @@ const getAuthErrorMessage = (errorCode: string): string => {
             return 'Email ou mot de passe incorrect';
         case 'auth/too-many-requests':
             return 'Trop de tentatives. Réessayez plus tard';
+        case 'auth/popup-closed-by-user':
+            return 'La fenêtre de connexion a été fermée';
         default:
             return 'Une erreur est survenue lors de la connexion';
     }

@@ -136,7 +136,7 @@ export function AdminBlogEdit() {
             <form onSubmit={handleSubmit}>
                 {/* Top Bar */}
                 <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-30 px-4 h-16 flex items-center justify-between shadow-sm">
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-2 md:gap-4">
                         <button
                             type="button"
                             onClick={() => navigate('/admin/blog')}
@@ -144,16 +144,16 @@ export function AdminBlogEdit() {
                         >
                             <FaArrowLeft />
                         </button>
-                        <h1 className="text-lg font-bold text-gray-900 dark:text-white hidden md:block">
-                            {isEditing ? 'Modifier l\'article' : 'Nouvel article'}
+                        <h1 className="text-base md:text-lg font-bold text-gray-900 dark:text-white truncate max-w-[150px] md:max-w-none">
+                            {isEditing ? 'Modifier' : 'Nouveau'}
                         </h1>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2 md:gap-3">
                         <select
                             value={status}
                             onChange={(e) => setStatus(e.target.value as 'draft' | 'published')}
-                            className={`px-3 py-1.5 rounded-lg text-sm font-medium border-0 focus:ring-2 focus:ring-offset-1 transition-all cursor-pointer ${status === 'published'
+                            className={`px-2 md:px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium border-0 focus:ring-2 focus:ring-offset-1 transition-all cursor-pointer ${status === 'published'
                                     ? 'bg-green-100 text-green-700 focus:ring-green-500 dark:bg-green-900/30 dark:text-green-400'
                                     : 'bg-yellow-100 text-yellow-700 focus:ring-yellow-500 dark:bg-yellow-900/30 dark:text-yellow-400'
                                 }`}
@@ -165,30 +165,30 @@ export function AdminBlogEdit() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold py-2 px-6 rounded-lg shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5"
+                            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold py-2 px-4 md:px-6 rounded-lg shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5 text-sm md:text-base"
                         >
                             {loading ? <FaSpinner className="animate-spin" /> : <FaSave />}
-                            <span>Enregistrer</span>
+                            <span className="hidden md:inline">Enregistrer</span>
                         </button>
                     </div>
                 </div>
 
-                <Container className="py-8">
-                    <div className="grid lg:grid-cols-3 gap-8">
+                <Container className="py-6 md:py-8 px-4">
+                    <div className="grid lg:grid-cols-3 gap-6 md:gap-8">
                         {/* Main Content (Left) */}
                         <div className="lg:col-span-2 space-y-6">
                             {/* Title Input */}
-                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl p-4 md:p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                 <input
                                     type="text"
                                     value={title}
                                     onChange={handleTitleChange}
                                     required
-                                    className="w-full text-3xl font-bold bg-transparent border-none p-0 placeholder-gray-300 dark:placeholder-gray-600 focus:ring-0 text-gray-900 dark:text-white"
+                                    className="w-full text-2xl md:text-3xl font-bold bg-transparent border-none p-0 placeholder-gray-300 dark:placeholder-gray-600 focus:ring-0 text-gray-900 dark:text-white"
                                     placeholder="Titre de l'article"
                                 />
-                                <div className="mt-4 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-                                    <span className="font-mono bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded">
+                                <div className="mt-4 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 overflow-x-auto">
+                                    <span className="font-mono bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded whitespace-nowrap">
                                         /{slug}
                                     </span>
                                 </div>
@@ -208,7 +208,7 @@ export function AdminBlogEdit() {
                         {/* Sidebar (Right) */}
                         <div className="space-y-6">
                             {/* Settings Card */}
-                            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6 space-y-6">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-4 md:p-6 space-y-6">
                                 <h3 className="font-semibold text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-700 pb-4">
                                     Paramètres
                                 </h3>
@@ -265,7 +265,7 @@ export function AdminBlogEdit() {
                             </div>
 
                             {/* Media Card */}
-                            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6 space-y-6">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-4 md:p-6 space-y-6">
                                 <h3 className="font-semibold text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-700 pb-4">
                                     Médias
                                 </h3>
@@ -294,7 +294,7 @@ export function AdminBlogEdit() {
                             </div>
 
                             {/* Excerpt Card */}
-                            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-4 md:p-6">
                                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                                     Extrait
                                 </label>

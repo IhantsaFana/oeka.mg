@@ -8,10 +8,11 @@ import { Contact } from '@/features/contact/Contact';
 import { NotFoundPage } from '@/features/error/NotFoundPage';
 import { BlogPage } from '@/features/blog/BlogPage';
 import { BlogPostPage } from '@/features/blog/BlogPostPage';
-import { AdminLogin } from '@/features/admin/AdminLogin';
+import { LoginPage } from '@/features/admin/LoginPage';
 import { AdminBlog } from '@/features/admin/AdminBlog';
 import { AdminBlogEdit } from '@/features/admin/AdminBlogEdit';
 import { ProtectedRoute } from '@/features/admin/components/ProtectedRoute';
+import { AdminLayout } from '@/features/admin/components/AdminLayout';
 
 import { getLocalizedPath } from '@/shared/utils/routes';
 
@@ -33,6 +34,11 @@ function RootRedirect() {
 }
 
 export const router = createBrowserRouter([
+  // Routes Admin (Prioritaires)
+  {
+    path: '/admin/login',
+    element: <LoginPage />,
+  },
   {
     path: '/',
     element: <RootRedirect />,
@@ -76,34 +82,36 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  // Routes Admin (sans langue)
+  // Routes Admin
   {
-    path: '/admin/login',
-    element: <AdminLogin />,
-  },
-  {
-    path: '/admin/blog',
-    element: (
-      <ProtectedRoute>
-        <AdminBlog />
-      </ProtectedRoute>
-    ),
-  },
-  {
-    path: '/admin/blog/new',
-    element: (
-      <ProtectedRoute>
-        <AdminBlogEdit />
-      </ProtectedRoute>
-    ),
-  },
-  {
-    path: '/admin/blog/edit/:id',
-    element: (
-      <ProtectedRoute>
-        <AdminBlogEdit />
-      </ProtectedRoute>
-    ),
+    path: '/admin',
+    element: <AdminLayout />,
+    children: [
+      {
+        path: 'blog',
+        element: (
+          <ProtectedRoute>
+            <AdminBlog />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'blog/new',
+        element: (
+          <ProtectedRoute>
+            <AdminBlogEdit />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'blog/edit/:id',
+        element: (
+          <ProtectedRoute>
+            <AdminBlogEdit />
+          </ProtectedRoute>
+        ),
+      },
+    ],
   },
   // Redirection pour les chemins non reconnus vers la page d'accueil de la langue par défaut
   {

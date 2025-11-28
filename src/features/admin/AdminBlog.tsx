@@ -98,16 +98,16 @@ export function AdminBlog() {
                 </Container>
             </div>
 
-            <Container className="py-8">
+            <Container className="py-8 px-4 md:px-6">
                 {/* Actions Bar */}
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
-                    <div className="flex flex-1 w-full gap-4">
+                <div className="flex flex-col lg:flex-row justify-between items-stretch lg:items-center gap-4 mb-8">
+                    <div className="flex flex-col sm:flex-row flex-1 w-full gap-4">
                         {/* Search */}
-                        <div className="relative flex-1 max-w-md">
+                        <div className="relative flex-1">
                             <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                             <input
                                 type="text"
-                                placeholder="Rechercher un article..."
+                                placeholder="Rechercher..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 className="w-full pl-10 pr-4 py-2.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
@@ -120,7 +120,7 @@ export function AdminBlog() {
                             <select
                                 value={selectedLanguage}
                                 onChange={(e) => setSelectedLanguage(e.target.value)}
-                                className="pl-10 pr-8 py-2.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 appearance-none cursor-pointer"
+                                className="w-full sm:w-auto pl-10 pr-8 py-2.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 appearance-none cursor-pointer"
                             >
                                 <option value="all">Toutes les langues</option>
                                 <option value="fr">Français</option>
@@ -135,7 +135,7 @@ export function AdminBlog() {
 
                     <button
                         onClick={() => navigate('/admin/blog/new')}
-                        className="w-full md:w-auto flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-xl shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5"
+                        className="w-full lg:w-auto flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-xl shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5 active:translate-y-0"
                     >
                         <FaPlus />
                         <span>Nouvel article</span>
@@ -148,7 +148,7 @@ export function AdminBlog() {
                         <FaSpinner className="animate-spin text-4xl text-blue-600" />
                     </div>
                 ) : filteredPosts.length === 0 ? (
-                    <div className="text-center py-20 bg-white dark:bg-gray-800 rounded-2xl border border-dashed border-gray-300 dark:border-gray-700">
+                    <div className="text-center py-20 bg-white dark:bg-gray-800 rounded-2xl border border-dashed border-gray-300 dark:border-gray-700 mx-4">
                         <p className="text-gray-500 dark:text-gray-400 text-lg mb-4">
                             Aucun article trouvé
                         </p>
@@ -168,9 +168,9 @@ export function AdminBlog() {
                                 animate={{ opacity: 1, y: 0 }}
                                 className="group bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 hover:shadow-lg hover:border-blue-500/30 transition-all duration-200"
                             >
-                                <div className="flex items-center gap-4">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                                     {/* Image Thumbnail */}
-                                    <div className="w-16 h-16 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-700">
+                                    <div className="w-full sm:w-24 h-32 sm:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-700">
                                         {post.coverImage ? (
                                             <img
                                                 src={post.coverImage}
@@ -185,39 +185,57 @@ export function AdminBlog() {
                                     </div>
 
                                     {/* Info */}
-                                    <div className="flex-1 min-w-0">
-                                        <div className="flex items-center gap-2 mb-1">
-                                            <h3 className="text-lg font-bold text-gray-900 dark:text-white truncate">
+                                    <div className="flex-1 min-w-0 w-full">
+                                        <div className="flex flex-wrap items-center gap-2 mb-2">
+                                            <h3 className="text-lg font-bold text-gray-900 dark:text-white truncate max-w-full">
                                                 {post.title}
                                             </h3>
                                             <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${post.status === 'published'
-                                                    ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'
-                                                    : 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400'
+                                                ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'
+                                                : 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400'
                                                 }`}>
                                                 {post.status === 'published' ? 'Publié' : 'Brouillon'}
                                             </span>
                                         </div>
 
-                                        <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400 mb-3 sm:mb-2">
                                             <span className="uppercase text-xs font-semibold bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded">
                                                 {post.language}
                                             </span>
                                             <span>{post.category}</span>
-                                            <span className="hidden md:inline">•</span>
-                                            <span className="hidden md:inline">{formatDate(post.createdAt)}</span>
+                                            <span className="hidden sm:inline">•</span>
+                                            <span className="text-xs sm:text-sm">{formatDate(post.createdAt)}</span>
                                         </div>
 
-                                        <div className="flex items-center gap-4 text-xs text-gray-400">
-                                            {post.views !== undefined && (
-                                                <span className="flex items-center gap-1">
-                                                    <FaEye /> {post.views}
-                                                </span>
-                                            )}
+                                        <div className="flex items-center justify-between sm:justify-start gap-4">
+                                            <div className="flex items-center gap-4 text-xs text-gray-400">
+                                                {post.views !== undefined && (
+                                                    <span className="flex items-center gap-1">
+                                                        <FaEye /> {post.views}
+                                                    </span>
+                                                )}
+                                            </div>
+
+                                            {/* Mobile Actions (visible only on mobile, hidden on sm) */}
+                                            <div className="flex sm:hidden items-center gap-2">
+                                                <button
+                                                    onClick={() => navigate(`/admin/blog/edit/${post.id}`)}
+                                                    className="p-2 text-blue-600 bg-blue-50 dark:bg-blue-900/20 rounded-lg"
+                                                >
+                                                    <FaEdit size={18} />
+                                                </button>
+                                                <button
+                                                    onClick={() => handleDelete(post.id)}
+                                                    className="p-2 text-red-600 bg-red-50 dark:bg-red-900/20 rounded-lg"
+                                                >
+                                                    <FaTrash size={18} />
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    {/* Actions */}
-                                    <div className="flex items-center gap-2">
+                                    {/* Desktop Actions (hidden on mobile, visible on sm) */}
+                                    <div className="hidden sm:flex items-center gap-2">
                                         <button
                                             onClick={() => navigate(`/admin/blog/edit/${post.id}`)}
                                             className="p-2 text-gray-500 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-all"
