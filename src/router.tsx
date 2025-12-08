@@ -60,7 +60,7 @@ export const router = createBrowserRouter([
         element: <Scout />,
       },
       {
-        path: 'scout/sampana-mena-90-taona',
+        path: 'scout/link-in-sera-2-0',
         element: <SampanaMena90Page />,
       },
       {
