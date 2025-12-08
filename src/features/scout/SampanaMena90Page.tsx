@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { SEO } from '@/shared/components/ui/SEO';
-import LinkInSera from './sections/Lininsera';
+import LinkInSera from './sections/Linkinsera';
 
 export function SampanaMena90Page() {
     const { t } = useTranslation();
