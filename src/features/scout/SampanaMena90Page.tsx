@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { SEO } from '@/shared/components/ui/SEO';
-import SampanaMena90 from './sections/SampanaMena90';
+import LinkInSera from './sections/Lininsera';
 
 export function SampanaMena90Page() {
     const { t } = useTranslation();
@@ -91,7 +91,7 @@ export function SampanaMena90Page() {
             </Helmet>
 
             <main className="overflow-hidden">
-                <SampanaMena90 />
+                <LinkInSera />
             </main>
         </>
     );
