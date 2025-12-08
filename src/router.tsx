@@ -61,7 +61,7 @@ export const router = createBrowserRouter([
       },
       {
         path: 'scout/link-in-sera-2-0',
-        element: <SampanaMena90Page />,
+        element: <SampanaMena90TaonaPage />,
       },
       {
         path: 'contact',
