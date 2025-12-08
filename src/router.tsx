@@ -3,7 +3,7 @@ import { Layout } from '@/shared/components/layout/Layout';
 import { Home } from '@/features/home/Home';
 import { Dev } from '@/features/dev/Dev';
 import { Scout } from '@/features/scout/Scout';
-import { SampanaMena90Page } from '@/features/scout/SampanaMena90Page';
+import { SampanaMena90TaonaPage } from '@/features/scout/SampanaMena90Page';
 import { Contact } from '@/features/contact/Contact';
 import { NotFoundPage } from '@/features/error/NotFoundPage';
 import { BlogPage } from '@/features/blog/BlogPage';
