@@ -33,7 +33,7 @@ const LinkInSera = () => {
       title: "Link'In Sera 2.0",
       subtitle: "Camp de Formation DSF & Mi-Tily Serasera - Tily eto Madagasikara",
       date: "04-07/12/2025",
-      location: "Tranombitsika, Madagascar",
+      location: "Tranombitsika",
       author: "DSF - TEM",
       intro:
         "Link'In Sera 2.0 est le grand camp de formation du DSF (Departemantan'ny Serasera sy Fifandraisana) de Tily eto Madagasikara et Mi-Tily Serasera. Plus de 85 jeunes venus de différentes régions se sont retrouvés à Tranombitsika pour apprendre, créer, partager et renforcer leur fraternité.",
@@ -73,7 +73,7 @@ const LinkInSera = () => {
       title: "Link'In Sera 2.0",
       subtitle: "DSF & Mi-Tily Serasera Training Camp - Tily eto Madagasikara",
       date: "04-07/12/2025",
-      location: "Tranombitsika, Madagascar",
+      location: "Tranombitsika",
       author: "DSF - TEM",
       intro:
         "Link'In Sera 2.0 is the official training camp of the DSF (Communication & Relations Department) and Mi-Tily Serasera of Tily eto Madagasikara. More than 85 participants from different regions gathered at Tranombitsika to learn, create, and build stronger bonds.",
@@ -113,7 +113,7 @@ const LinkInSera = () => {
       title: "Link'In Sera 2.0",
       subtitle: "Lasy fampivondronana ny ekipa DSF & Mi-Tily Serasera- Tily eto Madagasikara",
       date: "04-07/12/2025",
-      location: "Tranombitsika, Madagasikara",
+      location: "Tranombitsika",
       author: "DSF - TEM",
       intro:
         "Link'In Sera 2.0 dia lasy fanofanana ho an'ny DSF sy Mi-Tily Serasera ao amin'ny Tily eto Madagasikara. Mpandray anjara mihoatra ny 85 avy amin'ny faritra maro no nivory tao Tranombitsika hianatra, hamorona ary hanamafy ny firaisankina.",
