@@ -31,12 +31,12 @@ const LinkInSera = () => {
   const content: ContentByLang = {
     fr: {
       title: "Link'In Sera 2.0",
-      subtitle: "Camp de Formation DSF - Tily eto Madagasikara",
-      date: "7 - 10 Novembre 2024",
+      subtitle: "Camp de Formation DSF & Mi-Tily Serasera - Tily eto Madagasikara",
+      date: "04-07/12/2025",
       location: "Tranombitsika, Madagascar",
       author: "Departemantan'ny Serasera sy Fifandraisana - Tily eto Madagasikara",
       intro:
-        "Link'In Sera 2.0 est le grand camp de formation du DSF (Departemantan'ny Serasera sy Fifandraisana) de Tily eto Madagasikara. Plus de 85 jeunes venus de différentes régions se sont retrouvés à Tranombitsika pour apprendre, créer, partager et renforcer leur fraternité.",
+        "Link'In Sera 2.0 est le grand camp de formation du DSF (Departemantan'ny Serasera sy Fifandraisana) de Tily eto Madagasikara et Mi-Tily Serasera. Plus de 85 jeunes venus de différentes régions se sont retrouvés à Tranombitsika pour apprendre, créer, partager et renforcer leur fraternité.",
       sections: [
         {
           title: "Un Camp qui Rassemble",
@@ -71,12 +71,12 @@ const LinkInSera = () => {
 
     en: {
       title: "Link'In Sera 2.0",
-      subtitle: "DSF Training Camp - Tily eto Madagasikara",
-      date: "7 - 10 November 2024",
+      subtitle: "DSF & Mi-Tily Serasera Training Camp - Tily eto Madagasikara",
+      date: "04-07/12/2025",
       location: "Tranombitsika, Madagascar",
       author: "Communication Department - Tily eto Madagasikara",
       intro:
-        "Link'In Sera 2.0 is the official training camp of the DSF (Communication & Relations Department) of Tily eto Madagasikara. More than 85 participants from different regions gathered at Tranombitsika to learn, create, and build stronger bonds.",
+        "Link'In Sera 2.0 is the official training camp of the DSF (Communication & Relations Department) and Mi-Tily Serasera of Tily eto Madagasikara. More than 85 participants from different regions gathered at Tranombitsika to learn, create, and build stronger bonds.",
       sections: [
         {
           title: "A Camp that Connects People",
@@ -111,15 +111,15 @@ const LinkInSera = () => {
 
     mg: {
       title: "Link'In Sera 2.0",
-      subtitle: "Toby Fanofanana DSF - Tily eto Madagasikara",
-      date: "7 - 10 Novambra 2024",
+      subtitle: "Lasy fampivondronana ny ekipa DSF & Mi-Tily Serasera- Tily eto Madagasikara",
+      date: "04-07/12/2025",
       location: "Tranombitsika, Madagasikara",
       author: "Departemantan'ny Serasera sy Fifandraisana",
       intro:
-        "Link'In Sera 2.0 dia toby fanofanana lehibe ho an'ny DSF ao amin'ny Tily eto Madagasikara. Mpandray anjara mihoatra ny 85 avy amin'ny faritra maro no nivory tao Tranombitsika hianatra, hamorona ary hanamafy ny firaisankina.",
+        "Link'In Sera 2.0 dia lasy fanofanana ho an'ny DSF sy Mi-Tily Serasera ao amin'ny Tily eto Madagasikara. Mpandray anjara mihoatra ny 85 avy amin'ny faritra maro no nivory tao Tranombitsika hianatra, hamorona ary hanamafy ny firaisankina.",
       sections: [
         {
-          title: "Toby mampiray",
+          title: "Lasy mampiray",
           content:
             "Nandritra ny 4 andro, niaina tontolo iray feno momba ny serasera sy ny teknolojia maoderina ny mpandray anjara. Na maro aza no tsy mbola nifankahita, dia nivady vetivety. Niara-nianatra, niara-nisakafo, nihomehy... ary nody toy ny fianakaviana iray."
         },
@@ -198,7 +198,7 @@ const LinkInSera = () => {
           className="max-w-4xl mx-auto mb-12"
         >
           <img
-            src="/scout/gallerie/3.jpg"
+            src="/scout/gallerie/linksera-1.jpg"
             className="rounded-2xl shadow-xl"
           />
         </motion.div>
@@ -240,7 +240,7 @@ const LinkInSera = () => {
           className="max-w-4xl mx-auto mb-12"
         >
           <img
-            src="/scout/gallerie/8.jpg"
+            src="/scout/gallerie/linksera-2.jpg"
             className="rounded-2xl shadow-xl"
           />
         </motion.div>
