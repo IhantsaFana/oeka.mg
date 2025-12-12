@@ -6,14 +6,14 @@
   --color-primary: oklch(0.6 0.2 250);
   --color-secondary: oklch(0.5 0.15 200);
   --color-accent: oklch(0.7 0.25 150);
-  
+
   /* Spacing - Utilise les valeurs par défaut de Tailwind */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
-  
+
   /* Typography */
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-mono: 'Fira Code', monospace;
@@ -23,10 +23,36 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Styles personnalisés avec @layer pour éviter les conflits */
+/* Custom font faces */
 @layer base {
+  @font-face {
+    font-family: 'Insaniburger';
+    src: url('/fonts/Insaniburger.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Circus Of Innocents';
+    src: url('/fonts/Circus_Of_Innocents.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'James Stroker';
+    src: url('/fonts/James_Stroker.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   html {
     /* Éviter le flash de contenu non stylé */
-    color-scheme: light dark; /* Support automatique du thème système */
+    color-scheme: light dark;
+    /* Support automatique du thème système */
     transition: background-color 0.3s ease, color 0.3s ease;
     scroll-behavior: smooth;
   }
@@ -45,6 +71,7 @@
     0% {
       transform: translateX(-100%);
     }
+
     100% {
       transform: translateX(100%);
     }
@@ -52,6 +79,19 @@
 
   .animate-shimmer {
     animation: shimmer 2s infinite;
+  }
+
+  /* Custom font utilities for blog */
+  .font-blog-title {
+    font-family: 'Insaniburger', sans-serif;
+  }
+
+  .font-blog-subtitle {
+    font-family: 'Circus Of Innocents', sans-serif;
+  }
+
+  .font-blog-handwritten {
+    font-family: 'James Stroker', cursive;
   }
 }
 
@@ -84,37 +124,71 @@
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   .animate-spin-slow {
     animation: spin-slow 20s linear infinite;
   }
-  
+
   .animate-float-random {
     animation: float-random 6s ease-in-out infinite;
   }
-  
+
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
   }
-  
+
   @keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
-  
+
   @keyframes float-random {
-    0%, 100% { 
+
+    0%,
+    100% {
       transform: translateY(0px) translateX(0px) rotate(0deg);
     }
-    25% { 
+
+    25% {
       transform: translateY(-15px) translateX(10px) rotate(2deg);
     }
-    50% { 
+
+    50% {
       transform: translateY(-25px) translateX(-5px) rotate(-1deg);
     }
-    75% { 
+
+    75% {
       transform: translateY(-10px) translateX(15px) rotate(1deg);
     }
+  }
+
+  @keyframes gradient-xy {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient-xy {
+    background-size: 400% 400%;
+    animation: gradient-xy 15s ease infinite;
   }
 }
