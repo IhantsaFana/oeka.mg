@@ -15,12 +15,12 @@ export function BlogPage() {
 
     useEffect(() => {
         loadPosts();
-    }, [i18n.language]);
+    }, []);
 
     const loadPosts = async () => {
         try {
             setLoading(true);
-            const data = await getPublishedBlogPosts(i18n.language);
+            const data = await getPublishedBlogPosts();
             setPosts(data);
         } catch (error) {
             console.error('Error loading posts:', error);

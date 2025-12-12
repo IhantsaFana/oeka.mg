@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import SimpleMDE from 'react-simplemde-editor';
 import 'easymde/dist/easymde.min.css';
@@ -105,7 +105,7 @@ export function AdminBlogEdit() {
         }
     };
 
-    const mdeOptions = {
+    const mdeOptions = useMemo(() => ({
         spellChecker: false,
         placeholder: "Commencez à écrire votre histoire...",
         status: false,
@@ -121,7 +121,7 @@ export function AdminBlogEdit() {
             "preview", "side-by-side", "fullscreen", "|",
             "guide"
         ]
-    } as any;
+    } as any), [isEditing, id]);
 
     if (initialLoading) {
         return (
@@ -154,8 +154,8 @@ export function AdminBlogEdit() {
                             value={status}
                             onChange={(e) => setStatus(e.target.value as 'draft' | 'published')}
                             className={`px-2 md:px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium border-0 focus:ring-2 focus:ring-offset-1 transition-all cursor-pointer ${status === 'published'
-                                    ? 'bg-green-100 text-green-700 focus:ring-green-500 dark:bg-green-900/30 dark:text-green-400'
-                                    : 'bg-yellow-100 text-yellow-700 focus:ring-yellow-500 dark:bg-yellow-900/30 dark:text-yellow-400'
+                                ? 'bg-green-100 text-green-700 focus:ring-green-500 dark:bg-green-900/30 dark:text-green-400'
+                                : 'bg-yellow-100 text-yellow-700 focus:ring-yellow-500 dark:bg-yellow-900/30 dark:text-yellow-400'
                                 }`}
                         >
                             <option value="draft">Brouillon</option>

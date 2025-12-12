@@ -20,19 +20,19 @@ export function BlogPostPage() {
         if (slug) {
             loadPost(slug);
         }
-    }, [slug, i18n.language]);
+    }, [slug]);
 
     const loadPost = async (postSlug: string) => {
         try {
             setLoading(true);
-            const data = await getBlogPostBySlug(postSlug, i18n.language);
+            const data = await getBlogPostBySlug(postSlug);
 
             if (data) {
                 setPost(data);
                 // Increment views
                 incrementBlogPostViews(data.id);
             } else {
-                // If not found in current language, maybe redirect or show 404
+                // Post not found
                 console.log('Post not found');
             }
         } catch (error) {
