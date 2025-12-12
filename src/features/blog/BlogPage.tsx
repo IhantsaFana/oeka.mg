@@ -53,51 +53,30 @@ export function BlogPage() {
             />
 
             {/* Hero Section */}
-            <section className="relative py-20 md:py-28 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 overflow-hidden">
-                {/* Animated Background Elements */}
-                <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-                    <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/20 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
-                    <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/20 dark:bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-                </div>
-
-                <Container className="relative z-10">
+            <section className="relative py-16 md:py-20 border-b border-gray-200 dark:border-gray-800">
+                <Container>
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="max-w-4xl mx-auto text-center"
+                        className="max-w-5xl mx-auto"
                     >
-                        {/* Badge */}
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.2 }}
-                            className="inline-block mb-6"
-                        >
-                            <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-semibold">
-                                ✍️ {t('blog.title')}
-                            </span>
-                        </motion.div>
+                        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                            {/* Left side - Title */}
+                            <div className="flex-1">
+                                <h1 className="font-blog-title text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 dark:text-white leading-none mb-2">
+                                    {t('blog.title')}
+                                </h1>
+                                <div className="h-1 w-24 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+                            </div>
 
-                        {/* Title */}
-                        <motion.h1
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.3 }}
-                            className="font-blog-title text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6"
-                        >
-                            {t('blog.title')}
-                        </motion.h1>
-
-                        {/* Subtitle */}
-                        <motion.p
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.4 }}
-                            className="font-blog-subtitle text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
-                        >
-                            {t('blog.subtitle')}
-                        </motion.p>
+                            {/* Right side - Subtitle */}
+                            <div className="flex-1 md:text-right">
+                                <p className="font-blog-subtitle text-xl md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed">
+                                    {t('blog.subtitle')}
+                                </p>
+                            </div>
+                        </div>
                     </motion.div>
                 </Container>
             </section>
