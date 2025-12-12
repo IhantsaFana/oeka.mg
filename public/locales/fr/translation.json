@@ -490,5 +490,28 @@
       "description": "Chaque aventure est une opportunité de grandir, d'apprendre et de créer des souvenirs qui durent toute une vie.",
       "alt": "Activités scoutes en pleine nature"
     }
+  },
+  "blog": {
+    "seo": {
+      "title": "Blog & Actualités - OEKA",
+      "description": "Découvrez mes derniers articles, tutoriels et actualités sur le développement web, l'IA et le scoutisme."
+    },
+    "title": "Blog",
+    "subtitle": "Réflexions, tutoriels et aventures",
+    "loading": "Chargement...",
+    "noArticles": "Aucun article disponible pour le moment.",
+    "readMore": "Lire la suite",
+    "backToBlog": "Retour aux articles",
+    "backToList": "Retour au blog",
+    "articleNotFound": "Article non trouvé",
+    "articleNotFoundDesc": "Cet article n'existe pas ou a été supprimé.",
+    "readingTime": "min de lecture",
+    "views": "vues",
+    "publishedOn": "Publié le",
+    "by": "par",
+    "in": "dans",
+    "tags": "Tags",
+    "relatedArticles": "Articles similaires",
+    "shareArticle": "Partager cet article"
   }
 }

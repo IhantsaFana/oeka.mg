@@ -490,5 +490,28 @@
       "description": "Every adventure is an opportunity to grow, learn and create memories that last a lifetime.",
       "alt": "Scouting activities in nature"
     }
+  },
+  "blog": {
+    "seo": {
+      "title": "Blog & News - OEKA",
+      "description": "Discover my latest articles, tutorials and news about web development, AI and scouting."
+    },
+    "title": "Blog",
+    "subtitle": "Thoughts, tutorials and adventures",
+    "loading": "Loading...",
+    "noArticles": "No articles available at the moment.",
+    "readMore": "Read more",
+    "backToBlog": "Back to articles",
+    "backToList": "Back to blog",
+    "articleNotFound": "Article not found",
+    "articleNotFoundDesc": "This article doesn't exist or has been deleted.",
+    "readingTime": "min read",
+    "views": "views",
+    "publishedOn": "Published on",
+    "by": "by",
+    "in": "in",
+    "tags": "Tags",
+    "relatedArticles": "Related articles",
+    "shareArticle": "Share this article"
   }
 }
