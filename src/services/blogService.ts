@@ -51,10 +51,23 @@ export const updateBlogPost = async (input: UpdateBlogPostInput): Promise<void> 
     try {
         const { id, ...data } = input;
         const docRef = doc(db, COLLECTION_NAME, id);
-        await updateDoc(docRef, {
+
+        // Si le statut passe à "published" et qu'il n'y a pas de publishedAt, on l'ajoute
+        const updateData: any = {
             ...data,
             updatedAt: serverTimestamp(),
-        });
+        };
+
+        // Si on publie l'article, s'assurer que publishedAt est défini
+        if (data.status === 'published') {
+            // Vérifier si l'article avait déjà un publishedAt
+            const docSnap = await getDoc(docRef);
+            if (docSnap.exists() && !docSnap.data().publishedAt) {
+                updateData.publishedAt = serverTimestamp();
+            }
+        }
+
+        await updateDoc(docRef, updateData);
     } catch (error) {
         console.error('Error updating blog post:', error);
         throw error;
@@ -88,12 +101,12 @@ export const getBlogPostById = async (id: string): Promise<BlogPost | null> => {
 };
 
 // Récupérer un article par slug
-export const getBlogPostBySlug = async (slug: string, language: string): Promise<BlogPost | null> => {
+// Note: Ne filtre plus par langue - trouve le blog par slug uniquement
+export const getBlogPostBySlug = async (slug: string): Promise<BlogPost | null> => {
     try {
         const q = query(
             collection(db, COLLECTION_NAME),
             where('slug', '==', slug),
-            where('language', '==', language),
             where('status', '==', 'published'),
             limit(1)
         );
@@ -111,21 +124,29 @@ export const getBlogPostBySlug = async (slug: string, language: string): Promise
 };
 
 // Récupérer tous les articles publiés (avec pagination)
+// Note: Ne filtre plus par langue - affiche tous les blogs publiés
 export const getPublishedBlogPosts = async (
-    language: string,
     limitCount: number = 10
 ): Promise<BlogPost[]> => {
     try {
+        // Requête sans orderBy pour éviter le besoin d'index composite
         const q = query(
             collection(db, COLLECTION_NAME),
-            where('language', '==', language),
-            where('status', '==', 'published'),
-            orderBy('publishedAt', 'desc'),
-            limit(limitCount)
+            where('status', '==', 'published')
         );
 
         const querySnapshot = await getDocs(q);
-        return querySnapshot.docs.map(convertToBlogPost);
+        const posts = querySnapshot.docs.map(convertToBlogPost);
+
+        // Tri en mémoire par publishedAt
+        posts.sort((a, b) => {
+            const dateA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+            const dateB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+            return dateB - dateA; // Ordre décroissant
+        });
+
+        // Limiter les résultats
+        return posts.slice(0, limitCount);
     } catch (error) {
         console.error('Error getting published blog posts:', error);
         throw error;
@@ -158,16 +179,15 @@ export const getAllBlogPosts = async (language?: string): Promise<BlogPost[]> =>
 };
 
 // Récupérer les articles par catégorie
+// Note: Ne filtre plus par langue
 export const getBlogPostsByCategory = async (
     category: string,
-    language: string,
     limitCount: number = 10
 ): Promise<BlogPost[]> => {
     try {
         const q = query(
             collection(db, COLLECTION_NAME),
             where('category', '==', category),
-            where('language', '==', language),
             where('status', '==', 'published'),
             orderBy('publishedAt', 'desc'),
             limit(limitCount)
@@ -182,16 +202,15 @@ export const getBlogPostsByCategory = async (
 };
 
 // Récupérer les articles par tag
+// Note: Ne filtre plus par langue
 export const getBlogPostsByTag = async (
     tag: string,
-    language: string,
     limitCount: number = 10
 ): Promise<BlogPost[]> => {
     try {
         const q = query(
             collection(db, COLLECTION_NAME),
             where('tags', 'array-contains', tag),
-            where('language', '==', language),
             where('status', '==', 'published'),
             orderBy('publishedAt', 'desc'),
             limit(limitCount)
