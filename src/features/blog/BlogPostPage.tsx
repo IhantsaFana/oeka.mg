@@ -59,7 +59,7 @@ export function BlogPostPage() {
         return (
             <div className="min-h-screen flex flex-col items-center justify-center">
                 <FaSpinner className="animate-spin text-4xl text-gray-400 mb-4" />
-                <p className="text-gray-500 dark:text-gray-400">Chargement...</p>
+                <p className="text-gray-500 dark:text-gray-400">{t('blog.loading')}</p>
             </div>
         );
     }
@@ -68,13 +68,13 @@ export function BlogPostPage() {
         return (
             <div className="min-h-screen flex flex-col items-center justify-center">
                 <div className="text-center">
-                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Article non trouvé</h1>
-                    <p className="text-gray-600 dark:text-gray-400 mb-6">Cet article n'existe pas ou a été supprimé.</p>
+                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">{t('blog.articleNotFound')}</h1>
+                    <p className="text-gray-600 dark:text-gray-400 mb-6">{t('blog.articleNotFoundDesc')}</p>
                     <button
                         onClick={() => navigate(`/${i18n.language}/blog`)}
                         className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
                     >
-                        <FaArrowLeft /> Retour au blog
+                        <FaArrowLeft /> {t('blog.backToList')}
                     </button>
                 </div>
             </div>
@@ -99,7 +99,7 @@ export function BlogPostPage() {
                             onClick={() => navigate(`/${i18n.language}/blog`)}
                             className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                         >
-                            <FaArrowLeft /> Retour au blog
+                            <FaArrowLeft /> {t('blog.backToList')}
                         </button>
                     </div>
 
@@ -125,7 +125,7 @@ export function BlogPostPage() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <FaClock className="text-blue-600 dark:text-blue-400" />
-                                <span>{estimateReadingTime(post.content)} min</span>
+                                <span>{estimateReadingTime(post.content)} {t('blog.readingTime')}</span>
                             </div>
                             {post.views !== undefined && post.views > 0 && (
                                 <div className="flex items-center gap-2">
